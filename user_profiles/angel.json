@@ -1,0 +1,4315 @@
+{
+  "user_id": "angel",
+  "created_at": "2026-03-30T14:48:26.395602",
+  "views": [
+    {
+      "title": "Основы программирования для Linux",
+      "category": "DevOps / Cloud",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.029010"
+    },
+    {
+      "title": "Основы программирования на языке Си в Linux",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.034273"
+    },
+    {
+      "title": "Learning Linux for LFCA Certification",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:55.040593"
+    },
+    {
+      "title": "Основы Linux — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.046168"
+    },
+    {
+      "title": "Программа. Linux: с нуля до сертификата",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.051448"
+    },
+    {
+      "title": "Терминал Linux. Работа в командной строке — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.057335"
+    },
+    {
+      "title": "Linux простым языком",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.062999"
+    },
+    {
+      "title": "Командная строка Linux — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.068141"
+    },
+    {
+      "title": "Русский сертификационный экзамен LPI Linux Essentials 010-160",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.075964"
+    },
+    {
+      "title": "Регулярные выражения в Linux: искусство точного поиска",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.081313"
+    },
+    {
+      "title": "Курс Linux",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.087887"
+    },
+    {
+      "title": "C Programming with Linux",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:55.094188"
+    },
+    {
+      "title": "LPI Linux Essentials 010-160 Certification Exam Practice",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.101370"
+    },
+    {
+      "title": "Linux с нуля: пошаговый и понятный курс — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.108759"
+    },
+    {
+      "title": "Linux Basics: The Command Line Interface - 6",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:55.114030"
+    },
+    {
+      "title": "Ассемблер (NASM Linux x86-64) — Базовый уровень",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.118953"
+    },
+    {
+      "title": "Managing Linux Systems",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:55.124060"
+    },
+    {
+      "title": "Linux for Developers",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:55.130138"
+    },
+    {
+      "title": "Linux Command Line Basics",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.135722"
+    },
+    {
+      "title": "Linux System Programming and Introduction to Buildroot",
+      "category": "DevOps / Cloud",
+      "difficulty": "Advanced",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:55.141090"
+    },
+    {
+      "title": "PRO Kotlin. Основы программирования",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.769055"
+    },
+    {
+      "title": "PRO Kotlin. Курс для продвинутых — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.774706"
+    },
+    {
+      "title": "Kotlin for Java Developers",
+      "category": "Java / Kotlin",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:55.779810"
+    },
+    {
+      "title": "PRO Kotlin. Алгоритмы и структуры данных",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.786292"
+    },
+    {
+      "title": "PRO Kotlin. Базовый курс по структурам данных",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.791448"
+    },
+    {
+      "title": "Сопротивление материалов. Часть 1. Основные положения, растяжение-сжатие прямолинейных стержней, кручение прямолинейных стержней, простой изгиб, сложный изгиб",
+      "category": "General IT / Computer Science",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:18:55.797976"
+    },
+    {
+      "title": "ClickHouse для инженеров и аналитиков",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.803613"
+    },
+    {
+      "title": "Programming Fundamentals in Kotlin",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:55.809113"
+    },
+    {
+      "title": "Программист 1С. Интенсив с преподавателем",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.814573"
+    },
+    {
+      "title": "ClickHouse с нуля",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.820419"
+    },
+    {
+      "title": "Корутины и Flow в Kotlin (2025)",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.826135"
+    },
+    {
+      "title": "Jenkins в работе — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.830975"
+    },
+    {
+      "title": "Свой веб-сайт и telegram-бот в облаке — настрой и запусти сам",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.836385"
+    },
+    {
+      "title": "Вайб-кодинг. Промтинг и продвинутое использование нейросетей.",
+      "category": "C#",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.842313"
+    },
+    {
+      "title": "Advanced Programming in Kotlin",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:55.848061"
+    },
+    {
+      "title": "Молекулярная гастрономия",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:18:55.854023"
+    },
+    {
+      "title": "Живопись пастелью. Поэтапное освоение материала в рамках задания «натюрморт» и «пейзаж»",
+      "category": "General IT / Computer Science",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:18:55.859637"
+    },
+    {
+      "title": "Основы неорганической химии",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:18:55.864753"
+    },
+    {
+      "title": "Java Часть 2 (Знакомство с ООП) — Stepik",
+      "category": "Java / Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.870501"
+    },
+    {
+      "title": "Python. Часть 1 (Базовый python и условные операторы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:55.878662"
+    },
+    {
+      "title": "Основы Linux — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.688119"
+    },
+    {
+      "title": "Основы программирования для Linux",
+      "category": "DevOps / Cloud",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.693727"
+    },
+    {
+      "title": "Русский сертификационный экзамен LPI Linux Essentials 010-160",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.699431"
+    },
+    {
+      "title": "Linux простым языком",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.705051"
+    },
+    {
+      "title": "Программа. Linux: с нуля до сертификата",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.710338"
+    },
+    {
+      "title": "Курс Linux",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.716142"
+    },
+    {
+      "title": "Терминал Linux. Работа в командной строке — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.721610"
+    },
+    {
+      "title": "Основы программирования на языке Си в Linux",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.726633"
+    },
+    {
+      "title": "LPI Linux Essentials 010-160 Certification Exam Practice",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.732398"
+    },
+    {
+      "title": "Командная строка Linux — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.737159"
+    },
+    {
+      "title": "Learning Linux for LFCA Certification",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:56.743155"
+    },
+    {
+      "title": "Регулярные выражения в Linux: искусство точного поиска",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.749411"
+    },
+    {
+      "title": "Open Source Software Development, Linux and Git",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:56.754869"
+    },
+    {
+      "title": "Tools of the Trade: Linux and SQL",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:56.760356"
+    },
+    {
+      "title": "Linux с нуля: пошаговый и понятный курс — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.767886"
+    },
+    {
+      "title": "Ассемблер (NASM Linux x86-64) — Углублённый уровень — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:56.773158"
+    },
+    {
+      "title": "Linux for Developers",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:56.778318"
+    },
+    {
+      "title": "Advanced Embedded Linux Development",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:56.783647"
+    },
+    {
+      "title": "Managing Linux Systems",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:56.789377"
+    },
+    {
+      "title": "Hands-on Introduction to Linux Commands and Shell Scripting",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:56.794704"
+    },
+    {
+      "title": "PRO Kotlin. Основы программирования",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:57.924455"
+    },
+    {
+      "title": "PRO Kotlin. Курс для продвинутых — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:57.929675"
+    },
+    {
+      "title": "Kotlin for Java Developers",
+      "category": "Java / Kotlin",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:57.934802"
+    },
+    {
+      "title": "PRO Kotlin. Алгоритмы и структуры данных",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:57.939688"
+    },
+    {
+      "title": "PRO Kotlin. Базовый курс по структурам данных",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:57.944785"
+    },
+    {
+      "title": "Корутины и Flow в Kotlin (2025)",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:57.949158"
+    },
+    {
+      "title": "Оборудование машиностроительных производств",
+      "category": "Business & Management",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:18:57.954683"
+    },
+    {
+      "title": "Jenkins в работе — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:57.960293"
+    },
+    {
+      "title": "Programming Fundamentals in Kotlin",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:18:57.966826"
+    },
+    {
+      "title": "ClickHouse для инженеров и аналитиков",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:57.971969"
+    },
+    {
+      "title": "ClickHouse с нуля",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:57.977930"
+    },
+    {
+      "title": "BotLab: Лаборатория создания телеграм ботов — Stepik",
+      "category": "Java / Kotlin",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:57.983912"
+    },
+    {
+      "title": "Python. Часть 4 (Функции, замыкание и декораторы)",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:57.989205"
+    },
+    {
+      "title": "История естествознания. Часть 3",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:18:57.993801"
+    },
+    {
+      "title": "SQL Тренажер. Бесконечное приключение 01. На планете. — Stepik",
+      "category": "SQL",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:58.000914"
+    },
+    {
+      "title": "Бережливое производство",
+      "category": "Business & Management",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:18:58.006238"
+    },
+    {
+      "title": "Frontend: быстрый вход — Stepik",
+      "category": "Frontend / JavaScript",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:58.012568"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:58.018059"
+    },
+    {
+      "title": "Сопротивление материалов. Часть 1. Основные положения, растяжение-сжатие прямолинейных стержней, кручение прямолинейных стержней, простой изгиб, сложный изгиб",
+      "category": "General IT / Computer Science",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:18:58.023449"
+    },
+    {
+      "title": "Молекулярная гастрономия",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:18:58.028526"
+    },
+    {
+      "title": "Основы статистики",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.282737"
+    },
+    {
+      "title": "Свободное погружение в СУБД",
+      "category": "SQL",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.288556"
+    },
+    {
+      "title": "Представление данных: основы — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.293571"
+    },
+    {
+      "title": "Анализ данных просто и доступно. — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.298131"
+    },
+    {
+      "title": "Базы данных",
+      "category": "SQL",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.303308"
+    },
+    {
+      "title": "Основы работы с большими данными — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.309887"
+    },
+    {
+      "title": "Основы Искусственного Интеллекта",
+      "category": "Business & Management",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "udemy",
+      "ts": "2026-05-17T13:18:59.315932"
+    },
+    {
+      "title": "Анализ данных в R",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.321494"
+    },
+    {
+      "title": "Data Science с Глебом Михайловым",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.326712"
+    },
+    {
+      "title": "Большие данные — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.332236"
+    },
+    {
+      "title": "Введение в Data Science и машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.337580"
+    },
+    {
+      "title": "Старт в Data Science! — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.343576"
+    },
+    {
+      "title": "Основы больших данных (Big Data) — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.348997"
+    },
+    {
+      "title": "Летняя школа по аналитике, Data Science и Data Engineering 2025 — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.354030"
+    },
+    {
+      "title": "Аналитика и Data Science для менеджеров и гуманитариев",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.360259"
+    },
+    {
+      "title": "Анализ данных в R. Часть 2",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.365910"
+    },
+    {
+      "title": "Погружение в Data Science и машинное обучение с нуля — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.370757"
+    },
+    {
+      "title": "Профессия Data Engineer с нуля до junior",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.375595"
+    },
+    {
+      "title": "Анализ данных (Введение в Python и обработку таблиц)",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.381389"
+    },
+    {
+      "title": "Построение выводов по данным — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:18:59.386400"
+    },
+    {
+      "title": "MLOps. Начало — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.094422"
+    },
+    {
+      "title": "MathML на практике — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.100159"
+    },
+    {
+      "title": "Тренажер по вёрстке, плагин Emmet",
+      "category": "Frontend / JavaScript",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.108306"
+    },
+    {
+      "title": "Общий курс ML START (весна 2023)",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.113914"
+    },
+    {
+      "title": "A/B-тесты без сложностей — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.118700"
+    },
+    {
+      "title": "Старт в ML: создайте свою систему распознавания лиц — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.123534"
+    },
+    {
+      "title": "Профессия «Аналитик в ИТ». Модуль 0: Знакомство с профессией — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.131542"
+    },
+    {
+      "title": "Медико-социальные исследования: основы статистического анализа — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.137547"
+    },
+    {
+      "title": "Основы статистики",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.143221"
+    },
+    {
+      "title": "ML ЗА 3 ДНЯ — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.148365"
+    },
+    {
+      "title": "Разработка ML сервиса: от идеи к прототипу",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.154623"
+    },
+    {
+      "title": "АНАЛИЗ АССОРТИМЕНТА МАКСИМУМ (АВС-XYZ, оборачиваемость, скидки)",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.160180"
+    },
+    {
+      "title": "Power BI: от новичка до уверенного бизнес-пользователя",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.165403"
+    },
+    {
+      "title": "Linmodr - «Линейные модели с использованием R»  — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.172894"
+    },
+    {
+      "title": "Промт-инжиниринг для LLM: техники и лучшие практики",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.180396"
+    },
+    {
+      "title": "ML School by REU Data Science Club — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.186049"
+    },
+    {
+      "title": "Вёрстка от буткемпа SaintCode — Stepik",
+      "category": "Frontend / JavaScript",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.193234"
+    },
+    {
+      "title": "Основы статистики. Часть 2 — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.198521"
+    },
+    {
+      "title": "Основы статистики. Часть 3",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.203958"
+    },
+    {
+      "title": "LLMOps & Evaluation: из песочницы в продакшн — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.209525"
+    },
+    {
+      "title": "PRO Kotlin. Основы программирования",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.760184"
+    },
+    {
+      "title": "PRO Kotlin. Курс для продвинутых — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.766194"
+    },
+    {
+      "title": "Kotlin for Java Developers",
+      "category": "Java / Kotlin",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:19:00.772004"
+    },
+    {
+      "title": "PRO Kotlin. Алгоритмы и структуры данных",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.777114"
+    },
+    {
+      "title": "PRO Kotlin. Базовый курс по структурам данных",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.782160"
+    },
+    {
+      "title": "Jenkins в работе — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.787758"
+    },
+    {
+      "title": "ClickHouse с нуля",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.793517"
+    },
+    {
+      "title": "Programming Fundamentals in Kotlin",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:19:00.799129"
+    },
+    {
+      "title": "ClickHouse для инженеров и аналитиков",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.805673"
+    },
+    {
+      "title": "История естествознания. Часть 2",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:19:00.810928"
+    },
+    {
+      "title": "Корутины и Flow в Kotlin (2025)",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.815893"
+    },
+    {
+      "title": "Advanced Programming in Kotlin",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:19:00.820555"
+    },
+    {
+      "title": "Молекулярная гастрономия",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:19:00.829831"
+    },
+    {
+      "title": "PyTorch: от тензоров до нейросетей и кастомных фреймворков🔥 — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.835340"
+    },
+    {
+      "title": "Суахили для начинающих. Часть 1",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:19:00.840692"
+    },
+    {
+      "title": "Сопротивление материалов. Часть 1. Основные положения, растяжение-сжатие прямолинейных стержней, кручение прямолинейных стержней, простой изгиб, сложный изгиб",
+      "category": "General IT / Computer Science",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:19:00.846780"
+    },
+    {
+      "title": "Тестирование REST API в Postman - легкий старт в автоматизацию — Stepik",
+      "category": "Frontend / JavaScript",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.852305"
+    },
+    {
+      "title": "Материаловедение в катализе",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-05-17T13:19:00.858492"
+    },
+    {
+      "title": "Hadoop. Система для обработки больших объемов данных",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.863701"
+    },
+    {
+      "title": "Flutter Разработка (2025). От 🐣 базы до 😎 вайб кодинга",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:00.868907"
+    },
+    {
+      "title": "C++ для начинающих",
+      "category": "C++",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.598909"
+    },
+    {
+      "title": "C++_Yellow _Course — Stepik",
+      "category": "C++",
+      "difficulty": "Не указан",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.604425"
+    },
+    {
+      "title": "C++ dasturlash",
+      "category": "C++",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.609272"
+    },
+    {
+      "title": "Основы C++. Часть 0 - пролог",
+      "category": "C++",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.614206"
+    },
+    {
+      "title": "Базовые навыки программирования C++",
+      "category": "C++",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.620294"
+    },
+    {
+      "title": "Основы программирования на C++",
+      "category": "C++",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.625553"
+    },
+    {
+      "title": "Identifying Security Vulnerabilities in C/C++Programming",
+      "category": "C++",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-17T13:19:04.632421"
+    },
+    {
+      "title": "Задачи по программированию на языке C++",
+      "category": "C++",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.638118"
+    },
+    {
+      "title": "Добрый, добрый C/C++ с Сергеем Балакиревым",
+      "category": "C++",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.643838"
+    },
+    {
+      "title": "Программирование С++  Основы",
+      "category": "Programming",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.651507"
+    },
+    {
+      "title": "ОСНОВЫ АЛГОРИТМИЗАЦИИ И ПРОГРАММИРОВАНИЯ НА ЯЗЫКЕ С++ — Stepik",
+      "category": "Programming",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.657442"
+    },
+    {
+      "title": "Программирование на языке C++",
+      "category": "C++",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.663067"
+    },
+    {
+      "title": "Программирование на С++",
+      "category": "Programming",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.668785"
+    },
+    {
+      "title": "Основы программирования на C/C++ Полная версия",
+      "category": "C++",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.674405"
+    },
+    {
+      "title": "ОСНОВЫ ПРОГРАММИРОВАНИЯ НА ЯЗЫКЕ С++.  СТРУКТУРЫ ДАННЫХ — Stepik",
+      "category": "C++",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.679601"
+    },
+    {
+      "title": "9 класс C++",
+      "category": "C++",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.684642"
+    },
+    {
+      "title": "С++ для студентов: указатели и динамические массивы",
+      "category": "C++",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.689795"
+    },
+    {
+      "title": "8 класс C++ — Stepik",
+      "category": "C++",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.695537"
+    },
+    {
+      "title": "Введение в университетский C++",
+      "category": "C++",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.701106"
+    },
+    {
+      "title": "Программирование на языке C++ (продолжение)",
+      "category": "C++",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-17T13:19:04.706160"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.577083"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.581299"
+    },
+    {
+      "title": "Бесплатный Онлайн-Курс Профессия Python-разработчик+GIT с Нуля!",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.585868"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.589938"
+    },
+    {
+      "title": "Сингулярное разложение SVD Python. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.594160"
+    },
+    {
+      "title": "Python в научных расчетах — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.598290"
+    },
+    {
+      "title": "Python + SQL БД: PostgreSQL, MySQL, MariaDB для начинающих — Stepik",
+      "category": "SQL",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.602619"
+    },
+    {
+      "title": "Python. PID регулятор",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.606969"
+    },
+    {
+      "title": "Data Science с нуля: Python и машинное обучение для начинающих — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.611299"
+    },
+    {
+      "title": "\"Поколение Python\": базы данных и SQL",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.615241"
+    },
+    {
+      "title": "Профессия: Python-разработчик [ Python + SQL + Git + Linux ] — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.619829"
+    },
+    {
+      "title": "Осознанный Python — ООП",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.623929"
+    },
+    {
+      "title": "Простая Линейная Регрессия Python. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.628215"
+    },
+    {
+      "title": "Python. Алгоритмы фильтрации",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.632735"
+    },
+    {
+      "title": "Игра \"Змейка\" за час: Python + Tkinter (GUI)",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.637177"
+    },
+    {
+      "title": "Полный Курс Python 3: от Новичка до Мастера (Питон, Пайтон)",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.641351"
+    },
+    {
+      "title": "Многопроцессорный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.645510"
+    },
+    {
+      "title": "Многопоточный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.649492"
+    },
+    {
+      "title": "Пакет 3в1: Асинхронный, Многопоточный и Многопроцессорный Python — Stepik",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.653578"
+    },
+    {
+      "title": "Язык Python в биомедицине",
+      "category": "Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:06.657715"
+    },
+    {
+      "title": "Основы Golang",
+      "category": "Go / Golang",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.768029"
+    },
+    {
+      "title": "Go (Golang) Турбо — Stepik",
+      "category": "Go / Golang",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.774507"
+    },
+    {
+      "title": "Thank Go! Golang на практике",
+      "category": "Go / Golang",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.781985"
+    },
+    {
+      "title": "Golang — Templ Fiber HTMX — Stepik",
+      "category": "Go / Golang",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.790516"
+    },
+    {
+      "title": "Подготовка к Golang собеседованию — Stepik",
+      "category": "Go / Golang",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.797821"
+    },
+    {
+      "title": "Advanced Golang Concepts",
+      "category": "Go / Golang",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-20T14:28:39.804507"
+    },
+    {
+      "title": "Thank Go! Многозадачность в Golang",
+      "category": "Go / Golang",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.815848"
+    },
+    {
+      "title": "Go (golang) + Gin = быстрый бекенд для заметок v2 — Stepik",
+      "category": "Go / Golang",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.823924"
+    },
+    {
+      "title": "Продвинутый Golang",
+      "category": "Go / Golang",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.829479"
+    },
+    {
+      "title": "Подготовка к Golang собеседованию (middle/middle+)",
+      "category": "Go / Golang",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.834233"
+    },
+    {
+      "title": "Задачи по GoLang (120 задача) — Stepik",
+      "category": "Go / Golang",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.839032"
+    },
+    {
+      "title": "PRO Go. Основы программирования",
+      "category": "Go / Golang",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.844342"
+    },
+    {
+      "title": "PRO Go. Алгоритмы и структуры данных",
+      "category": "General IT / Computer Science",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.854242"
+    },
+    {
+      "title": "Практический Тренажер по GO",
+      "category": "Programming",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.860793"
+    },
+    {
+      "title": "PRO Go. Алгоритмы поиска и сортировки",
+      "category": "General IT / Computer Science",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.866476"
+    },
+    {
+      "title": "PRO Go. Базовый курс по структурам данных",
+      "category": "Go / Golang",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.871724"
+    },
+    {
+      "title": "Разработка веб-приложений на Go (GoLang)",
+      "category": "Go / Golang",
+      "difficulty": "Advanced",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.877075"
+    },
+    {
+      "title": "С++ GOF Паттерны проектирования",
+      "category": "C++",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-20T14:28:39.882348"
+    },
+    {
+      "title": "Concurrency in Go",
+      "category": "Business & Management",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-20T14:28:39.887845"
+    },
+    {
+      "title": "C, Go, and C++: A Comprehensive Introduction to Programming",
+      "category": "C++",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-05-20T14:28:39.894572"
+    }
+  ],
+  "likes": [
+    {
+      "title": "Java Тренажер",
+      "category": "Cybersecurity / Ethical Hacking",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-04-13T21:23:25.938610"
+    },
+    {
+      "title": "Старт в робототехнику с Python",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-04-13T21:25:44.242983"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-04-13T21:28:15.031733"
+    },
+    {
+      "title": "Прикладные задачи анализа данных (с примерами на Python и R) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-04-16T14:14:33.576541"
+    },
+    {
+      "title": "Асинхронный Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-04-16T14:45:02.957107"
+    },
+    {
+      "title": "Информационные системы в экономике. Работа с СУБД MS Access — Stepik",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-04-18T00:58:20.274376"
+    },
+    {
+      "title": "Добрый, добрый ИИ. Часть 1. Машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-04-18T01:02:34.622117"
+    },
+    {
+      "title": "SQL Тренажер. Бесконечное приключение 00. Интро.",
+      "category": "Programming / SQL",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-04-21T19:34:28.069547"
+    },
+    {
+      "title": "Пакет курсов: Pandas + Matplotlib + Seaborn",
+      "category": "Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-05-16T13:09:23.148166"
+    }
+  ],
+  "searches": [
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:10:34.207386"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:10:39.247586"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:12:35.132122"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:13:55.574816"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:14:43.107614"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:14:46.123084"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:16:39.271272"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:17:53.520899"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:18:43.081057"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:19:29.339762"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:22:39.643904"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:23:26.910180"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:23:31.524836"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:23:55.112933"
+    },
+    {
+      "query": "Java",
+      "ts": "2026-04-19T15:24:26.570286"
+    },
+    {
+      "query": "JavaScript",
+      "ts": "2026-04-19T15:24:31.926769"
+    },
+    {
+      "query": "Fullstack",
+      "ts": "2026-04-19T15:24:37.574383"
+    },
+    {
+      "query": "Mobile",
+      "ts": "2026-04-19T15:24:51.738680"
+    },
+    {
+      "query": "C#",
+      "ts": "2026-04-19T15:28:50.907747"
+    },
+    {
+      "query": "Docker",
+      "ts": "2026-04-19T15:29:27.379302"
+    },
+    {
+      "query": "C++",
+      "ts": "2026-04-19T15:30:33.102013"
+    },
+    {
+      "query": "C#",
+      "ts": "2026-04-19T15:30:35.613413"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:31:07.863895"
+    },
+    {
+      "query": "C#",
+      "ts": "2026-04-19T15:32:00.600967"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:32:08.145057"
+    },
+    {
+      "query": "Java",
+      "ts": "2026-04-19T15:32:11.813730"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:32:12.333958"
+    },
+    {
+      "query": "Fullstack",
+      "ts": "2026-04-19T15:32:14.068659"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:32:14.956834"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:32:32.404008"
+    },
+    {
+      "query": "Java",
+      "ts": "2026-04-19T15:32:39.015605"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:32:40.207738"
+    },
+    {
+      "query": "Java",
+      "ts": "2026-04-19T15:32:42.030212"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:32:43.013369"
+    },
+    {
+      "query": "JavaScript",
+      "ts": "2026-04-19T15:32:45.286551"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:32:46.714567"
+    },
+    {
+      "query": "ChatGPT",
+      "ts": "2026-04-19T15:32:49.169598"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:32:50.801293"
+    },
+    {
+      "query": "AI",
+      "ts": "2026-04-19T15:32:56.502537"
+    },
+    {
+      "query": "Data Science",
+      "ts": "2026-04-19T15:32:59.167335"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:33:02.078883"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:39:42.123484"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:55:36.829316"
+    },
+    {
+      "query": "Java",
+      "ts": "2026-04-19T15:55:51.313894"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-19T15:55:53.234573"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-20T11:51:36.384831"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-20T11:52:24.398989"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-20T11:52:26.708649"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-20T11:52:57.698725"
+    },
+    {
+      "query": "C#",
+      "ts": "2026-04-20T12:00:09.924715"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-21T16:06:29.262977"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-21T19:27:36.892131"
+    },
+    {
+      "query": "Java",
+      "ts": "2026-04-21T19:32:12.562711"
+    },
+    {
+      "query": "C++",
+      "ts": "2026-04-21T19:32:16.864888"
+    },
+    {
+      "query": "C#",
+      "ts": "2026-04-21T19:32:21.664550"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-21T19:32:25.780263"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-21T19:32:27.749870"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-21T19:32:41.841568"
+    },
+    {
+      "query": "UI/UX",
+      "ts": "2026-04-21T19:32:44.812192"
+    },
+    {
+      "query": "Project Management",
+      "ts": "2026-04-21T19:33:00.146038"
+    },
+    {
+      "query": "Testing",
+      "ts": "2026-04-21T19:33:04.112418"
+    },
+    {
+      "query": "Blockchain",
+      "ts": "2026-04-21T19:33:08.092035"
+    },
+    {
+      "query": "Excel",
+      "ts": "2026-04-21T19:33:13.678769"
+    },
+    {
+      "query": "Cybersecurity",
+      "ts": "2026-04-21T19:33:20.784995"
+    },
+    {
+      "query": "Analytics",
+      "ts": "2026-04-21T19:33:21.255542"
+    },
+    {
+      "query": "Analytics",
+      "ts": "2026-04-21T19:34:12.148749"
+    },
+    {
+      "query": "SQL",
+      "ts": "2026-04-21T19:34:14.296144"
+    },
+    {
+      "query": "SQL",
+      "ts": "2026-04-21T19:34:16.083995"
+    },
+    {
+      "query": "sql: новичка уверенного бизнес-пользователя",
+      "ts": "2026-04-21T19:34:36.249009"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-22T22:09:35.008823"
+    },
+    {
+      "query": "Project Management",
+      "ts": "2026-04-22T22:10:21.352176"
+    },
+    {
+      "query": "Go",
+      "ts": "2026-04-22T22:10:56.063324"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-04-22T22:18:54.257139"
+    },
+    {
+      "query": "C++",
+      "ts": "2026-04-24T14:30:14.639414"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-05-16T13:09:05.681832"
+    },
+    {
+      "query": "пайтон",
+      "ts": "2026-05-16T13:09:51.246224"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-05-16T13:11:04.836458"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-05-17T13:18:22.373223"
+    },
+    {
+      "query": "Data Science",
+      "ts": "2026-05-17T13:18:36.442305"
+    },
+    {
+      "query": "AI",
+      "ts": "2026-05-17T13:18:37.575254"
+    },
+    {
+      "query": "Deep Learning",
+      "ts": "2026-05-17T13:18:40.138875"
+    },
+    {
+      "query": "Fullstack",
+      "ts": "2026-05-17T13:18:42.137902"
+    },
+    {
+      "query": "Statistics",
+      "ts": "2026-05-17T13:18:43.785107"
+    },
+    {
+      "query": "Java",
+      "ts": "2026-05-17T13:18:45.638216"
+    },
+    {
+      "query": "JavaScript",
+      "ts": "2026-05-17T13:18:48.737023"
+    },
+    {
+      "query": "SQL",
+      "ts": "2026-05-17T13:18:49.540135"
+    },
+    {
+      "query": "Go",
+      "ts": "2026-05-17T13:18:50.335724"
+    },
+    {
+      "query": "React",
+      "ts": "2026-05-17T13:18:51.015593"
+    },
+    {
+      "query": "Docker",
+      "ts": "2026-05-17T13:18:51.851004"
+    },
+    {
+      "query": "DevOps",
+      "ts": "2026-05-17T13:18:53.569343"
+    },
+    {
+      "query": "Linux",
+      "ts": "2026-05-17T13:18:54.838053"
+    },
+    {
+      "query": "Kotlin",
+      "ts": "2026-05-17T13:18:55.587632"
+    },
+    {
+      "query": "Linux",
+      "ts": "2026-05-17T13:18:56.516501"
+    },
+    {
+      "query": "Kotlin",
+      "ts": "2026-05-17T13:18:57.737443"
+    },
+    {
+      "query": "Data Science",
+      "ts": "2026-05-17T13:18:59.086630"
+    },
+    {
+      "query": "ML",
+      "ts": "2026-05-17T13:18:59.919822"
+    },
+    {
+      "query": "Kotlin",
+      "ts": "2026-05-17T13:19:00.585933"
+    },
+    {
+      "query": "C++",
+      "ts": "2026-05-17T13:19:04.386920"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-05-20T14:22:59.644078"
+    },
+    {
+      "query": "Go",
+      "ts": "2026-05-20T14:28:39.438910"
+    }
+  ],
+  "dislikes": [
+    {
+      "title": "Java Тренажер",
+      "ts": "2026-04-13T21:22:45.337864"
+    },
+    {
+      "title": "Сингулярное разложение SVD Python. Математика машинного обучения — Stepik",
+      "ts": "2026-04-13T21:25:51.425679"
+    },
+    {
+      "title": "Векторная алгебра с NumPy — Stepik",
+      "ts": "2026-04-13T21:28:17.309117"
+    },
+    {
+      "title": "PROкод: курс по ООП на Python — Stepik",
+      "ts": "2026-04-16T14:14:58.455763"
+    },
+    {
+      "title": "ChatGPT for Project Management: Execution, Tracking, Success",
+      "ts": "2026-04-16T14:45:29.515457"
+    },
+    {
+      "title": "PRO C#. Основы программирования",
+      "ts": "2026-04-20T12:00:13.584425"
+    }
+  ],
+  "saved": [
+    {
+      "title": "Веб-разработка для начинающих: HTML и CSS",
+      "source": "stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.599936752222855,
+      "url": "https://stepik.org/course/38218",
+      "organization": "Unknown",
+      "ts": "2026-04-05T00:52:07.276897"
+    },
+    {
+      "title": "Основы HTML и CSS — Stepik",
+      "source": "stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.7997169512781195,
+      "url": "https://stepik.org/course/268737",
+      "organization": "Unknown",
+      "ts": "2026-04-05T00:52:09.097303"
+    },
+    {
+      "title": "Jetpack Compose: полный курс",
+      "source": "stepik",
+      "category": "UI/UX Design",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 0,
+      "price": 6990,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.989843609760056,
+      "url": "https://stepik.org/course/125685",
+      "organization": "Unknown",
+      "ts": "2026-04-05T00:52:11.099629"
+    },
+    {
+      "title": "Основы программирования для Linux",
+      "source": "stepik",
+      "category": "UI/UX Design",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.69952755127618,
+      "url": "https://stepik.org/course/548",
+      "organization": "Unknown",
+      "ts": "2026-04-05T00:52:12.754620"
+    },
+    {
+      "title": "Нейронные сети и компьютерное зрение",
+      "source": "stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.799768926041019,
+      "url": "https://stepik.org/course/50352",
+      "organization": "Unknown",
+      "ts": "2026-04-05T15:26:00.084431"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "source": "stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 3144,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.997190667128056,
+      "url": "https://stepik.org/course/134773",
+      "organization": "",
+      "ts": "2026-04-06T14:50:23.792949"
+    },
+    {
+      "title": "\"Поколение Python\": ООП",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 0,
+      "price": 7900,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.897060856705902,
+      "url": "https://stepik.org/course/98974",
+      "organization": "",
+      "ts": "2026-04-06T14:50:25.314019"
+    },
+    {
+      "title": "Введение в Data Science и машинное обучение",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.899852799976334,
+      "url": "https://stepik.org/course/4852",
+      "organization": "",
+      "ts": "2026-04-06T15:31:45.963033"
+    },
+    {
+      "title": "PRO C#. Основы программирования",
+      "source": "stepik",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 2490,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.899760688405673,
+      "url": "https://stepik.org/course/5482",
+      "organization": "",
+      "ts": "2026-04-06T15:32:12.645151"
+    },
+    {
+      "title": "Свой сайт в интернете. WordPress и базы данных — это просто!  — Stepik",
+      "source": "stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.808923434366427,
+      "url": "https://stepik.org/course/201247",
+      "organization": "Unknown",
+      "ts": "2026-04-07T19:17:12.461586"
+    },
+    {
+      "title": "Анализ данных (Введение в Python и обработку таблиц)",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.89841805108271,
+      "url": "https://stepik.org/course/126333",
+      "organization": "",
+      "ts": "2026-04-07T22:01:03.147497"
+    },
+    {
+      "title": "Программа курсов: Анализ данных",
+      "source": "stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 12100,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.868019279407738,
+      "url": "https://stepik.org/course/210097",
+      "organization": "",
+      "ts": "2026-04-07T22:01:04.787814"
+    },
+    {
+      "title": "Библиотеки Python для Data Science — Stepik",
+      "source": "stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 4000,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.864527725952916,
+      "url": "https://stepik.org/course/129105",
+      "organization": "",
+      "ts": "2026-04-07T22:01:05.549510"
+    },
+    {
+      "title": "Основы Python для исследований и анализа данных",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 3500,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.963886798596758,
+      "url": "https://stepik.org/course/114837",
+      "organization": "",
+      "ts": "2026-04-07T22:01:06.232362"
+    },
+    {
+      "title": "Обработка данных в Python Pandas — Stepik",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 3.7000638393620107,
+      "url": "https://stepik.org/course/83990",
+      "organization": "",
+      "ts": "2026-04-07T22:03:43.115864"
+    },
+    {
+      "title": "NumPy-массивы в Python — Stepik",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "is_free": 0,
+      "price": 1900,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.712886049214117,
+      "url": "https://stepik.org/course/113585",
+      "organization": "",
+      "ts": "2026-04-07T22:03:43.562225"
+    },
+    {
+      "title": "Unity. Прототип шутера от первого лица (FPS) — Stepik",
+      "source": "stepik",
+      "category": "Programming / C# / .NET",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 9900,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.807486768459408,
+      "url": "https://stepik.org/course/129234",
+      "organization": "Unknown",
+      "ts": "2026-04-09T12:09:52.541530"
+    },
+    {
+      "title": "Погружение в базы данных PostgreSQL — Stepik",
+      "source": "stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 4000,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.807486768459408,
+      "url": "https://stepik.org/course/204101",
+      "organization": "Unknown",
+      "ts": "2026-04-10T01:20:23.277469"
+    },
+    {
+      "title": "Apache Kafka Java: Продвинутый",
+      "source": "stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 0,
+      "price": 1500,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.804547635153445,
+      "url": "https://stepik.org/course/243796",
+      "organization": "Unknown",
+      "ts": "2026-04-11T01:37:11.455750"
+    },
+    {
+      "title": "Создаем  AI-помощника Jarvis на ChatGPT-like моделях от Сбера",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 4590,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.804547635153445,
+      "url": "https://stepik.org/course/203007",
+      "organization": "Unknown",
+      "ts": "2026-04-13T00:02:34.820357"
+    },
+    {
+      "title": "Django for Everybody",
+      "source": "coursera",
+      "category": "Cybersecurity / Ethical Hacking",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Короткий (<1 мес)",
+      "weighted_rating": 3.719787010255062,
+      "url": "https://www.coursera.org/learn/django-web-framework",
+      "organization": "University of Michigan",
+      "ts": "2026-04-13T00:25:50.734767"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 3000,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.470887575009518,
+      "url": "https://stepik.org/course/133721",
+      "organization": "",
+      "ts": "2026-04-13T14:12:30.516609"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 1980,
+      "duration_category": "Не указана",
+      "weighted_rating": 3.950839826360537,
+      "url": "https://stepik.org/course/214324",
+      "organization": "",
+      "ts": "2026-04-13T14:12:57.561815"
+    },
+    {
+      "title": "Лучший по Python. Часть 3",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 0,
+      "price": 2100,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.973899837110195,
+      "url": "https://stepik.org/course/227627",
+      "organization": "",
+      "ts": "2026-04-13T14:15:37.212975"
+    },
+    {
+      "title": "Разработка мобильного приложения",
+      "source": "openedu",
+      "category": "Mobile Development",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Длинный (>3 мес)",
+      "weighted_rating": 3.719787010255062,
+      "url": "https://openedu.ru/course/mephi/mephi_razrmp/?session=fall_2025",
+      "organization": "",
+      "ts": "2026-04-13T14:16:16.976740"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.796355556714761,
+      "url": "https://stepik.org/course/189476",
+      "organization": "",
+      "ts": "2026-04-13T14:57:00.386249"
+    },
+    {
+      "title": "Машинное Обучение в Python: Большой Курс для Начинающих",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 2900,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.995370772049377,
+      "url": "https://stepik.org/course/129449",
+      "organization": "",
+      "ts": "2026-04-13T14:57:03.603654"
+    },
+    {
+      "title": "Нейронные сети с PyTorch: без формул, только практика! — Stepik",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 0,
+      "price": 2550,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.9783747805786325,
+      "url": "https://stepik.org/course/186169",
+      "organization": "",
+      "ts": "2026-04-13T14:57:06.183560"
+    },
+    {
+      "title": "Продуктовая аналитика - Python — Stepik",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.927875324521412,
+      "url": "https://stepik.org/course/254012",
+      "organization": "",
+      "ts": "2026-04-13T14:57:07.221142"
+    },
+    {
+      "title": "Python в научных расчетах — Stepik",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.287248066159452,
+      "url": "https://stepik.org/course/100110",
+      "organization": "",
+      "ts": "2026-04-13T15:03:45.611888"
+    },
+    {
+      "title": "Кайдзен разработка",
+      "source": "stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.891058992501933,
+      "url": "https://stepik.org/course/208758",
+      "organization": "",
+      "ts": "2026-04-13T15:13:46.395620"
+    },
+    {
+      "title": "Data Science with Python and Machine Learning For Beginners",
+      "source": "udemy",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "en",
+      "is_free": 0,
+      "price": 5390,
+      "duration_category": "Не указана",
+      "weighted_rating": 3.719787010255062,
+      "url": "https://www.udemy.com/course/data-science-with-python-and-machine-learning-for-beginners",
+      "organization": "",
+      "ts": "2026-04-13T17:40:19.980615"
+    },
+    {
+      "title": "Java Тренажер",
+      "source": "stepik",
+      "category": "Cybersecurity / Ethical Hacking",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.8986566353767635,
+      "url": "https://stepik.org/course/236047",
+      "organization": "",
+      "ts": "2026-04-13T21:23:25.937035"
+    },
+    {
+      "title": "Старт в робототехнику с Python",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "is_free": 0,
+      "price": 555,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.667477145520795,
+      "url": "https://stepik.org/course/247050",
+      "organization": "",
+      "ts": "2026-04-13T21:25:44.240727"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.6924772602475455,
+      "url": "https://stepik.org/course/175246",
+      "organization": "",
+      "ts": "2026-04-13T21:28:15.029597"
+    },
+    {
+      "title": "Программируем Pixel Art-студию на Python + Tkinter — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/237718",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.257166"
+    },
+    {
+      "title": "Многопроцессность в Python: от новичка до эксперта",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/188951",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.258644"
+    },
+    {
+      "title": "Практический Machine Learning",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/125501",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.259960"
+    },
+    {
+      "title": "Добрый, добрый C/C++ с Сергеем Балакиревым",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/193691",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.261104"
+    },
+    {
+      "title": "\"Поколение Python\": алгоритмы и структуры данных для начинающих",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/100575",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.262177"
+    },
+    {
+      "title": "Методы программирования: базовый уровень",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/52892",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.263286"
+    },
+    {
+      "title": "Курс по машинному обучению. Проект «ИИ Старт»",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/125587/promo",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.264428"
+    },
+    {
+      "title": "Основы анализа данных в  Python",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/116618",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.265996"
+    },
+    {
+      "title": "Data Science — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/214747/promo",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.268110"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/175382",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.269611"
+    },
+    {
+      "title": "Математика и Python для анализа данных",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/7172",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.270969"
+    },
+    {
+      "title": "Демоверсия курса «Аналитик данных» школы karpov.courses",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/252958",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.272210"
+    },
+    {
+      "title": "Основы программирования на Python с бонусным курсом по SQL — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/213870",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.273371"
+    },
+    {
+      "title": "Программирование на Python — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/276374",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.274532"
+    },
+    {
+      "title": "1С: Система компоновки данных — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/187221",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.275659"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/216469",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.276799"
+    },
+    {
+      "title": "Курс по Numpy — Твой путь в AI — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/180256",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.278212"
+    },
+    {
+      "title": "Алгоритмы на Python",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/251189",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.279403"
+    },
+    {
+      "title": "Погружаемся в SQLAlchemy на Python: курс для начинающих — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/195243",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.280679"
+    },
+    {
+      "title": "SQL & Python",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/256721",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.282078"
+    },
+    {
+      "title": "Анализ данных с Pandas",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/187506",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.283223"
+    },
+    {
+      "title": "Базовый курс по разработке на Платформе Sherpa RPA — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/254118",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.284379"
+    },
+    {
+      "title": "\"Поколение Python\": профи + ООП + SQL + алгоритмы для начинающих",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/215129",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.285854"
+    },
+    {
+      "title": "Основы Python: курс для продвинутых",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/186192",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.287633"
+    },
+    {
+      "title": "Базы данных: основы проектирования и использования — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/118614",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.289890"
+    },
+    {
+      "title": "Data Science с нуля: Python и машинное обучение для начинающих — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/241837",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.291697"
+    },
+    {
+      "title": "☯ Программирование на Python для начинающих — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/251751",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.293087"
+    },
+    {
+      "title": "Введение в Data Science: часть 1 - программирование на Python — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/100567",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.294777"
+    },
+    {
+      "title": "Python. Генетический алгоритм — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/210946",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.296238"
+    },
+    {
+      "title": "React для современных веб-приложений",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/114197",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.299363"
+    },
+    {
+      "title": "Старт в Data Science! — Stepik",
+      "source": "stepik",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": 0,
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/194633/promo",
+      "organization": "",
+      "ts": "2026-04-13T21:45:32.301499"
+    },
+    {
+      "title": "ReactJS 18, Firebase 9 Project- Realtor Clone",
+      "source": "coursera",
+      "category": "Cybersecurity / Ethical Hacking",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Короткий (<1 мес)",
+      "weighted_rating": 3.719787010255062,
+      "url": "https://www.coursera.org/learn/packt-advanced-react-testing-and-firebase-projects-xavo3",
+      "organization": "Packt",
+      "ts": "2026-04-14T13:27:26.530455"
+    },
+    {
+      "title": "Практикум по математике и Python",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.7996780001222925,
+      "url": "https://stepik.org/course/3356",
+      "organization": "",
+      "ts": "2026-04-14T20:05:04.789984"
+    },
+    {
+      "title": "Прикладные задачи анализа данных (с примерами на Python и R) — Stepik",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 1000,
+      "duration_category": "Не указана",
+      "weighted_rating": 3.542654295481011,
+      "url": "https://stepik.org/course/253506",
+      "organization": "",
+      "ts": "2026-04-16T14:14:33.573444"
+    },
+    {
+      "title": "Асинхронный Python",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 0,
+      "price": 3900,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.7944044911176125,
+      "url": "https://stepik.org/course/170777",
+      "organization": "",
+      "ts": "2026-04-16T14:45:02.953775"
+    },
+    {
+      "title": "Осознанный Python — ООП",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 0,
+      "price": 1000,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.888743795996711,
+      "url": "https://stepik.org/course/182023",
+      "organization": "",
+      "ts": "2026-04-16T14:45:05.613154"
+    },
+    {
+      "title": "WEB Парсинг на Python",
+      "source": "stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 0,
+      "price": 4900,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.895378057608205,
+      "url": "https://stepik.org/course/104774",
+      "organization": "",
+      "ts": "2026-04-16T14:45:23.472626"
+    },
+    {
+      "title": "Building a Complete MEAN Stack Application",
+      "source": "coursera",
+      "category": "Cybersecurity / Ethical Hacking",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Короткий (<1 мес)",
+      "weighted_rating": 3.719787010255062,
+      "url": "https://www.coursera.org/learn/building-a-complete-mean-stack-application",
+      "organization": "Board Infinity",
+      "ts": "2026-04-17T11:32:54.797879"
+    },
+    {
+      "title": "Информационные системы в экономике. Работа с СУБД MS Access — Stepik",
+      "source": "stepik",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.798817630265165,
+      "url": "https://stepik.org/course/58692",
+      "organization": "Unknown",
+      "ts": "2026-04-18T00:58:20.270994"
+    },
+    {
+      "title": "Добрый, добрый ИИ. Часть 1. Машинное обучение",
+      "source": "stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.998818392182616,
+      "url": "https://stepik.org/course/209247",
+      "organization": "",
+      "ts": "2026-04-18T01:02:34.614506"
+    },
+    {
+      "title": "Prompt Engineering & Python Integration, Tips & Hacks",
+      "source": "udemy",
+      "category": "Cybersecurity / Ethical Hacking",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "is_free": 0,
+      "price": 5390,
+      "duration_category": "Не указана",
+      "weighted_rating": 3.719787010255062,
+      "url": "https://www.udemy.com/course/prompt-engineering-python-integration-tips-hacks",
+      "organization": "Unknown",
+      "ts": "2026-04-19T13:02:03.739652"
+    },
+    {
+      "title": "JavaScript Security Part 1",
+      "source": "coursera",
+      "category": "Frontend / JavaScript",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Короткий (<1 мес)",
+      "weighted_rating": 3.719787010255062,
+      "url": "https://www.coursera.org/learn/javascript-security-part-1",
+      "organization": "Infosec",
+      "ts": "2026-04-19T13:55:25.318295"
+    },
+    {
+      "title": "Business Analysis & Process Management",
+      "source": "coursera",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Beginner",
+      "language": "en",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Короткий (<1 мес)",
+      "weighted_rating": 3.719787010255062,
+      "url": "https://www.coursera.org/projects/business-analysis-process-management",
+      "organization": "Coursera Project Network",
+      "ts": "2026-04-20T11:52:49.924298"
+    },
+    {
+      "title": "SQL Тренажер. Бесконечное приключение 00. Интро.",
+      "source": "stepik",
+      "category": "Programming / SQL",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.6981463445731,
+      "url": "https://stepik.org/course/130079",
+      "organization": "",
+      "ts": "2026-04-21T19:34:28.065398"
+    },
+    {
+      "title": "OVER (оконки): SQL для Избранных — Stepik",
+      "source": "stepik",
+      "category": "Programming / SQL",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.907898346061515,
+      "url": "https://stepik.org/course/257140",
+      "organization": "",
+      "ts": "2026-04-21T19:34:30.153777"
+    },
+    {
+      "title": "Полный Курс Python 3: от Новичка до Мастера (Питон, Пайтон)",
+      "source": "",
+      "category": "",
+      "difficulty": "",
+      "language": "",
+      "is_free": 0,
+      "price": "2,750 тг",
+      "duration_category": "",
+      "weighted_rating": 0,
+      "url": "https://stepik.org/course/130664",
+      "organization": "",
+      "ts": "2026-04-24T14:21:09.960445"
+    },
+    {
+      "title": "Пакет курсов: Pandas + Matplotlib + Seaborn",
+      "source": "stepik",
+      "category": "Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "is_free": 0,
+      "price": 22220,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.928678942075491,
+      "url": "https://stepik.org/course/211639",
+      "organization": "",
+      "ts": "2026-05-16T13:09:23.144381"
+    },
+    {
+      "title": "Frontend for Java Full Stack Development",
+      "source": "coursera",
+      "category": "Fullstack",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Короткий (<1 мес)",
+      "weighted_rating": 3.719787010255062,
+      "url": "https://www.coursera.org/learn/frontend-development-for-java-full-stack",
+      "organization": "Board Infinity",
+      "ts": "2026-05-20T14:23:23.891211"
+    }
+  ],
+  "onboarding": {
+    "level": "Intermediate",
+    "languages": [
+      "Python",
+      "Java",
+      "Android"
+    ],
+    "goals": [
+      "Кибербезопасность"
+    ],
+    "completed_at": "2026-04-13T14:34:06.135414"
+  },
+  "profile_meta": {
+    "bio": "привет",
+    "goal": "Хобби / интерес",
+    "avatar": "👩‍💻",
+    "display_name": "",
+    "display_name_changed_at": "",
+    "updated_at": "2026-04-20T11:51:34.347011"
+  },
+  "gamification": {
+    "streak": 1,
+    "last_visit": "2026-05-24",
+    "xp": 12885,
+    "achievements": [
+      "course_of_day",
+      "first_search",
+      "goal_set",
+      "started_1",
+      "xp_100",
+      "xp_500",
+      "completed_1",
+      "searches_10",
+      "streak_3",
+      "started_5",
+      "streak_7",
+      "weekly_3",
+      "weekly_5",
+      "explorer",
+      "saved_10",
+      "xp_2000",
+      "xp_7000"
+    ],
+    "total_searches": 345,
+    "course_of_day_opened": "2026-05-24",
+    "weekly": {
+      "week_start": "2026-05-18",
+      "courses_opened": 1,
+      "courses_saved": 0,
+      "claimed": [],
+      "days_visited": [
+        "2026-05-20",
+        "2026-05-22",
+        "2026-05-24"
+      ]
+    }
+  },
+  "started": [
+    {
+      "title": "Программируем Pixel Art-студию на Python + Tkinter — Stepik",
+      "url": "https://stepik.org/course/237718",
+      "source": "stepik",
+      "progress": 50,
+      "started_at": "2026-04-03T17:20:07.472834"
+    },
+    {
+      "title": "Многопроцессность в Python: от новичка до эксперта",
+      "url": "https://stepik.org/course/188951",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-03T17:20:13.288654"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "url": "https://stepik.org/course/134773",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-03T17:20:15.087462"
+    },
+    {
+      "title": "Практический Machine Learning",
+      "url": "https://stepik.org/course/125501",
+      "source": "stepik",
+      "progress": 50,
+      "started_at": "2026-04-05T00:58:16.341933"
+    },
+    {
+      "title": "Веб-разработка для начинающих: HTML и CSS",
+      "url": "https://stepik.org/course/38218",
+      "source": "stepik",
+      "progress": 50,
+      "started_at": "2026-04-05T00:58:17.856615"
+    },
+    {
+      "title": "Основы программирования для Linux",
+      "url": "https://stepik.org/course/548",
+      "source": "stepik",
+      "progress": 50,
+      "started_at": "2026-04-05T00:58:19.060598"
+    },
+    {
+      "title": "Jetpack Compose: полный курс",
+      "url": "https://stepik.org/course/125685",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-05T00:58:20.076938"
+    },
+    {
+      "title": "Основы HTML и CSS — Stepik",
+      "url": "https://stepik.org/course/268737",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-05T00:58:20.827027"
+    },
+    {
+      "title": "PRO C#. Основы программирования",
+      "url": "https://stepik.org/course/5482",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-06T15:32:43.478386"
+    },
+    {
+      "title": "Добрый, добрый C/C++ с Сергеем Балакиревым",
+      "url": "https://stepik.org/course/193691",
+      "source": "stepik",
+      "progress": 50,
+      "started_at": "2026-04-06T15:33:03.748912"
+    },
+    {
+      "title": "Свой сайт в интернете. WordPress и базы данных — это просто!  — Stepik",
+      "url": "https://stepik.org/course/201247",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-04-07T19:20:58.700320"
+    },
+    {
+      "title": "\"Поколение Python\": алгоритмы и структуры данных для начинающих",
+      "url": "https://stepik.org/course/100575",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-04-07T22:01:03.866649"
+    },
+    {
+      "title": "Методы программирования: базовый уровень",
+      "url": "https://stepik.org/course/52892",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-04-07T22:01:05.193384"
+    },
+    {
+      "title": "Курс по машинному обучению. Проект «ИИ Старт»",
+      "url": "https://stepik.org/course/125587/promo",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-04-07T22:01:05.927900"
+    },
+    {
+      "title": "Основы анализа данных в  Python",
+      "url": "https://stepik.org/course/116618",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:01:07.483447"
+    },
+    {
+      "title": "Data Science — Stepik",
+      "url": "https://stepik.org/course/214747/promo",
+      "source": "stepik",
+      "progress": 50,
+      "started_at": "2026-04-07T22:01:07.925745"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "url": "https://stepik.org/course/175382",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:01:08.226376"
+    },
+    {
+      "title": "Математика и Python для анализа данных",
+      "url": "https://stepik.org/course/7172",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-04-07T22:03:32.996955"
+    },
+    {
+      "title": "Демоверсия курса «Аналитик данных» школы karpov.courses",
+      "url": "https://stepik.org/course/252958",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-04-07T22:03:33.794764"
+    },
+    {
+      "title": "Основы программирования на Python с бонусным курсом по SQL — Stepik",
+      "url": "https://stepik.org/course/213870",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-04-07T22:03:34.479585"
+    },
+    {
+      "title": "Программирование на Python — Stepik",
+      "url": "https://stepik.org/course/276374",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-04-07T22:03:34.902250"
+    },
+    {
+      "title": "1С: Система компоновки данных — Stepik",
+      "url": "https://stepik.org/course/187221",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-04-07T22:03:35.548321"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "url": "https://stepik.org/course/216469",
+      "source": "stepik",
+      "progress": 50,
+      "started_at": "2026-04-07T22:03:35.960703"
+    },
+    {
+      "title": "Курс по Numpy — Твой путь в AI — Stepik",
+      "url": "https://stepik.org/course/180256",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:36.336636"
+    },
+    {
+      "title": "Алгоритмы на Python",
+      "url": "https://stepik.org/course/251189",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:36.788064"
+    },
+    {
+      "title": "Погружаемся в SQLAlchemy на Python: курс для начинающих — Stepik",
+      "url": "https://stepik.org/course/195243",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:37.348797"
+    },
+    {
+      "title": "SQL & Python",
+      "url": "https://stepik.org/course/256721",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:37.912720"
+    },
+    {
+      "title": "Анализ данных с Pandas",
+      "url": "https://stepik.org/course/187506",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:38.345077"
+    },
+    {
+      "title": "Базовый курс по разработке на Платформе Sherpa RPA — Stepik",
+      "url": "https://stepik.org/course/254118",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:38.924642"
+    },
+    {
+      "title": "\"Поколение Python\": профи + ООП + SQL + алгоритмы для начинающих",
+      "url": "https://stepik.org/course/215129",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:39.343310"
+    },
+    {
+      "title": "Основы Python: курс для продвинутых",
+      "url": "https://stepik.org/course/186192",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:39.770045"
+    },
+    {
+      "title": "Базы данных: основы проектирования и использования — Stepik",
+      "url": "https://stepik.org/course/118614",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:40.326638"
+    },
+    {
+      "title": "Data Science с нуля: Python и машинное обучение для начинающих — Stepik",
+      "url": "https://stepik.org/course/241837",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:40.905366"
+    },
+    {
+      "title": "☯ Программирование на Python для начинающих — Stepik",
+      "url": "https://stepik.org/course/251751",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:41.459166"
+    },
+    {
+      "title": "Введение в Data Science: часть 1 - программирование на Python — Stepik",
+      "url": "https://stepik.org/course/100567",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-07T22:03:41.887713"
+    },
+    {
+      "title": "Unity. Прототип шутера от первого лица (FPS) — Stepik",
+      "url": "https://stepik.org/course/129234",
+      "source": "stepik",
+      "progress": 50,
+      "started_at": "2026-04-09T12:09:55.244735"
+    },
+    {
+      "title": "Погружение в базы данных PostgreSQL — Stepik",
+      "url": "https://stepik.org/course/204101",
+      "source": "stepik",
+      "progress": 50,
+      "started_at": "2026-04-10T01:22:44.648028"
+    },
+    {
+      "title": "Apache Kafka Java: Продвинутый",
+      "url": "https://stepik.org/course/243796",
+      "source": "stepik",
+      "progress": 50,
+      "started_at": "2026-04-11T01:37:13.980144"
+    },
+    {
+      "title": "Создаем  AI-помощника Jarvis на ChatGPT-like моделях от Сбера",
+      "url": "https://stepik.org/course/203007",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T00:02:37.457072"
+    },
+    {
+      "title": "Django for Everybody",
+      "url": "https://www.coursera.org/learn/django-web-framework",
+      "source": "coursera",
+      "progress": 100,
+      "started_at": "2026-04-13T13:29:38.609788"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "url": "https://stepik.org/course/133721",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T14:12:33.274012"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "url": "https://stepik.org/course/214324",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T14:12:47.306307"
+    },
+    {
+      "title": "Python. Генетический алгоритм — Stepik",
+      "url": "https://stepik.org/course/210946",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T14:13:00.805973"
+    },
+    {
+      "title": "Лучший по Python. Часть 3",
+      "url": "https://stepik.org/course/227627",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T14:15:39.273938"
+    },
+    {
+      "title": "Разработка мобильного приложения",
+      "url": "https://openedu.ru/course/mephi/mephi_razrmp/?session=fall_2025",
+      "source": "openedu",
+      "progress": 100,
+      "started_at": "2026-04-13T14:16:11.194391"
+    },
+    {
+      "title": "React для современных веб-приложений",
+      "url": "https://stepik.org/course/114197",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T14:16:19.770613"
+    },
+    {
+      "title": "Python в научных расчетах — Stepik",
+      "url": "https://stepik.org/course/100110",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T15:03:47.647681"
+    },
+    {
+      "title": "Кайдзен разработка",
+      "url": "https://stepik.org/course/208758",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T15:13:47.711365"
+    },
+    {
+      "title": "Data Science with Python and Machine Learning For Beginners",
+      "url": "https://www.udemy.com/course/data-science-with-python-and-machine-learning-for-beginners",
+      "source": "udemy",
+      "progress": 100,
+      "started_at": "2026-04-13T17:40:21.115265"
+    },
+    {
+      "title": "Старт в робототехнику с Python",
+      "url": "https://stepik.org/course/247050",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T21:25:46.334362"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "url": "https://stepik.org/course/175246",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T21:27:53.901408"
+    },
+    {
+      "title": "NumPy-массивы в Python — Stepik",
+      "url": "https://stepik.org/course/113585",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T21:37:42.848487"
+    },
+    {
+      "title": "Старт в Data Science! — Stepik",
+      "url": "https://stepik.org/course/194633/promo",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T21:49:25.419933"
+    },
+    {
+      "title": "Машинное Обучение в Python: Большой Курс для Начинающих",
+      "url": "https://stepik.org/course/129449",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-13T21:49:46.359015"
+    },
+    {
+      "title": "ReactJS 18, Firebase 9 Project- Realtor Clone",
+      "url": "https://www.coursera.org/learn/packt-advanced-react-testing-and-firebase-projects-xavo3",
+      "source": "coursera",
+      "progress": 100,
+      "started_at": "2026-04-14T13:56:44.445218"
+    },
+    {
+      "title": "Практикум по математике и Python",
+      "url": "https://stepik.org/course/3356",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-14T20:05:04.786915"
+    },
+    {
+      "title": "Прикладные задачи анализа данных (с примерами на Python и R) — Stepik",
+      "url": "https://stepik.org/course/253506",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-16T14:14:35.825626"
+    },
+    {
+      "title": "Осознанный Python — ООП",
+      "url": "https://stepik.org/course/182023",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-16T14:45:05.610900"
+    },
+    {
+      "title": "WEB Парсинг на Python",
+      "url": "https://stepik.org/course/104774",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-16T14:45:23.466978"
+    },
+    {
+      "title": "Building a Complete MEAN Stack Application",
+      "url": "https://www.coursera.org/learn/building-a-complete-mean-stack-application",
+      "source": "coursera",
+      "progress": 100,
+      "started_at": "2026-04-17T11:32:57.124056"
+    },
+    {
+      "title": "Информационные системы в экономике. Работа с СУБД MS Access — Stepik",
+      "url": "https://stepik.org/course/58692",
+      "source": "stepik",
+      "progress": 50,
+      "started_at": "2026-04-18T00:58:21.982907"
+    },
+    {
+      "title": "Добрый, добрый ИИ. Часть 1. Машинное обучение",
+      "url": "https://stepik.org/course/209247",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-18T01:04:18.083161"
+    },
+    {
+      "title": "Prompt Engineering & Python Integration, Tips & Hacks",
+      "url": "https://www.udemy.com/course/prompt-engineering-python-integration-tips-hacks",
+      "source": "udemy",
+      "progress": 100,
+      "started_at": "2026-04-19T13:02:05.827439"
+    },
+    {
+      "title": "Business Analysis & Process Management",
+      "url": "https://www.coursera.org/projects/business-analysis-process-management",
+      "source": "coursera",
+      "progress": 100,
+      "started_at": "2026-04-20T11:52:49.920441"
+    },
+    {
+      "title": "OVER (оконки): SQL для Избранных — Stepik",
+      "url": "https://stepik.org/course/257140",
+      "source": "stepik",
+      "progress": 100,
+      "started_at": "2026-04-21T19:34:30.150568"
+    },
+    {
+      "title": "Полный Курс Python 3: от Новичка до Мастера (Питон, Пайтон)",
+      "url": "https://stepik.org/course/130664",
+      "source": "Stepik",
+      "progress": 0,
+      "started_at": "2026-04-24T14:21:06.481278"
+    },
+    {
+      "title": "Пакет курсов: Pandas + Matplotlib + Seaborn",
+      "url": "https://stepik.org/course/211639",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-05-16T13:09:24.634478"
+    },
+    {
+      "title": "Frontend for Java Full Stack Development",
+      "url": "https://www.coursera.org/learn/frontend-development-for-java-full-stack",
+      "source": "coursera",
+      "progress": 0,
+      "started_at": "2026-05-20T14:23:26.410091"
+    }
+  ],
+  "user_ratings": [
+    {
+      "title": "Программируем Pixel Art-студию на Python + Tkinter — Stepik",
+      "stars": 5,
+      "url": "https://stepik.org/course/237718",
+      "source": "stepik",
+      "ts": "2026-04-05T00:13:18.587428"
+    },
+    {
+      "title": "Многопроцессность в Python: от новичка до эксперта",
+      "stars": 3,
+      "url": "https://stepik.org/course/188951",
+      "source": "stepik",
+      "ts": "2026-04-06T15:06:50.121758"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "stars": 5,
+      "url": "https://stepik.org/course/134773",
+      "source": "stepik",
+      "ts": "2026-04-06T15:06:42.381427"
+    },
+    {
+      "title": "Основы HTML и CSS — Stepik",
+      "stars": 2,
+      "url": "https://stepik.org/course/268737",
+      "source": "stepik",
+      "ts": "2026-04-06T15:06:47.070660"
+    },
+    {
+      "title": "Jetpack Compose: полный курс",
+      "stars": 1,
+      "url": "https://stepik.org/course/125685",
+      "source": "stepik",
+      "ts": "2026-04-06T15:13:27.351570"
+    },
+    {
+      "title": "PRO C#. Основы программирования",
+      "stars": 5,
+      "url": "https://stepik.org/course/5482",
+      "source": "stepik",
+      "ts": "2026-04-06T15:32:55.764881"
+    },
+    {
+      "title": "Основы анализа данных в  Python",
+      "stars": 5,
+      "url": "https://stepik.org/course/116618",
+      "source": "stepik",
+      "ts": "2026-04-07T22:03:59.117548"
+    },
+    {
+      "title": "Базы данных: основы проектирования и использования — Stepik",
+      "stars": 3,
+      "url": "https://stepik.org/course/118614",
+      "source": "stepik",
+      "ts": "2026-04-07T22:04:00.651803"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "stars": 2,
+      "url": "https://stepik.org/course/175382",
+      "source": "stepik",
+      "ts": "2026-04-07T22:04:02.839378"
+    },
+    {
+      "title": "☯ Программирование на Python для начинающих — Stepik",
+      "stars": 5,
+      "url": "https://stepik.org/course/251751",
+      "source": "stepik",
+      "ts": "2026-04-07T22:04:04.985694"
+    },
+    {
+      "title": "Курс по Numpy — Твой путь в AI — Stepik",
+      "stars": 5,
+      "url": "https://stepik.org/course/180256",
+      "source": "stepik",
+      "ts": "2026-04-14T18:17:07.490729"
+    },
+    {
+      "title": "Алгоритмы на Python",
+      "stars": 2,
+      "url": "https://stepik.org/course/251189",
+      "source": "stepik",
+      "ts": "2026-04-14T18:20:09.703453"
+    },
+    {
+      "title": "Погружаемся в SQLAlchemy на Python: курс для начинающих — Stepik",
+      "stars": 2,
+      "url": "https://stepik.org/course/195243",
+      "source": "stepik",
+      "ts": "2026-04-14T18:20:25.003649"
+    },
+    {
+      "title": "\"Поколение Python\": профи + ООП + SQL + алгоритмы для начинающих",
+      "stars": 4,
+      "url": "https://stepik.org/course/215129",
+      "source": "stepik",
+      "ts": "2026-04-14T18:51:28.292625"
+    },
+    {
+      "title": "SQL & Python",
+      "stars": 5,
+      "url": "https://stepik.org/course/256721",
+      "source": "stepik",
+      "ts": "2026-04-14T18:55:54.439145"
+    },
+    {
+      "title": "Анализ данных с Pandas",
+      "stars": 5,
+      "url": "https://stepik.org/course/187506",
+      "source": "stepik",
+      "ts": "2026-04-14T18:57:33.353851"
+    },
+    {
+      "title": "Базовый курс по разработке на Платформе Sherpa RPA — Stepik",
+      "stars": 2,
+      "url": "https://stepik.org/course/254118",
+      "source": "stepik",
+      "ts": "2026-04-14T19:51:40.334013"
+    },
+    {
+      "title": "Основы Python: курс для продвинутых",
+      "stars": 2,
+      "url": "https://stepik.org/course/186192",
+      "source": "stepik",
+      "ts": "2026-04-14T19:52:02.187347"
+    },
+    {
+      "title": "Data Science с нуля: Python и машинное обучение для начинающих — Stepik",
+      "stars": 1,
+      "url": "https://stepik.org/course/241837",
+      "source": "stepik",
+      "ts": "2026-04-14T19:52:27.934668"
+    },
+    {
+      "title": "Введение в Data Science: часть 1 - программирование на Python — Stepik",
+      "stars": 5,
+      "url": "https://stepik.org/course/100567",
+      "source": "stepik",
+      "ts": "2026-04-14T19:54:59.604583"
+    },
+    {
+      "title": "Старт в робототехнику с Python",
+      "stars": 2,
+      "url": "https://stepik.org/course/247050",
+      "source": "stepik",
+      "ts": "2026-04-14T19:55:03.319308"
+    },
+    {
+      "title": "Старт в Data Science! — Stepik",
+      "stars": 4,
+      "url": "https://stepik.org/course/194633/promo",
+      "source": "stepik",
+      "ts": "2026-04-14T20:03:11.343485"
+    },
+    {
+      "title": "ReactJS 18, Firebase 9 Project- Realtor Clone",
+      "stars": 4,
+      "url": "https://www.coursera.org/learn/packt-advanced-react-testing-and-firebase-projects-xavo3",
+      "source": "coursera",
+      "ts": "2026-04-14T20:03:16.957685"
+    },
+    {
+      "title": "Разработка мобильного приложения",
+      "stars": 3,
+      "url": "https://openedu.ru/course/mephi/mephi_razrmp/?session=fall_2025",
+      "source": "openedu",
+      "ts": "2026-04-14T20:05:23.736425"
+    },
+    {
+      "title": "Python в научных расчетах — Stepik",
+      "stars": 5,
+      "url": "https://stepik.org/course/100110",
+      "source": "stepik",
+      "ts": "2026-04-14T20:36:42.079666"
+    },
+    {
+      "title": "Data Science with Python and Machine Learning For Beginners",
+      "stars": 2,
+      "url": "https://www.udemy.com/course/data-science-with-python-and-machine-learning-for-beginners",
+      "source": "udemy",
+      "ts": "2026-04-14T20:41:03.853070"
+    },
+    {
+      "title": "NumPy-массивы в Python — Stepik",
+      "stars": 4,
+      "url": "https://stepik.org/course/113585",
+      "source": "stepik",
+      "ts": "2026-04-14T20:45:13.286252"
+    },
+    {
+      "title": "Практикум по математике и Python",
+      "stars": 2,
+      "url": "https://stepik.org/course/3356",
+      "source": "stepik",
+      "ts": "2026-04-14T20:58:33.275936"
+    },
+    {
+      "title": "React для современных веб-приложений",
+      "stars": 4,
+      "url": "https://stepik.org/course/114197",
+      "source": "stepik",
+      "ts": "2026-04-15T20:53:49.658149"
+    },
+    {
+      "title": "Машинное Обучение в Python: Большой Курс для Начинающих",
+      "stars": 2,
+      "url": "https://stepik.org/course/129449",
+      "source": "stepik",
+      "ts": "2026-04-15T20:54:03.212728"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "stars": 3,
+      "url": "https://stepik.org/course/175246",
+      "source": "stepik",
+      "ts": "2026-04-15T21:03:01.103502"
+    },
+    {
+      "title": "Django for Everybody",
+      "stars": 2,
+      "url": "https://www.coursera.org/learn/django-web-framework",
+      "source": "coursera",
+      "ts": "2026-04-15T21:05:41.103473"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "stars": 3,
+      "url": "https://stepik.org/course/214324",
+      "source": "stepik",
+      "ts": "2026-04-15T21:15:40.028664"
+    },
+    {
+      "title": "Лучший по Python. Часть 3",
+      "stars": 2,
+      "url": "https://stepik.org/course/227627",
+      "source": "stepik",
+      "ts": "2026-04-16T16:03:57.144956"
+    },
+    {
+      "title": "Python. Генетический алгоритм — Stepik",
+      "stars": 2,
+      "url": "https://stepik.org/course/210946",
+      "source": "stepik",
+      "ts": "2026-04-16T16:09:23.910030"
+    },
+    {
+      "title": "Кайдзен разработка",
+      "stars": 2,
+      "url": "https://stepik.org/course/208758",
+      "source": "stepik",
+      "ts": "2026-04-16T16:13:22.163912"
+    },
+    {
+      "title": "Прикладные задачи анализа данных (с примерами на Python и R) — Stepik",
+      "stars": 4,
+      "url": "https://stepik.org/course/253506",
+      "source": "stepik",
+      "ts": "2026-04-16T16:38:07.913752"
+    },
+    {
+      "title": "Создаем  AI-помощника Jarvis на ChatGPT-like моделях от Сбера",
+      "stars": 3,
+      "url": "https://stepik.org/course/203007",
+      "source": "stepik",
+      "ts": "2026-04-16T20:44:54.838669"
+    },
+    {
+      "title": "Осознанный Python — ООП",
+      "stars": 4,
+      "url": "https://stepik.org/course/182023",
+      "source": "stepik",
+      "ts": "2026-04-18T01:04:28.297717"
+    },
+    {
+      "title": "WEB Парсинг на Python",
+      "stars": 3,
+      "url": "https://stepik.org/course/104774",
+      "source": "stepik",
+      "ts": "2026-04-18T01:04:38.561831"
+    },
+    {
+      "title": "Prompt Engineering & Python Integration, Tips & Hacks",
+      "stars": 2,
+      "url": "https://www.udemy.com/course/prompt-engineering-python-integration-tips-hacks",
+      "source": "udemy",
+      "ts": "2026-04-22T22:49:08.504696"
+    },
+    {
+      "title": "Business Analysis & Process Management",
+      "stars": 2,
+      "url": "https://www.coursera.org/projects/business-analysis-process-management",
+      "source": "coursera",
+      "ts": "2026-04-22T22:49:13.646027"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "stars": 5,
+      "url": "https://stepik.org/course/133721",
+      "source": "stepik",
+      "ts": "2026-05-20T14:23:41.125311"
+    }
+  ],
+  "notifications": [
+    {
+      "text": "Достижение разблокировано: Курс дня",
+      "icon": "📅",
+      "category": "achievement",
+      "ts": "2026-04-07T22:09:42.702700",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: Первопроходец",
+      "icon": "🔍",
+      "category": "achievement",
+      "ts": "2026-04-07T22:09:42.702707",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: Цель поставлена",
+      "icon": "🎯",
+      "category": "achievement",
+      "ts": "2026-04-07T22:09:42.702709",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: Поехали!",
+      "icon": "🚀",
+      "category": "achievement",
+      "ts": "2026-04-07T22:09:42.702710",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: 100 XP",
+      "icon": "⭐",
+      "category": "achievement",
+      "ts": "2026-04-07T22:09:42.702711",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: 500 XP",
+      "icon": "🌟",
+      "category": "achievement",
+      "ts": "2026-04-07T22:09:42.702712",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: Первый финиш",
+      "icon": "🏅",
+      "category": "achievement",
+      "ts": "2026-04-07T22:09:42.702713",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: Исследователь",
+      "icon": "🔎",
+      "category": "achievement",
+      "ts": "2026-04-07T22:09:42.702714",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: 3 дня подряд",
+      "icon": "🔥",
+      "category": "achievement",
+      "ts": "2026-04-07T22:09:42.702715",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: Пять курсов!",
+      "icon": "🎯",
+      "category": "achievement",
+      "ts": "2026-04-07T22:09:42.702715",
+      "read": true
+    },
+    {
+      "text": "Новый уровень: Студент! (100 XP)",
+      "icon": "",
+      "category": "level",
+      "ts": "2026-04-07T22:09:42.702719",
+      "read": true
+    },
+    {
+      "text": "Новый уровень: Знаток! (250 XP)",
+      "icon": "",
+      "category": "level",
+      "ts": "2026-04-07T22:09:42.702721",
+      "read": true
+    },
+    {
+      "text": "Новый уровень: Эксперт! (500 XP)",
+      "icon": "",
+      "category": "level",
+      "ts": "2026-04-07T22:09:42.702722",
+      "read": true
+    },
+    {
+      "text": "Новый уровень: Мастер! (1000 XP)",
+      "icon": "",
+      "category": "level",
+      "ts": "2026-04-07T22:09:42.702722",
+      "read": true
+    },
+    {
+      "text": "Новый уровень: Гуру! (2000 XP)",
+      "icon": "",
+      "category": "level",
+      "ts": "2026-04-07T22:09:42.702723",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: Неделя!",
+      "icon": "⚡",
+      "category": "achievement",
+      "ts": "2026-04-09T12:07:43.850489",
+      "read": true
+    },
+    {
+      "text": "Достижение: Активная неделя! 3 курса за неделю",
+      "icon": "📆",
+      "category": "achievement",
+      "ts": "2026-04-13T14:13:00.809738",
+      "read": true
+    },
+    {
+      "text": "Достижение: Чемпион недели! 5 курсов за неделю",
+      "icon": "🏆",
+      "category": "achievement",
+      "ts": "2026-04-13T14:16:11.198967",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: Исследователь миров",
+      "icon": "🌍",
+      "category": "achievement",
+      "ts": "2026-04-13T14:16:11.210216",
+      "read": true
+    },
+    {
+      "text": "Достижение: Коллекционер! 10 сохранённых курсов",
+      "icon": "🔖",
+      "category": "achievement",
+      "ts": "2026-04-13T15:13:46.405097",
+      "read": true
+    },
+    {
+      "text": "Новый уровень: Легенда! (5000 XP)",
+      "icon": "⬆️",
+      "category": "level",
+      "ts": "2026-04-13T19:00:21.557586",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: 2000 XP",
+      "icon": "💫",
+      "category": "achievement",
+      "ts": "2026-04-16T14:14:22.459122",
+      "read": true
+    },
+    {
+      "text": "Получено 80 XP за задание: Открой 3 курса за неделю",
+      "icon": "🎁",
+      "category": "achievement",
+      "ts": "2026-04-16T14:39:45.383272",
+      "read": true
+    },
+    {
+      "text": "Получено 150 XP за задание: Открой 5 курсов за неделю",
+      "icon": "🎁",
+      "category": "achievement",
+      "ts": "2026-04-16T14:39:49.319451",
+      "read": true
+    },
+    {
+      "text": "Получено 100 XP за задание: Заходи 5 дней подряд",
+      "icon": "🎁",
+      "category": "achievement",
+      "ts": "2026-04-16T14:39:52.214060",
+      "read": true
+    },
+    {
+      "text": "Получено 50 XP за задание: Сохрани 3 курса за неделю",
+      "icon": "🎁",
+      "category": "achievement",
+      "ts": "2026-04-16T14:39:53.990265",
+      "read": true
+    },
+    {
+      "text": "Достижение разблокировано: 7000 XP",
+      "icon": "🔮",
+      "category": "achievement",
+      "ts": "2026-04-16T14:44:50.215817",
+      "read": true
+    },
+    {
+      "text": "Новый уровень: Профессионал! (7560 XP)",
+      "icon": "⬆️",
+      "category": "level",
+      "ts": "2026-04-16T16:13:26.400492",
+      "read": true
+    },
+    {
+      "text": "Новый уровень: Мастер! (11010 XP)",
+      "icon": "⬆️",
+      "category": "level",
+      "ts": "2026-04-22T22:10:19.550332",
+      "read": true
+    }
+  ]
+}

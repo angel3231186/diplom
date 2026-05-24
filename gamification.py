@@ -1,8 +1,3 @@
-"""
-Gamification — стрики, XP, достижения, курс дня.
-Duolingo-стиль для IT-курсов.
-"""
-
 import json
 import os
 import re as _re
@@ -10,9 +5,6 @@ from datetime import date, datetime, timedelta
 import pandas as pd
 
 PROFILES_DIR = "user_profiles"
-
-
-# ── Достижения ──────────────────────────────────────────────────────────────
 
 ACHIEVEMENTS = [
     {"id": "first_search",    "icon": "🔍", "title": "Первопроходец",      "desc": "Сделай первый поиск"},
@@ -37,7 +29,6 @@ ACHIEVEMENTS = [
     {"id": "saved_10",        "icon": "🔖", "title": "Коллекционер",        "desc": "Сохрани 10 курсов"},
 ]
 
-# Недельные задания (статичный список, прогресс считается динамически)
 WEEKLY_QUESTS = [
     {"id": "wq_open_3",    "title": "Открой 3 курса за неделю",   "target": 3,  "xp": 80,  "icon": "📖"},
     {"id": "wq_open_5",    "title": "Открой 5 курсов за неделю",  "target": 5,  "xp": 150, "icon": "🏆"},
@@ -55,8 +46,6 @@ XP_REWARDS = {
     "set_goal":        20,
 }
 
-
-# ── Чтение / запись ──────────────────────────────────────────────────────────
 
 def _path(user_id: str) -> str:
     return os.path.join(PROFILES_DIR, f"{user_id}.json")
@@ -76,7 +65,6 @@ def _save(user_id: str, data: dict):
 
 
 def _push_notif(data: dict, text: str, icon: str = "", category: str = "info"):
-    """Добавляет уведомление прямо в data-объект (без отдельного _load/_save)."""
     data.setdefault("notifications", []).append({
         "text":     text,
         "icon":     icon,
@@ -99,13 +87,7 @@ def _get_gamif(data: dict) -> dict:
     return data["gamification"]
 
 
-# ── Стрик ────────────────────────────────────────────────────────────────────
-
 def update_streak(user_id: str) -> dict:
-    """
-    Обновляет стрик при заходе пользователя.
-    Возвращает {"streak": int, "xp_gained": int, "new_achievements": list}.
-    """
     data = _load(user_id)
     g = _get_gamif(data)
 
@@ -114,7 +96,6 @@ def update_streak(user_id: str) -> dict:
     xp_gained = 0
     new_achievements = []
 
-    # Всегда обновляем дни посещения этой недели (для wq_streak_5)
     _cur_week = _week_start()
     wdata = g.setdefault("weekly", {})
     if wdata.get("week_start") != _cur_week:
@@ -129,7 +110,6 @@ def update_streak(user_id: str) -> dict:
         _visited.append(today)
 
     if last == today:
-        # Уже заходил сегодня — только сохраняем дни посещения
         _save(user_id, data)
         return {"streak": g["streak"], "xp_gained": 0, "new_achievements": []}
 
@@ -145,7 +125,6 @@ def update_streak(user_id: str) -> dict:
     xp_gained += XP_REWARDS["daily_login"]
     g["xp"] = g.get("xp", 0) + xp_gained
 
-    # Достижения за стрик
     for sid, days in [("streak_3", 3), ("streak_7", 7), ("streak_30", 30)]:
         if g["streak"] >= days and sid not in g["achievements"]:
             g["achievements"].append(sid)
@@ -165,12 +144,7 @@ def get_streak(user_id: str) -> int:
     return g.get("streak", 0)
 
 
-# ── XP ───────────────────────────────────────────────────────────────────────
-
 def add_xp(user_id: str, action: str) -> dict:
-    """
-    Начисляет XP за действие. Возвращает {"xp": int, "new_achievements": list}.
-    """
     data = _load(user_id)
     g = _get_gamif(data)
     new_achievements = []
@@ -179,7 +153,6 @@ def add_xp(user_id: str, action: str) -> dict:
     xp_before = g.get("xp", 0)
     g["xp"] = xp_before + amount
 
-    # Level-up notification
     _level_thresholds = [0, 500, 1200, 2500, 4500, 7500, 11000, 16000, 22000, 30000]
     _level_titles     = ["Новичок", "Студент", "Знаток", "Практик", "Эксперт", "Профессионал", "Мастер", "Гуру", "Элита", "Легенда"]
     _level_icons      = ["⬆️", "⬆️", "⬆️", "⬆️", "⬆️", "⬆️", "⬆️"]
@@ -223,10 +196,7 @@ def get_xp(user_id: str) -> int:
     return _get_gamif(data).get("xp", 0)
 
 
-# ── Достижения ───────────────────────────────────────────────────────────────
-
 def unlock_achievement(user_id: str, achievement_id: str) -> bool:
-    """Разблокирует достижение. Возвращает True если новое."""
     data = _load(user_id)
     g = _get_gamif(data)
     if achievement_id not in g["achievements"]:
@@ -242,7 +212,6 @@ def unlock_achievement(user_id: str, achievement_id: str) -> bool:
 
 
 def get_achievements(user_id: str) -> list:
-    """Возвращает список всех достижений с флагом unlocked."""
     data = _load(user_id)
     g = _get_gamif(data)
     unlocked = set(g.get("achievements", []))
@@ -251,8 +220,6 @@ def get_achievements(user_id: str) -> list:
         result.append({**a, "unlocked": a["id"] in unlocked})
     return result
 
-
-# ── Курс дня ─────────────────────────────────────────────────────────────────
 
 _GOAL_KW = {
     "Веб-разработка":             ["web", "html", "css", "javascript", "frontend", "backend", "react", "django", "flask"],
@@ -266,10 +233,6 @@ _GOAL_KW = {
 
 
 def get_course_of_day(df, profile=None) -> dict:
-    """
-    Персональный курс дня — меняется каждый день.
-    Если передан профиль — выбирается под анкету пользователя.
-    """
     today_seed = int(date.today().strftime("%Y%m%d"))
     pool = df.copy()
 
@@ -279,13 +242,11 @@ def get_course_of_day(df, profile=None) -> dict:
         languages = onb.get("languages", [])
         goals     = onb.get("goals", [])
 
-        # Фильтр по уровню
         if level and "difficulty" in pool.columns:
             lvl_pool = pool[pool["difficulty"] == level]
             if len(lvl_pool) >= 5:
                 pool = lvl_pool
 
-        # Фильтр по языкам
         if languages:
             mask = pd.Series(False, index=pool.index)
             for lang in languages:
@@ -297,7 +258,6 @@ def get_course_of_day(df, profile=None) -> dict:
             if mask.sum() >= 5:
                 pool = pool[mask]
 
-        # Фильтр по направлению
         if goals:
             goal_keywords = []
             for g in goals:
@@ -321,7 +281,6 @@ def get_course_of_day(df, profile=None) -> dict:
 
 
 def mark_course_of_day_opened(user_id: str) -> list:
-    """Отмечает что пользователь открыл курс дня. Возвращает новые достижения."""
     data = _load(user_id)
     g = _get_gamif(data)
     today = date.today().isoformat()
@@ -338,10 +297,7 @@ def mark_course_of_day_opened(user_id: str) -> list:
     return new_achievements
 
 
-# ── Уведомления ──────────────────────────────────────────────────────────────
-
 def add_notification(user_id: str, text: str, icon: str = "", category: str = "info"):
-    """Добавляет уведомление пользователю."""
     data = _load(user_id)
     notifs = data.setdefault("notifications", [])
     notifs.append({
@@ -355,7 +311,6 @@ def add_notification(user_id: str, text: str, icon: str = "", category: str = "i
 
 
 def get_notifications(user_id: str) -> list:
-    """Возвращает все уведомления (новые сначала)."""
     data = _load(user_id)
     return list(reversed(data.get("notifications", [])))
 
@@ -378,21 +333,17 @@ def clear_notifications(user_id: str):
     _save(user_id, data)
 
 
-# ── Недельные задания ─────────────────────────────────────────────────────────
-
 def _week_start() -> str:
     today = date.today()
     return (today - timedelta(days=today.weekday())).isoformat()
 
 
 def get_weekly_progress(user_id: str) -> list:
-    """Возвращает прогресс по недельным заданиям."""
     data = _load(user_id)
     g    = _get_gamif(data)
     week = _week_start()
     wdata = g.setdefault("weekly", {})
 
-    # Сбрасываем счётчики если новая неделя
     if wdata.get("week_start") != week:
         wdata.clear()
         wdata["week_start"] = week
@@ -422,7 +373,6 @@ def get_weekly_progress(user_id: str) -> list:
 
 
 def track_weekly_course_opened(user_id: str):
-    """Вызывать когда пользователь начинает/сохраняет курс."""
     data = _load(user_id)
     g    = _get_gamif(data)
     week = _week_start()
@@ -435,7 +385,6 @@ def track_weekly_course_opened(user_id: str):
         wdata["claimed"]         = []
     wdata["courses_opened"] = wdata.get("courses_opened", 0) + 1
 
-    # Проверяем достижения за неделю
     opened = wdata["courses_opened"]
     new_achievements = []
     if opened >= 3 and "weekly_3" not in g["achievements"]:
@@ -473,7 +422,6 @@ def track_weekly_course_saved(user_id: str):
 
 
 def claim_weekly_quest(user_id: str, quest_id: str) -> int:
-    """Забрать награду за выполненное задание. Возвращает кол-во XP."""
     data = _load(user_id)
     g    = _get_gamif(data)
     wdata = g.setdefault("weekly", {})
@@ -490,10 +438,7 @@ def claim_weekly_quest(user_id: str, quest_id: str) -> int:
     return xp
 
 
-# ── Проверка стрика под угрозой ───────────────────────────────────────────────
-
 def check_streak_warning(user_id: str) -> bool:
-    """Возвращает True если стрик > 0 и пользователь не заходил вчера (угроза обрыва)."""
     data = _load(user_id)
     g    = _get_gamif(data)
     streak = g.get("streak", 0)
@@ -504,16 +449,11 @@ def check_streak_warning(user_id: str) -> bool:
         return False
     today     = date.today()
     last_date = date.fromisoformat(last)
-    # Если последний визит был позавчера или раньше — стрик уже сломан
-    # Если последний визит был вчера — сегодня ещё не заходил, стрик под угрозой
     diff = (today - last_date).days
-    return diff == 1  # заходил вчера, сегодня ещё нет → предупредить
+    return diff == 1
 
-
-# ── XP прогресс-бар ──────────────────────────────────────────────────────────
 
 def xp_level(xp: int) -> dict:
-    """Возвращает уровень и прогресс до следующего."""
     thresholds = [0, 500, 1200, 2500, 4500, 7500, 11000, 16000, 22000, 30000]
     titles     = ["Новичок", "Студент", "Знаток", "Практик", "Эксперт", "Профессионал", "Мастер", "Гуру", "Элита", "Легенда"]
     level = 0

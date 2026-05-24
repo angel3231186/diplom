@@ -33,6 +33,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 
+import chat_history_server as _chat_srv; _chat_srv.ensure_running()
 import auth
 _main = _load_local("_coursefind_main", "main.py")
 from personalization import profile_manager, recommend_by_onboarding, recommend_by_embeddings
@@ -40,7 +41,7 @@ from evaluation import run_evaluation, DISPLAY_COLS, TEST_CASES
 import styles as _styles_mod
 import gamification as gam
 
-# ─── PAGE CONFIG ───────────────────────────────────────────────────────────────
+# ─── НАСТРОЙКИ СТРАНИЦЫ ────────────────────────────────────────────────────────
 
 st.set_page_config(
     page_title="Рекомендации IT-курсов",
@@ -49,7 +50,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ─── THEME & CSS ───────────────────────────────────────────────────────────────
+# ─── ТЕМА И СТИЛИ ──────────────────────────────────────────────────────────────
 
 # Скрываем дефолтный Streamlit multipage nav сразу
 st.markdown("""<style>
@@ -85,6 +86,31 @@ st.markdown("""
 .results-summary { font-size: 0.78rem; color: #55556a; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.07); margin-bottom: 16px; }
 .results-summary strong { color: #8888a0; }
 
+/* ── Pagination buttons ── */
+.pagination-row { margin: 20px 0 8px; }
+.pagination-row [data-testid="stButton"] button {
+    background: rgba(124, 107, 255, 0.08) !important;
+    border: 1px solid rgba(124, 107, 255, 0.3) !important;
+    border-radius: 8px !important;
+    color: #a594ff !important;
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em !important;
+    padding: 8px 0 !important;
+    transition: background .2s, border-color .2s, color .2s !important;
+}
+.pagination-row [data-testid="stButton"] button:hover:not(:disabled) {
+    background: rgba(124, 107, 255, 0.18) !important;
+    border-color: rgba(124, 107, 255, 0.6) !important;
+    color: #c4b8ff !important;
+}
+.pagination-row [data-testid="stButton"] button:disabled {
+    background: rgba(255,255,255,0.03) !important;
+    border-color: rgba(255,255,255,0.08) !important;
+    color: rgba(255,255,255,0.2) !important;
+    cursor: default !important;
+}
+
 /* Убираем курсор из selectbox — выглядит как кнопка, не как input */
 [data-baseweb="select"] input {
     caret-color: transparent !important;
@@ -111,16 +137,16 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ─── LOAD SYSTEM ───────────────────────────────────────────────────────────────
+# ─── ЗАГРУЗКА СИСТЕМЫ ──────────────────────────────────────────────────────────
 
 @st.cache_resource(show_spinner="Загружаем модель и данные...")
-def load_system(_v=2):  # bump _v to invalidate cache
+def load_system(_v=12):  # увеличь _v чтобы сбросить кэш
     df = _main.load_data(_main.DATA_PATH)
     df = _main.add_bayes(df)
     embeddings, knn, df = _main.get_model(df, force_rebuild=False)
     return df, embeddings, knn
 
-df, _embeddings, _knn = load_system()
+df, _embeddings, _knn = load_system(_v=11)
 
 # Устанавливаем глобальные переменные при каждом запуске скрипта,
 # а не только внутри кэшированной функции
@@ -128,7 +154,7 @@ _main.df         = df
 _main.embeddings = _embeddings
 _main.knn        = _knn
 
-# ─── PRECOMPUTE STATS ──────────────────────────────────────────────────────────
+# ─── ПРЕДВАРИТЕЛЬНЫЕ ВЫЧИСЛЕНИЯ ────────────────────────────────────────────────
 
 @st.cache_data
 def compute_stats(_df: pd.DataFrame):
@@ -163,7 +189,7 @@ def compute_stats(_df: pd.DataFrame):
     TOTAL, FREE_PCT, AVG_RATING, PLATFORMS,
 ) = compute_stats(df)
 
-# ─── SESSION STATE ─────────────────────────────────────────────────────────────
+# ─── СОСТОЯНИЕ СЕССИИ ──────────────────────────────────────────────────────────
 
 for key, default in [
     ("logged_in",      False),
@@ -185,7 +211,6 @@ for key, default in [
     if key not in st.session_state:
         st.session_state[key] = default
 
-# Show queued toasts from previous rerun
 for _tq in st.session_state.toast_queue:
     st.toast(_tq["text"])
 st.session_state.toast_queue = []
@@ -212,7 +237,7 @@ if st.session_state.logged_in and not st.session_state.username:
 
 
 
-# ─── AUTH SCREEN ───────────────────────────────────────────────────────────────
+# ─── ЭКРАН АВТОРИЗАЦИИ ─────────────────────────────────────────────────────────
 
 if not st.session_state.logged_in:
     st.markdown("""
@@ -290,9 +315,11 @@ if not st.session_state.logged_in:
                         else:
                             st.error(msg)
 
+    import streamlit.components.v1 as _auth_comp
+    _auth_comp.html("", height=0)
     st.stop()
 
-# ─── ONBOARDING SCREEN ─────────────────────────────────────────────────────────
+# ─── ЭКРАН ОНБОРДИНГА ──────────────────────────────────────────────────────────
 
 _current_profile = profile_manager.get(st.session_state.username)
 if not _current_profile.is_onboarded():
@@ -354,7 +381,12 @@ if not _current_profile.is_onboarded():
                 st.session_state.page = "about"
                 st.rerun()
 
+    import streamlit.components.v1 as _onb_comp
+    _onb_comp.html("", height=0)
     st.stop()
+
+# ─── ИИ-чат виджет (только для авторизованных и прошедших онбординг) ──────────
+_styles_mod.inject_chat_widget(user_id=st.session_state.get("username", "default"))
 
 USER_ID = st.session_state.username
 
@@ -373,7 +405,7 @@ if not USER_ID:
     st.session_state.logged_in = False
     st.rerun()
 
-# ─── TOAST QUEUE HELPER ───────────────────────────────────────────────────────
+# ─── ОЧЕРЕДЬ УВЕДОМЛЕНИЙ ───────────────────────────────────────────────────────
 
 def _queue_toast(text: str):
     """Queue a toast to show on next rerun."""
@@ -395,7 +427,7 @@ def _queue_xp_toasts(xp_before: int, xp_after: int):
     if _after > _before:
         _queue_toast(f"Новый уровень: {_lvl_n[_after]}!")
 
-# ─── BACK BUTTON HELPER ────────────────────────────────────────────────────────
+# ─── КНОПКА НАЗАД ──────────────────────────────────────────────────────────────
 
 def _back_btn(key: str, label: str = "← Назад") -> bool:
     st.markdown('<div class="back-btn-wrap">', unsafe_allow_html=True)
@@ -403,7 +435,7 @@ def _back_btn(key: str, label: str = "← Назад") -> bool:
     st.markdown('</div>', unsafe_allow_html=True)
     return clicked
 
-# ─── CARD HELPERS ──────────────────────────────────────────────────────────────
+# ─── КАРТОЧКИ КУРСОВ ───────────────────────────────────────────────────────────
 
 _SOURCE_CLS = {
     "stepik": "b-stepik", "udemy": "b-udemy",
@@ -490,7 +522,6 @@ def render_course_card(row, idx: int, show_sim: bool = True, tab: str = ""):
                 _start_new_ach.append("started_1")
             if _started_count >= 5 and gam.unlock_achievement(USER_ID, "started_5"):
                 _start_new_ach.append("started_5")
-            # Достижение за разнообразие направлений
             _started_cats = {s.get("source","") for s in profile_manager.get(USER_ID).get_started()}
             if len(_started_cats) >= 3 and gam.unlock_achievement(USER_ID, "explorer"):
                 _start_new_ach.append("explorer")
@@ -536,7 +567,7 @@ def render_course_card(row, idx: int, show_sim: bool = True, tab: str = ""):
     st.write("")
 
 
-# ─── CATALOG/LIST CARD HELPERS ─────────────────────────────────────────────────
+# ─── КАРТОЧКИ КАТАЛОГА И СПИСКА ────────────────────────────────────────────────
 
 def _thumb_cls(row) -> str:
     cats = (str(row.get("top_category", "")) + str(row.get("category", ""))).lower()
@@ -551,18 +582,33 @@ def _thumb_cls(row) -> str:
     return "ct-gray"
 
 def _thumb_icon(row) -> str:
-    s = (str(row.get("top_category","")) + str(row.get("category","")) + str(row.get("title",""))).lower()
-    if "python"  in s: return "🐍"
-    if "java"    in s and "script" not in s: return "☕"
-    if "javascript" in s or "react" in s or "vue" in s or "frontend" in s: return "⚡"
-    if "data"    in s or "ml"     in s or "machine" in s: return "📊"
-    if "docker"  in s or "devops" in s or "kubern"  in s: return "🐳"
-    if "mobile"  in s or "android" in s or "ios"   in s: return "📱"
-    if "sql"     in s or "database" in s or "базы"  in s: return "🗄️"
-    if "web"     in s: return "🌐"
-    if "security" in s or "cyber" in s or "кибер"  in s: return "🔒"
-    if "design"  in s or "ux"    in s or "ui"      in s: return "🎨"
-    if "cloud"   in s or "aws"   in s or "azure"   in s: return "☁️"
+    cat = str(row.get("category", "")).lower()
+    top = str(row.get("top_category", "")).lower()
+    s   = cat + " " + top + " " + str(row.get("title", "")).lower()
+
+    if "data science" in cat or "ml" in cat or "machine" in s or "нейрон" in s: return "📚"
+    if "python"      in cat: return "🐍"
+    if "fullstack"   in cat: return "🧩"
+    if "frontend"    in cat or "javascript" in cat: return "⚡"
+    if "java / kotlin" in cat or ("java" in s and "script" not in s): return "☕"
+    if "go / golang" in cat or "golang" in s: return "🐹"
+    if "c++"         in cat: return "⚙️"
+    if "c#"          in cat: return "🔷"
+    if "devops"      in cat or "cloud" in cat: return "🐳"
+    if "mobile"      in cat or "android" in s or "ios" in s: return "📱"
+    if "sql"         in cat: return "🗄️"
+    if "excel"       in cat: return "📊"
+    if "git"         in cat: return "🔀"
+    if "cybersecur"  in cat or "security" in top: return "🔒"
+    if "ui/ux"       in cat or "design"   in cat: return "🎨"
+    if "testing"     in cat or "qa"       in s: return "🔍"
+    if "иностранн"   in cat: return "🌍"
+    if "business & management" in cat or "business" in cat or "management" in cat or "soft skills" in cat: return "💼"
+    if "marketing"   in cat: return "📣"
+    if "finance"     in cat: return "💰"
+    if "soft skills" in cat: return "🤝"
+    if "project"     in cat: return "📋"
+    if "general it" in cat or "computer science" in cat: return "💻"
     return "📚"
 
 
@@ -668,6 +714,7 @@ def render_catalog_section(title: str, section_df: pd.DataFrame, section_key: st
         if st.button(f"Показать все {title} →", key=f"show_{section_key}",
                      type="secondary", use_container_width=True):
             st.session_state.cat_section = section_key
+            st.session_state[f"cat_page_{section_key}"] = 0
             st.rerun()
     st.write("")
 
@@ -719,10 +766,9 @@ def render_card_grid(recs: pd.DataFrame, show_sim: bool, tab: str):
                     profile_manager.track_view(USER_ID, row.to_dict())
 
 
-# ─── SIDEBAR ───────────────────────────────────────────────────────────────────
+# ─── БОКОВАЯ ПАНЕЛЬ ────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    # Logo
     st.markdown(f"""
     <div class="sb-logo">
       <span class="sb-logo-dot"></span>
@@ -730,7 +776,6 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 
-    # Profile block
     _sb_profile = profile_manager.get(USER_ID)
     _sb_onb     = _sb_profile.get_onboarding()
     _sb_saved_n = len(_sb_profile.get_saved())
@@ -739,7 +784,6 @@ with st.sidebar:
     _sb_lvl     = _sb_lvl_ru.get(_sb_onb.get("level",""), "")
     _sb_av      = _sb_profile.get_profile_meta().get("avatar", "")
 
-    # Стрик — обновляем при каждом заходе
     _gam_result = gam.update_streak(USER_ID)
     _streak     = _gam_result["streak"]
     _xp_info    = gam.xp_level(gam.get_xp(USER_ID))
@@ -748,7 +792,6 @@ with st.sidebar:
             _ach = gam.ACHIEVEMENT_MAP.get(_ach_id, {})
             st.toast(f'{_ach.get("icon","🏆")} Достижение: {_ach.get("title","")}', icon="🎉")
 
-    # Уведомление если стрик под угрозой (заходил вчера, сегодня ещё нет)
     if "streak_warned" not in st.session_state:
         st.session_state.streak_warned = False
     if not st.session_state.streak_warned and gam.check_streak_warning(USER_ID):
@@ -776,7 +819,6 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
 
-    # Стрик + XP
     _xp_pct = int(_xp_info["progress"] * 100)
     st.markdown(f"""
     <div style="display:flex;align-items:center;justify-content:space-between;margin:8px 0 4px">
@@ -798,14 +840,12 @@ with st.sidebar:
 
     st.divider()
 
-    # Nav: Главная
     if st.button("Главная", key="nav_home", use_container_width=True,
                  type="primary" if st.session_state.page == "home" else "secondary"):
         st.session_state.page = "home"
         st.session_state.show_account = False
         st.rerun()
 
-    # Nav: Уведомления
     _sb_unread = gam.unread_count(USER_ID)
     _notif_lbl = f"Уведомления  {_sb_unread}" if _sb_unread else "Уведомления"
     if st.button(_notif_lbl, key="nav_notifs", use_container_width=True,
@@ -814,7 +854,6 @@ with st.sidebar:
         st.session_state.show_account = False
         st.rerun()
 
-    # Nav: Поиск
     st.markdown('<div class="sb-nav-label">Поиск</div>', unsafe_allow_html=True)
     if st.button("Найти курс", key="nav_search", use_container_width=True,
                  type="primary" if st.session_state.page == "search" else "secondary"):
@@ -829,7 +868,6 @@ with st.sidebar:
         st.session_state.show_account = False
         st.rerun()
 
-    # Nav: Моё
     st.markdown('<div class="sb-nav-label">Моё</div>', unsafe_allow_html=True)
     _my_active = st.session_state.page in ("mylist", "started", "myratings", "my")
     _sb_started_n = len(_sb_profile.get_started())
@@ -839,7 +877,6 @@ with st.sidebar:
         st.session_state.show_account = False
         st.rerun()
 
-    # Nav: Библиотека
     st.markdown('<div class="sb-nav-label">Библиотека</div>', unsafe_allow_html=True)
     if st.button("Каталог", key="nav_catalog", use_container_width=True,
                  type="primary" if st.session_state.page == "catalog" else "secondary"):
@@ -848,7 +885,6 @@ with st.sidebar:
         st.session_state.show_account = False
         st.rerun()
 
-    # Nav: Данные
     st.markdown('<div class="sb-nav-label">Данные</div>', unsafe_allow_html=True)
     if st.button("Датасет", key="nav_stats", use_container_width=True,
                  type="primary" if st.session_state.page == "stats" else "secondary"):
@@ -870,7 +906,6 @@ with st.sidebar:
 
     st.markdown('<hr style="border:none;border-top:1px solid rgba(255,255,255,0.07);margin:8px 0 12px 0">', unsafe_allow_html=True)
 
-    # Недельные задания
     _wq_list  = gam.get_weekly_progress(USER_ID)
     _wq_done_n = sum(1 for q in _wq_list if q["done"])
     st.markdown(f'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><span style="font-size:0.7rem;color:#55556a;letter-spacing:.07em;font-weight:600">ЗАДАНИЯ НЕДЕЛИ</span><span style="font-size:0.68rem;color:#7c6bff;font-weight:600">{_wq_done_n}/{len(_wq_list)}</span></div>', unsafe_allow_html=True)
@@ -903,7 +938,6 @@ with st.sidebar:
                 st.rerun()
             st.markdown('</div>', unsafe_allow_html=True)
 
-    # Footer stats
     st.markdown(f"""
     <div class="sb-footer-stats">
       <div class="sb-stat-mini">
@@ -933,7 +967,7 @@ with st.sidebar:
         st.rerun()
 
 
-# Default filter values (overridden inline on search page)
+# Значения фильтров по умолчанию
 top_k        = 5
 sort_by      = "relevance"
 language     = "all"
@@ -950,7 +984,7 @@ filter_kwargs = dict(
     min_rating=min_rating,
 )
 
-# ─── ACCOUNT PANEL ─────────────────────────────────────────────────────────────
+# ─── ПАНЕЛЬ АККАУНТА ───────────────────────────────────────────────────────────
 
 if st.session_state.show_account:
     import io as _io_acct
@@ -973,7 +1007,6 @@ if st.session_state.show_account:
     _ap_avatar       = _ap_meta.get("avatar",       "")
     _ap_display_name = _ap_meta.get("display_name", "")
 
-    # Заголовок панели и кнопка закрыть
     _close_col, _title_col = st.columns([1, 9])
     with _close_col:
         if st.button("✕", key="close_acct"):
@@ -986,13 +1019,11 @@ if st.session_state.show_account:
               <span style="font-size:1.1rem;font-weight:700;color:#c0baff;letter-spacing:.03em">Аккаунт</span>
             </div>""", unsafe_allow_html=True)
 
-    # Hero-строка
     _ap_lang_tags = "".join(f'<span class="interest-tag">{l}</span>' for l in _ap_langs)
     _ap_lvl_badge = (f'<span class="level-tag {_LVL_CLS_AP.get(_ap_level, "level-beg")}">'
                      f'{_LVL_RU_AP.get(_ap_level, _ap_level)}</span>') if _ap_level else ""
     _ap_created_str = f'<strong>С</strong> {_ap_created}' if _ap_created else ""
 
-    # Формируем HTML аватара
     if _ap_avatar.startswith("data:"):
         _av_html = (f'<img src="{_ap_avatar}" '
                     f'style="width:56px;height:56px;border-radius:50%;object-fit:cover;'
@@ -1027,7 +1058,6 @@ if st.session_state.show_account:
         unsafe_allow_html=True,
     )
 
-    # Быстрая статистика
     st.markdown(f"""
     <div style="display:flex;gap:20px;padding:12px 0;border-top:1px solid #1a1a2a;border-bottom:1px solid #1a1a2a;margin-bottom:20px">
       <div><div style="font-size:1.3rem;font-weight:800;color:#e2e8f0">{_ap_stats['searches']}</div><div style="font-size:0.7rem;color:#475569;text-transform:uppercase;letter-spacing:.06em">Поисков</div></div>
@@ -1179,7 +1209,6 @@ if st.session_state.show_account:
 
     st.markdown('<hr class="profile-divider">', unsafe_allow_html=True)
 
-    # Две панели: безопасность + интересы
     _set_l, _set_r = st.columns(2, gap="medium")
 
     with _set_l:
@@ -1201,7 +1230,7 @@ if st.session_state.show_account:
                 else:
                     _ok, _msg = auth.change_password(USER_ID, _old_p, _new_p)
                     if _ok:
-                        st.success("Пароль изменён")
+                        _queue_toast("🔒 Пароль успешно изменён")
                         st.session_state["ap_show_cp"] = False
                         st.rerun()
                     else:
@@ -1273,7 +1302,6 @@ if st.session_state.show_account:
     else:
         st.caption("Заполни интересы и уровень — подберём курсы")
 
-    # Ссылка на раздел Моё
     _ap_saved = _ap.get_saved()
     _ap_started_count = len(_ap.get_started())
     _ap_rated_count = len(_ap.get_ratings())
@@ -1303,7 +1331,6 @@ if st.session_state.show_account:
         st.rerun()
 
     # ── Начатые курсы ─────────────────────────────────────────────────────────
-    # История поиска
     _ap_searches = _ap_data.get("searches", [])
     if _ap_searches:
         st.markdown('<hr class="profile-divider">', unsafe_allow_html=True)
@@ -1315,7 +1342,6 @@ if st.session_state.show_account:
             _ap.clear_searches()
             st.rerun()
 
-        # Уникальные запросы, последние сначала, макс 20
         _seen_q = set()
         _unique_q = []
         for _shi in reversed(_ap_searches):
@@ -1342,13 +1368,11 @@ if st.session_state.show_account:
     _gam_xp_info = gam.xp_level(gam.get_xp(USER_ID))
     _gam_xp_pct  = int(_gam_xp_info["progress"] * 100)
 
-    # Статистика
     _gc1, _gc2, _gc3 = st.columns(3)
     _gc1.metric("🔥 Стрик", f"{_gam_streak} дн.")
     _gc2.metric("⚡ XP", _gam_xp_info["xp"])
     _gc3.metric("🎖 Уровень", _gam_xp_info["title"])
 
-    # XP прогресс-бар
     st.markdown(f"""
     <div style="margin:4px 0 14px">
       <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:#888;margin-bottom:4px">
@@ -1361,7 +1385,6 @@ if st.session_state.show_account:
     </div>
     """, unsafe_allow_html=True)
 
-    # Достижения
     st.markdown('<div style="font-size:0.8rem;color:#888;margin-bottom:10px">Достижения</div>', unsafe_allow_html=True)
     _ach_list = gam.get_achievements(USER_ID)
     _ach_rows = [_ach_list[i:i+4] for i in range(0, len(_ach_list), 4)]
@@ -1381,7 +1404,6 @@ if st.session_state.show_account:
                 </div>
                 """, unsafe_allow_html=True)
 
-    # Опасная зона
     _ap_dislikes = _ap_data.get("dislikes", [])
     if _ap_dislikes or _ap_data.get("views") or _ap_data.get("likes"):
         st.markdown('<hr class="profile-divider">', unsafe_allow_html=True)
@@ -1425,9 +1447,8 @@ if st.session_state.show_account:
 
     st.stop()
 
-# ─── PAGE ROUTING ──────────────────────────────────────────────────────────────
+# ─── МАРШРУТИЗАЦИЯ СТРАНИЦ ─────────────────────────────────────────────────────
 
-# Обработка оценки курса через HTML-звёзды (query param сохраняет сессию)
 _rate_title = st.query_params.get("rate_title", "")
 _rate_stars = st.query_params.get("rate_stars", "")
 if _rate_title and _rate_stars and USER_ID:
@@ -1506,7 +1527,6 @@ if _page == "notifications":
 
 if _page == "home":
 
-    # Handle course-of-day actions triggered via HTML link query params
     _cod_action = st.query_params.get("cod_action", "")
     if _cod_action in ("save", "start"):
         _cod_act_course = gam.get_course_of_day(df, profile=profile_manager.get(USER_ID))
@@ -1531,7 +1551,6 @@ if _page == "home":
         del st.query_params["cod_action"]
         st.rerun()
 
-    # Single profile load for the whole home page
     _home_profile  = profile_manager.get(USER_ID)
     _home_gam      = gam.update_streak(USER_ID)
     _home_streak   = _home_gam["streak"]
@@ -1630,7 +1649,7 @@ if _page == "home":
     with _right_col:
         st.markdown('<div style="margin-top:24px"></div>', unsafe_allow_html=True)
         st.markdown("### Для тебя сегодня")
-        # Embeddings only if user has significant history (3+ items), otherwise use onboarding prefs
+        # Эмбеддинги только если у пользователя достаточно истории (3+ курса), иначе по онбордингу
         _home_saved_n   = len(_home_profile.get_saved())
         _home_started_n = len(_home_profile.get_started())
         _home_use_emb   = _home_saved_n + _home_started_n >= 3
@@ -1639,7 +1658,6 @@ if _page == "home":
         else:
             _home_recs = recommend_by_onboarding(_home_profile, df, top_k=4)
 
-        # Подпись почему рекомендуется
         _onb_data   = _home_profile.get_onboarding()
         _onb_langs  = _onb_data.get("languages", [])
         _onb_goals  = _onb_data.get("goals", [])
@@ -1692,7 +1710,6 @@ if _page == "home":
 
 if _page == "search":
 
-    # Клик по HTML-чипу языка
     if "sc" in st.query_params:
         _sc = st.query_params["sc"]
         del st.query_params["sc"]
@@ -1715,7 +1732,6 @@ if _page == "search":
         </div>
         """, unsafe_allow_html=True)
 
-        # Курс дня
         _cod = gam.get_course_of_day(df, profile=profile_manager.get(USER_ID))
         _cod_title  = _cod.get("title", "")[:60]
         _cod_src    = _cod.get("source", "").capitalize()
@@ -1724,15 +1740,12 @@ if _page == "search":
         _cod_stars  = "⭐" * min(int(round(_cod_rating)), 5) if _cod_rating else ""
         st.markdown(f'<a href="{_cod_url}" target="_blank" style="text-decoration:none;color:inherit"><div style="background:linear-gradient(135deg,rgba(124,107,255,0.12),rgba(124,107,255,0.04));border:1px solid rgba(124,107,255,0.25);border-radius:14px;padding:20px 24px;margin:0 0 24px;cursor:pointer;transition:border-color .15s" onmouseover="this.style.borderColor=\'rgba(124,107,255,0.6)\'" onmouseout="this.style.borderColor=\'rgba(124,107,255,0.25)\'"><div style="font-size:0.72rem;color:#a594ff;letter-spacing:.08em;margin-bottom:8px">📅 КУРС ДНЯ</div><div style="font-size:1.05rem;font-weight:600;color:#f0f0f5;margin-bottom:6px">{_cod_title} ↗</div><div style="font-size:0.8rem;color:#888">{_cod_src} &nbsp;·&nbsp; {_cod_stars} {_cod_rating:.1f}</div></div></a>', unsafe_allow_html=True)
         gam.mark_course_of_day_opened(USER_ID)
-        gam.add_xp(USER_ID, "course_of_day")
 
-    # Если чип/история запустили поиск — вписываем текст до рендера инпута
     if st.session_state.run_query:
         st.session_state.q_text = st.session_state.run_query
     elif st.session_state.get("_pending_q_text"):
         st.session_state.q_text = st.session_state.pop("_pending_q_text")
 
-    # Поисковая строка
     with st.form("search_form", clear_on_submit=False):
         col_q, col_btn = st.columns([6, 1])
         with col_q:
@@ -1745,7 +1758,6 @@ if _page == "search":
         with col_btn:
             search_btn = st.form_submit_button("Найти", use_container_width=True)
 
-    # Быстрые запросы — st.pills (нативные pill-кнопки Streamlit 1.38+)
     CHIPS = [
         "Python", "Java", "JavaScript", "SQL", "Go",
         "React", "Docker", "DevOps", "Linux", "Kotlin",
@@ -1778,7 +1790,6 @@ if _page == "search":
         st.session_state.run_query = _selected
         st.session_state["_pending_q_text"] = _selected
 
-    # Inline filters
     with st.expander("Фильтры"):
         _fc1, _fc2, _fc3 = st.columns(3)
         with _fc1:
@@ -1804,7 +1815,6 @@ if _page == "search":
             min_rating=min_rating,
         )
 
-    # Авто-перезапуск поиска при изменении фильтров
     _f_snapshot = str(filter_kwargs)
     if st.session_state.get("_f_snapshot_prev") != _f_snapshot:
         st.session_state["_f_snapshot_prev"] = _f_snapshot
@@ -1812,7 +1822,6 @@ if _page == "search":
             run_search(st.session_state.last_query, **filter_kwargs)
             st.rerun()
 
-    # Запуск
     if st.session_state.run_query:
         q = st.session_state.run_query
         st.session_state.run_query = None
@@ -1822,7 +1831,6 @@ if _page == "search":
         run_search(query_input, **filter_kwargs)
         st.rerun()
 
-    # Результаты
     results = st.session_state.results
     if results is not None:
         if "Сообщение" in results.columns:
@@ -1878,8 +1886,6 @@ if _page == "search":
 # ══════════════════════════════ PAGE: ДЛЯ ВАС ════════════════════════════════
 
 elif _page == "personal":
-    if _back_btn("personal"):
-        st.rerun()
 
     _pers_profile = profile_manager.get(USER_ID)
     _pers_onb     = _pers_profile.get_onboarding()
@@ -1955,10 +1961,14 @@ elif _page == "personal":
 
         if "_pers_recs_cache" not in st.session_state:
             with st.spinner("Подбираем курсы..."):
-                st.session_state["_pers_recs_cache"] = recommend_by_embeddings(
-                    _pers_profile, df, _embeddings, _knn, top_k=10, seed=_pers_seed
-                )
-        personal_recs = st.session_state["_pers_recs_cache"]
+                # Основная подборка — по onboarding профилю
+                _onb_recs = recommend_by_onboarding(_pers_profile, df, top_k=8, seed=_pers_seed)
+                # 2-3 курса по сохранённым (если есть)
+                _saved_recs = recommend_by_embeddings(
+                    _pers_profile, df, _embeddings, _knn, top_k=3, seed=_pers_seed
+                ) if bool(_pers_profile.get_saved()) else None
+                st.session_state["_pers_recs_cache"] = (_onb_recs, _saved_recs)
+        personal_recs, saved_recs = st.session_state["_pers_recs_cache"]
 
         if st.session_state.get("_pers_similar_results") is not None:
             _sim_title = st.session_state.get("_pers_similar_title", "")
@@ -1976,20 +1986,22 @@ elif _page == "personal":
             st.markdown("""
             <div class="empty-state">
               <div class="empty-state-title">Пока не хватает данных</div>
-              <div class="empty-state-text">Просматривай курсы и сохраняй понравившиеся — рекомендации появятся автоматически</div>
+              <div class="empty-state-text">Заполни профиль — укажи цель и технологии</div>
             </div>""", unsafe_allow_html=True)
         else:
             st.markdown(results_summary_html(personal_recs), unsafe_allow_html=True)
             render_card_grid(personal_recs, show_sim=False, tab="personal")
+            if saved_recs is not None and "Сообщение" not in saved_recs.columns and not saved_recs.empty:
+                st.markdown(
+                    '<div style="font-size:0.85rem;font-weight:600;color:#8888a0;'
+                    'margin:28px 0 10px;letter-spacing:0.04em">На основе сохранённых курсов</div>',
+                    unsafe_allow_html=True,
+                )
+                render_card_grid(saved_recs, show_sim=False, tab="personal_saved")
 
 # ══════════════════════════════ PAGE: КАТАЛОГ ════════════════════════════════
 
 elif _page == "catalog":
-    if _back_btn("catalog"):
-        st.session_state.cat_section = "all"
-        st.session_state.cat_chip    = None
-        st.rerun()
-
     st.markdown("""
     <div class="page-header">
       <div class="page-header-title">Каталог IT-курсов</div>
@@ -1997,27 +2009,26 @@ elif _page == "catalog":
     </div>
     """, unsafe_allow_html=True)
 
-    # Единый фильтр
     _ALL_OPTS   = ["Бесплатные", "Топ рейтинг", "Популярные", "На русском", "На английском", "Udemy", "Coursera", "Stepik", "OpenEdu"]
     _OPT_TO_VAL = {
         "Бесплатные":"free","Топ рейтинг":"rating","Популярные":"popularity","На русском":"ru","На английском":"en",
         "Udemy":"udemy","Coursera":"coursera","Stepik":"stepik","OpenEdu":"openedu",
     }
     _VAL_TO_OPT = {v: k for k, v in _OPT_TO_VAL.items()}
-    _cur_opt    = _VAL_TO_OPT.get(st.session_state.cat_chip)
-    _sel_opt    = st.segmented_control(
-        "Фильтр", options=_ALL_OPTS,
-        default=_cur_opt,
-        label_visibility="collapsed",
-        key="cat_seg",
-    )
-    _sel_val = _OPT_TO_VAL.get(_sel_opt)
-    if _sel_val != st.session_state.cat_chip:
-        st.session_state.cat_chip    = _sel_val
-        st.session_state.cat_section = "all"
-        st.rerun()
+    if st.session_state.cat_section == "all":
+        _cur_opt    = _VAL_TO_OPT.get(st.session_state.cat_chip)
+        _sel_opt    = st.segmented_control(
+            "Фильтр", options=_ALL_OPTS,
+            default=_cur_opt,
+            label_visibility="collapsed",
+            key="cat_seg",
+        )
+        _sel_val = _OPT_TO_VAL.get(_sel_opt)
+        if _sel_val != st.session_state.cat_chip:
+            st.session_state.cat_chip    = _sel_val
+            st.session_state.cat_section = "all"
+            st.rerun()
 
-    # Применяем фильтр
     cat_df = df.copy()
     chip = st.session_state.cat_chip
     if chip == "free":
@@ -2035,33 +2046,67 @@ elif _page == "catalog":
     else:
         cat_df = cat_df.sort_values("hybrid_score", ascending=False)
 
-    # Счётчик результатов
     if chip:
         st.markdown(
             f'<div class="cat-count-badge">Найдено {len(cat_df):,} курсов — {_VAL_TO_OPT.get(chip, chip)}</div>',
             unsafe_allow_html=True,
         )
 
-    sections = sorted(df["category"].dropna().unique().tolist())
+    _CATEGORY_ORDER = [
+        # IT / Dev — по количеству курсов
+        "Data Science / ML / AI",
+        "General IT / Computer Science",
+        "Git / GitHub",
+        "Python",
+        "DevOps / Cloud",
+        "Programming",
+        "Frontend / JavaScript",
+        "Fullstack",
+        "SQL",
+        "Excel",
+        "Java / Kotlin",
+        "Go / Golang",
+        "C++",
+        "C#",
+        "UI/UX Design",
+        "Cybersecurity / Ethical Hacking",
+        "Mobile Development",
+        "Testing / QA",
+        "Иностранные языки",
+        # Бизнес / Остальное
+        "Business & Management",
+        "Finance",
+        "Marketing",
+        "Project Management",
+        "Other",
+    ]
+    _existing = set(df["category"].dropna().unique())
+    sections = [c for c in _CATEGORY_ORDER if c in _existing]
+    # Добавляем категории которых нет в списке (на случай новых)
+    for c in sorted(_existing):
+        if c not in sections:
+            sections.append(c)
     active_sec = st.session_state.cat_section
 
     if active_sec == "all":
-        # Netflix-режим: строки по категориям
         for sec in sections:
-            if sec in ("Other", "Другое / Не определено", "Programming / Other"):
+            if sec in ("Other", "Другое / Не определено"):
                 continue
             sec_data = cat_df[cat_df["category"] == sec]
             if not sec_data.empty:
                 render_catalog_section(sec, sec_data, sec)
+        # Other — всегда последним
+        other_data = cat_df[cat_df["category"] == "Other"]
+        if not other_data.empty:
+            render_catalog_section("Other", other_data, "Other")
     else:
-        # Режим раздела: сетка 4 колонки
         c_back, _ = st.columns([2, 8])
         with c_back:
             if st.button("← Все разделы", type="secondary", key="cat_back"):
                 st.session_state.cat_section = "all"
                 st.rerun()
 
-        sec_data = cat_df[cat_df["category"] == active_sec]
+        sec_data = cat_df[cat_df["category"] == active_sec].sort_values("hybrid_score", ascending=False)
         n = len(sec_data)
         st.markdown(
             f'<div class="section-header">{active_sec}'
@@ -2071,13 +2116,39 @@ elif _page == "catalog":
         if sec_data.empty:
             st.info("Нет курсов по выбранным фильтрам.")
         else:
-            items = list(sec_data.iterrows())
+            _PAGE_SIZE = 48
+            _page_key  = f"cat_page_{active_sec}"
+            if _page_key not in st.session_state:
+                st.session_state[_page_key] = 0
+            _cur_page  = st.session_state[_page_key]
+            _total     = len(sec_data)
+            _total_pages = (_total - 1) // _PAGE_SIZE + 1
+            items = list(sec_data.iloc[_cur_page * _PAGE_SIZE : (_cur_page + 1) * _PAGE_SIZE].iterrows())
             for row_i in range(0, len(items), 4):
                 cols = st.columns(4, gap="medium")
                 for ci, (_, row) in enumerate(items[row_i: row_i + 4]):
                     with cols[ci]:
-                        render_compact_card(row, f"sec_{active_sec}_{row_i + ci}")
+                        render_compact_card(row, f"sec_{active_sec}_{_cur_page}_{row_i + ci}")
                 st.write("")
+            if _total_pages > 1:
+                st.markdown('<div class="pagination-row">', unsafe_allow_html=True)
+                p_cols = st.columns([1, 2, 1])
+                with p_cols[0]:
+                    if st.button("← Назад", key=f"cat_prev_{active_sec}",
+                                 disabled=(_cur_page == 0),
+                                 use_container_width=True):
+                        st.session_state[_page_key] -= 1; st.rerun()
+                with p_cols[1]:
+                    st.markdown(
+                        f'<div style="text-align:center;color:#94a3b8;padding-top:10px;font-size:0.85rem">'
+                        f'Страница {_cur_page+1} из {_total_pages}</div>',
+                        unsafe_allow_html=True)
+                with p_cols[2]:
+                    if st.button("Вперёд →", key=f"cat_next_{active_sec}",
+                                 disabled=(_cur_page >= _total_pages - 1),
+                                 use_container_width=True):
+                        st.session_state[_page_key] += 1; st.rerun()
+                st.markdown('</div>', unsafe_allow_html=True)
 
 # ══════════════════════════ PAGE: МОЁ ════════════════════════════════════════
 
@@ -2106,7 +2177,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
         else:
             _ml_df = pd.DataFrame(_ml_saved)
 
-            # Кнопки-фильтр по статусу
             _ml_started_titles = {s.get("title") for s in _my_profile.get_started()}
             if "ml_status_sel" not in st.session_state:
                 st.session_state["ml_status_sel"] = "Все"
@@ -2118,7 +2188,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
                     st.rerun()
             _ml_status = st.session_state["ml_status_sel"]
 
-            # Поиск + фильтры
             _ml_s1, _ml_s2, _ml_s3, _ml_s4 = st.columns([3, 1.5, 1.5, 1.5])
             _ml_query = _ml_s1.text_input("Поиск", placeholder="Найти курс...", label_visibility="collapsed", key="ml_search")
             _ml_src_opts = ["Все"] + sorted({c.get("source","").capitalize() for c in _ml_saved if c.get("source")})
@@ -2128,7 +2197,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
             _ml_sort_opts = ["По дате", "По рейтингу", "По цене"]
             _ml_sort = _ml_s4.selectbox("Сортировка", _ml_sort_opts, label_visibility="collapsed", key="ml_sort")
 
-            # Применяем фильтры
             _ml_filtered = _ml_saved
             if _ml_status == "Начатые":
                 _ml_filtered = [c for c in _ml_filtered if c.get("title") in _ml_started_titles]
@@ -2149,7 +2217,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
             elif _ml_sort == "По цене":
                 _ml_filtered = sorted(_ml_filtered, key=lambda x: float(x.get("price",0) or 0))
 
-            # Счётчик
             st.markdown(f"""
             <div style="display:flex;align-items:center;gap:10px;margin:8px 0 4px">
               <span style="font-size:0.72rem;color:#475569;background:rgba(255,255,255,0.06);
@@ -2176,7 +2243,9 @@ elif _page in ("my", "mylist", "started", "myratings"):
                             _sv_lang = _svi.get("language","—")
                             _sv_r    = float(_svi.get("weighted_rating",0) or 0)
                             _sv_free = int(_svi.get("is_free",0) or 0)
-                            _sv_p    = float(_svi.get("price",0) or 0)
+                            _sv_p_raw = _svi.get("price_raw", _svi.get("price", 0))
+                            try: _sv_p = float(_sv_p_raw or 0)
+                            except (ValueError, TypeError): _sv_p = 0.0
                             _sv_lang_str = "RU" if _sv_lang=="ru" else ("EN" if _sv_lang=="en" else _sv_lang.upper())
                             _sv_diff_ru  = {"Beginner":"Нач","Intermediate":"Средн","Advanced":"Проф"}.get(_sv_diff, "")
                             _sv_tag = " · ".join(filter(None, [_sv_src.capitalize(), _sv_lang_str, _sv_diff_ru]))
@@ -2255,7 +2324,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
             for _s in _st_list:
                 _cnt[_s.get("progress", 0)] += 1
 
-            # Счётчики
             st.markdown(f"""
             <div style="display:flex;gap:10px;margin:16px 0 22px">
               <div style="flex:1;padding:14px 18px;border:1px solid rgba(124,107,255,0.2);
@@ -2275,7 +2343,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
               </div>
             </div>""", unsafe_allow_html=True)
 
-            # Фильтр по статусу + поиск + сортировка
             if "st_status_sel" not in st.session_state:
                 st.session_state["st_status_sel"] = "Все"
             _sb1, _sb2, _sb3, _sb4 = st.columns(4)
@@ -2292,7 +2359,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
             _st_period = _st_fc2.selectbox("Период", ["За всё время", "За неделю", "За месяц"], label_visibility="collapsed", key="st_period")
             _st_sort = _st_fc3.selectbox("Сортировка", ["По дате", "По прогрессу", "По названию А-Я"], label_visibility="collapsed", key="st_sort")
 
-            # Применяем фильтры
             from datetime import datetime, timedelta
             _now = datetime.now()
             _st_filtered = _st_list
@@ -2420,7 +2486,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
                 st.session_state["_active_tab"] = "started"
                 st.rerun()
         else:
-            # Счётчики
             st.markdown(f"""
             <div style="display:flex;gap:10px;margin:16px 0 22px">
               <div style="flex:1;padding:14px 18px;border:1px solid rgba(124,107,255,0.4);
@@ -2435,7 +2500,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
               </div>
             </div>""", unsafe_allow_html=True)
 
-            # Блок: ожидают оценки
             if _unrated:
                 for _uc in _unrated:
                     _uc_t   = _uc.get("title", "—")
@@ -2469,7 +2533,7 @@ elif _page in ("my", "mylist", "started", "myratings"):
                             st.session_state[_pkey] = _fb + 1
                     with _uc3:
                         st.markdown('<div style="height:8px"></div>', unsafe_allow_html=True)
-                        if st.button("Сохранить", key=f"save_{_uch}", use_container_width=True, disabled=_pending == 0):
+                        if st.button("Сохранить", key=f"save_{_uch}", use_container_width=True, disabled=st.session_state.get(_pkey, 0) == 0):
                             _my_profile.add_rating(_uc_t, _pending, _uc_url, _uc.get("source", ""))
                             gam.add_xp(USER_ID, "set_goal")
                             st.session_state[_pkey] = 0
@@ -2477,7 +2541,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
                             st.toast(f"Оценка {'★' * _pending} сохранена!")
                             st.rerun()
                     st.markdown('<div style="height:8px"></div>', unsafe_allow_html=True)
-            # Разделитель
             if _unrated and _rated_list:
                 st.markdown("""
                 <div style="display:flex;align-items:center;gap:12px;margin:18px 0 14px">
@@ -2486,7 +2549,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
                   <div style="flex:1;height:1px;background:rgba(255,255,255,0.06)"></div>
                 </div>""", unsafe_allow_html=True)
 
-            # Блок: уже оценённые
             if _rated_list:
                 for _rr in _rated_list:
                     _rr_t   = _rr.get("title", "—")
@@ -2526,7 +2588,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
                                 st.session_state[_rr_edit_key] = False
                                 st.rerun()
                     else:
-                        # Режим просмотра
                         _rr_lnk = f'<a href="{_rr_url}" target="_blank" style="color:#4b5563;text-decoration:line-through;text-decoration-color:#374151">{_rr_t}</a>' if _rr_url else f'<span style="color:#4b5563;text-decoration:line-through;text-decoration-color:#374151">{_rr_t}</span>'
                         _rv1, _rv2 = st.columns([9, 1.2])
                         with _rv1:
@@ -2561,8 +2622,6 @@ elif _page in ("my", "mylist", "started", "myratings"):
 # ══════════════════════════════ PAGE: ДАТАСЕТ ════════════════════════════════
 
 elif _page == "stats":
-    if _back_btn("stats"):
-        st.rerun()
 
     st.markdown(f"""
     <div class="page-header">
@@ -2654,6 +2713,13 @@ elif _page == "stats":
         st.altair_chart(_bar(pop_counts, angle=-20), use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
+    # ── Языки программирования ───────────────────────────────────────────────
+    prog_counts = df["programming_language"].value_counts().head(15).rename("Курсов")
+    if not prog_counts.empty:
+        st.markdown('<div class="chart-panel" style="margin-top:16px"><div class="chart-panel-title">Топ-15 языков программирования</div>', unsafe_allow_html=True)
+        st.altair_chart(_bar(prog_counts, h=240, angle=-30), use_container_width=True)
+        st.markdown('</div>', unsafe_allow_html=True)
+
     # ── Топ-12 категорий (без Other) ──────────────────────────────────────────
     st.markdown('<div class="chart-panel" style="margin-top:16px"><div class="chart-panel-title">Топ-12 категорий</div>', unsafe_allow_html=True)
     top_cat_clean = (
@@ -2686,8 +2752,6 @@ elif _page == "stats":
 # ══════════════════════════════ PAGE: ОЦЕНКА ═════════════════════════════════
 
 elif _page == "eval":
-    if _back_btn("eval"):
-        st.rerun()
 
     st.markdown(f"""
     <div class="page-header">
@@ -2801,7 +2865,6 @@ elif _page == "eval":
             </div>
             """, unsafe_allow_html=True)
 
-            # Экспорт
             csv = df_res.to_csv(index=False).encode("utf-8")
             st.download_button(
                 "Скачать результаты CSV",
@@ -2814,8 +2877,6 @@ elif _page == "eval":
 
 
 elif _page == "about":
-    if _back_btn("about"):
-        st.rerun()
 
     st.markdown("""
     <div class="page-header">

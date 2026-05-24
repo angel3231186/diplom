@@ -9,8 +9,6 @@ from sklearn.neighbors import NearestNeighbors
 
 from personalization import profile_manager, personalize_scores
 
-# CONFIG
-
 DATA_PATH = "final_dataset_ready.xlsx"
 MODEL_DIR = "model"
 
@@ -27,21 +25,14 @@ def _get_model():
         _model_instance = SentenceTransformer("paraphrase-multilingual-mpnet-base-v2")
     return _model_instance
 
+# Веса итогового скора: 75% — семантическое сходство с запросом, 25% — качество курса
 W_SIMILARITY         = 0.75
 W_QUALITY            = 0.25
-SIMILARITY_THRESHOLD = 0.20
-EXACT_LANG_SIM       = 0.85
-FAKE_RATING          = 3.72
-
-# МАППИНГ ЗАПРОС -> способ поиска
-
-# Три типа:
-#   "pl"       — по колонке programming_language
-#   "category" — по колонке category
-#   "title"    — по подстроке в title (для языков/инструментов без разметки)
+SIMILARITY_THRESHOLD = 0.20   # порог отсечения нерелевантных результатов KNN
+EXACT_LANG_SIM       = 0.85   # similarity для точного совпадения по языку программирования
+FAKE_RATING          = 3.72   # средний рейтинг-заглушка у курсов без реальных оценок
 
 LANG_QUERY_MAP = {
-    # ── Языки с programming_language в датасете ──────────────────────────────
     "python":          {"type": "pl", "values": ["Python"],       "confirm": r"\bpython\b|питон|пайтон"},
     "java":            {"type": "pl", "values": ["Java"],         "confirm": r"\bjava\b", "exclude": r"javascript|node\.js|react\b|angular\b|vue\b"},
     "javascript":      {"type": "pl", "values": ["JavaScript"],   "confirm": r"\bjavascript\b|джаваскрипт|яваскрипт"},
@@ -81,7 +72,6 @@ LANG_QUERY_MAP = {
     "game":            {"type": "pl", "values": ["Game Design"],  "confirm": r"\bgame\b|игр"},
     "gamedev":         {"type": "pl", "values": ["Game Design"],  "confirm": r"\bgame\b|игр|геймдев"},
     "геймдев":         {"type": "pl", "values": ["Game Design"],  "confirm": r"\bgame\b|игр|геймдев"},
-    # ── Инструменты/фреймворки — ищем по title ───────────────────────────────
     "kotlin":          {"type": "title", "pattern": r"\bkotlin\b|котлин"},
     "swift":           {"type": "title", "pattern": r"\bswift\b"},
     "rust":            {"type": "title", "pattern": r"\brust\b|язык rust"},
@@ -106,10 +96,6 @@ LANG_QUERY_MAP = {
 
 
 def get_lang_candidates(query: str, normalized: str, df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Гибридный канал поиска по языку/инструменту.
-    Три стратегии: programming_language, category, title.
-    """
     matched_lang = None
     for q in [query.lower().strip(), normalized.lower().strip()]:
         if q in LANG_QUERY_MAP:
@@ -122,7 +108,6 @@ def get_lang_candidates(query: str, normalized: str, df: pd.DataFrame) -> pd.Dat
     cfg = LANG_QUERY_MAP[matched_lang]
     search_type = cfg["type"]
 
-    # ── Выборка по типу поиска ─────────────────────────────────────
     if search_type == "pl":
         if "programming_language" not in df.columns:
             return pd.DataFrame()
@@ -164,7 +149,6 @@ def get_lang_candidates(query: str, normalized: str, df: pd.DataFrame) -> pd.Dat
     if result.empty:
         return pd.DataFrame()
 
-    # Сортируем: сначала курсы с реальным рейтингом, потом по hybrid_score
     result = result.copy()
     result["_has_real"] = ~(
         (result["rating"].round(2) == FAKE_RATING) &
@@ -173,7 +157,6 @@ def get_lang_candidates(query: str, normalized: str, df: pd.DataFrame) -> pd.Dat
 
     _lang_word = matched_lang.lower()
     _title_lower = result["title"].str.lower().fillna("")
-    # Вторичные курсы: язык идёт после темы через предлог ("X в Python", "X на Python", "X с Python")
     _sec = rf"\b(?:в|на|с|и|для|с помощью|using|with|in|and|for)\s+{re.escape(_lang_word)}\b"
     _is_secondary = _title_lower.str.contains(_sec, regex=True, na=False)
     result["_primary"] = (~_is_secondary).astype(int)
@@ -182,15 +165,11 @@ def get_lang_candidates(query: str, normalized: str, df: pd.DataFrame) -> pd.Dat
         ["_primary", "_has_real", "hybrid_score"],
         ascending=[False, False, False]
     )
-    # Первичные курсы получают высокий similarity, вторичные — низкий.
-    # Это сохраняет порядок после пересортировки по personal_score в recommend().
     result["similarity"] = result["_primary"].apply(
         lambda p: EXACT_LANG_SIM if p == 1 else EXACT_LANG_SIM * 0.55
     )
     result = result.drop(columns=["_has_real", "_primary"])
     return result
-
-# СИНОНИМЫ ДЛЯ ОБОГАЩЕНИЯ ТЕКСТА КУРСА
 
 TECH_SYNONYMS = {
     r"java(?!script|fx|ee|se|me)": "java programming джава",
@@ -240,15 +219,18 @@ TECH_SYNONYMS = {
 }
 
 def enrich_text(text: str) -> str:
+    # Расширяем текст синонимами: "python" → добавляем "питон pandas sklearn",
+    # чтобы русскоязычные запросы находили англоязычные курсы и наоборот.
     extras = []
     for pattern, expansion in TECH_SYNONYMS.items():
         if re.search(pattern, text, re.IGNORECASE):
             extras.append(expansion)
     return (text + " " + " ".join(extras)).strip() if extras else text
 
-# TEXT BUILD
 
 def build_text(row):
+    # Поля повторяются для повышения их веса в векторном пространстве эмбеддингов:
+    # язык программирования ×5, название и навыки ×3, описание ×1
     pl_val    = row.get("programming_language")
     prog_lang = str(pl_val) if (pl_val and pd.notna(pl_val)) else ""
     base = " ".join([
@@ -260,7 +242,6 @@ def build_text(row):
     ])
     return enrich_text(base)
 
-# LOAD DATA
 
 def load_data(path):
     df = pd.read_excel(path)
@@ -272,26 +253,40 @@ def load_data(path):
     df["_text"]          = df.apply(build_text, axis=1)
     return df
 
-# BAYES SCORE
 
 def fix_categories(df: "pd.DataFrame") -> "pd.DataFrame":
-    """
-    Исправляет ошибки в категоризации — курсы попавшие в неправильную категорию.
-    Применяет keyword-правила по title к категориям и top_category.
-    """
     rules = [
-        # (паттерн в title, новая category, новая top_category)
-        (r"html|css|верстк|web.{0,5}tech|web-технолог|bootstrap",   "Frontend / JavaScript", "Programming"),
+        (r"html|css|верстк|вёрстк|web.{0,5}tech|web-технолог|bootstrap", "Frontend / JavaScript", "Programming"),
         (r"react|vue[.]js|angular|next[.]js|svelte|webpack|frontend","Frontend / JavaScript", "Programming"),
         (r"javascript|typescript|node[.]js|express[.]js",            "Frontend / JavaScript", "Programming"),
         (r"android|kotlin|swift|ios dev|flutter|react native",       "Mobile Development",    "Mobile Development"),
         (r"photoshop|illustrator|figma|ui.{0,3}ux|ux.{0,3}design|graphic design", "UI/UX Design", "Design"),
-        (r"excel|word|powerpoint|microsoft office|google sheets",    "General IT / Computer Science", "General IT"),
+        (r"excel|\bmicrosoft word\b|powerpoint|microsoft office|google sheets", "Excel", "General IT"),
         (r"marketing|smm|seo|tiktok|instagram|реклам|таргет|crm",   "Business / Management / Soft Skills", "Management"),
         (r"project manag|scrum|agile|jira|управление проект",        "Project Management",    "Management"),
+        (r"\bmysql\b|\bpostgresql\b|\bpostgres\b|\bsqlite\b|\bсубд\b|\bms access\b|sqlalchemy|проектирование.{0,20}баз.{0,20}данных|разработк.{0,20}баз.{0,20}данных|pl.{0,3}pgsql", "SQL", "General IT"),
+        (r"golang|\bgo\b.{0,10}(lang|программ|разработ|курс|основ)|thank go|задачи.{0,10}golang", "Go / Golang", "Programming"),
+        (r"иностранн|китайский|японский|корейский|французский|немецкий|испанский|итальянский|английский.{0,20}(язык|для|уровень|начинающ|продолжающ)|математический английский|chinese language|japanese language|korean language|french language|german language|spanish language|hsk\b|jlpt\b|topik\b", "Иностранные языки", "Other"),
+        (r"веб.{0,10}проект|web.{0,10}проект|веб-проект|сайт.{0,10}(html|css|bootstrap|верстк)|вводный курс.{0,20}веб|веб.{0,20}разработ", "Frontend / JavaScript", "Programming"),
+        (r"c\+\+|c/c\+\+|cpp\b|работа с массивами на с\b|простые задачки по си\b|программирование на с[.]|многопоточн.{0,20}c", "C++", "Programming"),
+        (r"\bc#\b|csharp|pro c#|\basp\.net\b|\b\.net\b|язык.{0,10}c#|задачник.{0,20}c#", "C#", "Programming"),
+        (r"\bdjango\b|\bflask\b|\bfastapi\b",                         "Python",                "Programming"),
+        (r"\bjava\b(?!script)",                                        "Java / Kotlin",         "Programming"),
+        (r"jetpack compose|android studio",                           "Mobile Development",    "Mobile Development"),
+        (r"\b1с\b|\b1c\b|1с.{0,10}программ|программ.{0,10}1с",      "Other",                 "Other"),
+        (r"\bgit\b|\bgithub\b|\bgitlab\b",                           "Git / GitHub",          "General IT"),
+        # Исправляем курсы где Git — второстепенная тема
+        (r"gitlab.{0,10}ci\b|github.{0,10}actions|gitlab.{0,10}pipeline", "DevOps / Cloud", "DevOps / Cloud"),
+        (r"\bpython\b.{0,60}\bgit\b|\bgit\b.{0,60}\bpython\b",     "Python",                "Programming"),
+        (r"(javascript|frontend|верстальщик|верстк).{0,60}\bgit\b|\bgit\b.{0,60}(javascript|frontend|верстальщик|верстк)", "Frontend / JavaScript", "Programming"),
+        (r"(\b1с\b|\b1c\b).{0,60}\bgit\b|\bgit\b.{0,60}(\b1с\b|\b1c\b)", "Other",          "Other"),
+        (r"pro c#.{0,30}git|c#.{0,60}\bgit\b|\bgit\b.{0,60}c#",    "C#",                   "Programming"),
         (r"docker|kubernetes|devops|linux|nginx|ansible|terraform",  "DevOps / Cloud",        "DevOps / Cloud"),
         (r"cybersecur|pentest|kali|hacking|информацион.{0,10}безопасн", "Cybersecurity / Ethical Hacking", "Security"),
         (r"autocad|3d model|blender|solidworks|revit| cad ",         "Design",                "Design"),
+        (r"\bэкологи\b|экология|оцифровк.{0,30}историч|историч.{0,30}оцифровк|ветеринар", "Other", "Other"),
+        (r"компьютерное зрение.{0,30}робот|робот.{0,30}компьютерное зрение", "Data Science / ML / AI", "Data Science / ML / AI"),
+        (r"fullstack|full.stack|full-stack|фулстак|фул.стак",              "Fullstack",             "Programming"),
         # DS/ML курсы которые ошибочно помечены как Programming
         (r"machine learning|deep learning|neural network|data science|искусственный интеллект|нейронн|машинн.{0,5}обуч|reinforcement learning|computer vision|natural language processing|nlp|генеративн|large language model|llm|tensorflow|pytorch|scikit.learn|keras", "Data Science / ML / AI", "Data Science / ML / AI"),
     ]
@@ -302,10 +297,17 @@ def fix_categories(df: "pd.DataFrame") -> "pd.DataFrame":
         mask = title_lower.str.contains(pattern, regex=True, na=False)
         df.loc[mask, "category"]     = new_cat
         df.loc[mask, "top_category"] = new_top
+    # Объединяем дублирующиеся бизнес-категории
+    _merge = {"Business", "Management", "Soft Skills", "Business / Management / Soft Skills"}
+    df.loc[df["category"].isin(_merge), "category"]     = "Business & Management"
+    df.loc[df["category"] == "Business & Management", "top_category"] = "Management"
     return df
 
 
 def add_bayes(df):
+    # Байесовский взвешенный рейтинг: (n·R + m·C) / (n + m)
+    # n — число студентов, R — рейтинг курса, C — средний рейтинг по всей выборке,
+    # m = 20 — сглаживающая константа (штрафует курсы с малым числом отзывов)
     df = fix_categories(df)
     C = df["rating"].mean()
     m = 20
@@ -314,10 +316,12 @@ def add_bayes(df):
     pop = np.log1p(df["students_count"])
     df["popularity_norm"] = pop / pop.max()
 
+    # Курсы без реальных отзывов (рейтинг-заглушка 3.72) получают штраф ×0.5
     has_real_rating = ~(
         (df["rating"].round(2) == FAKE_RATING) &
         (df["reviews_count"] == 0)
     )
+    # Stepik и Udemy дают небольшой бонус (+0.05): там рейтинги верифицированы студентами
     source_bonus = df["source"].map(
         {"stepik": 0.05, "udemy": 0.05, "coursera": 0.0, "openedu": 0.0}
     ).fillna(0.0)
@@ -327,9 +331,10 @@ def add_bayes(df):
     )
     return df
 
-# EMBEDDINGS
 
 def build_embeddings(df):
+    # normalize_embeddings=True → все векторы на единичной сфере,
+    # косинусное расстояние сводится к скалярному произведению (быстрее).
     return np.array(_get_model().encode(
         df["_text"].tolist(),
         show_progress_bar=True,
@@ -337,7 +342,6 @@ def build_embeddings(df):
         normalize_embeddings=True
     ))
 
-# LOAD / BUILD MODEL
 
 def get_model(df, force_rebuild=False):
     if force_rebuild:
@@ -364,9 +368,11 @@ def get_model(df, force_rebuild=False):
     print("✅ Эмбеддинги сохранены в кэш")
     return embeddings, knn, df
 
-# MMR
 
 def mmr_rerank(df, embeddings, lambda_param=0.7, top_k=5):
+    # MMR (Maximal Marginal Relevance) — балансирует релевантность и разнообразие результатов.
+    # λ=0.7: каждый следующий курс максимизирует 0.7·релевантность − 0.3·сходство_с_уже_выбранными.
+    # Это предотвращает показ дублирующих курсов по одной теме.
     selected  = []
     remaining = df.copy()
     df_indices = df.index.to_list()
@@ -390,8 +396,6 @@ def mmr_rerank(df, embeddings, lambda_param=0.7, top_k=5):
         remaining = remaining.drop(best_idx)
 
     return df.loc[selected]
-
-# СИНОНИМЫ ЗАПРОСА
 
 QUERY_SYNONYMS = {
     "пайтон": "python", "пйтон": "python", "питон": "python",
@@ -459,13 +463,15 @@ QUERY_SYNONYMS = {
 }
 
 def normalize_query(query: str) -> str:
+    # Переводит русскоязычный запрос в технические термины:
+    # "пайтон машинное обучение" → "python machine learning".
+    # Сортируем по длине чтобы длинные фразы заменялись раньше коротких подстрок.
     q = query.lower().strip()
     q = re.sub(r"[^\w\s+#.]", " ", q)
     for ru, en in sorted(QUERY_SYNONYMS.items(), key=lambda x: -len(x[0])):
         q = re.sub(rf"\b{re.escape(ru)}\b", en, q)
     return re.sub(r"\s+", " ", q).strip()
 
-# ОБЪЯСНЕНИЕ
 
 def explain(row) -> str:
     parts = []
@@ -491,7 +497,6 @@ def explain(row) -> str:
 
     return "  ·  ".join(parts) if parts else "—"
 
-# МЕТРИКИ
 
 def precision_at_k(recommended, relevant, k):
     return len(set(recommended[:k]) & set(relevant)) / k
@@ -508,7 +513,6 @@ def ndcg_at_k(recommended, relevant, k):
     ideal = dcg_at_k(relevant, relevant, k)
     return dcg / ideal if ideal > 0 else 0
 
-# ОСНОВНАЯ ФУНКЦИЯ
 
 def recommend(
     query:        str,
@@ -524,25 +528,30 @@ def recommend(
     min_rating:   float = 0.0,
     sort_by:      str   = "relevance",
 ) -> pd.DataFrame:
+    # Пайплайн рекомендаций (5 шагов):
+    # 1. normalize_query — транслитерация + синонимы (RU→EN терминология)
+    # 2. KNN-поиск по косинусному расстоянию в пространстве эмбеддингов (top-200)
+    # 3. Точный поиск по языку программирования (get_lang_candidates) + слияние с KNN
+    # 4. Фильтрация по параметрам пользователя, подсчёт final_score = 0.75·sim + 0.25·quality
+    # 5. MMR-переранжирование для разнообразия → возврат top_k результатов
 
     if not query.strip():
         return pd.DataFrame({"Сообщение": ["Введите запрос"]})
 
     normalized = normalize_query(query)
 
-    # ── 1. KNN-поиск ───────────────────────────────────────────────
     user_vec = _get_model().encode([normalized], normalize_embeddings=True)
     n_neighbors = min(200, len(df))
     distances, indices = knn.kneighbors(user_vec, n_neighbors=n_neighbors)
 
     knn_cands = df.iloc[indices[0]].copy()
-    knn_cands["similarity"] = 1 - distances[0]
+    knn_cands["similarity"] = 1 - distances[0]  # косинусное расстояние → сходство
     knn_cands = knn_cands[knn_cands["similarity"] >= SIMILARITY_THRESHOLD]
 
-    # ── 2. Точный поиск по языку/инструменту ──────────────────────
+    # Точный поиск по языку программирования добавляется поверх KNN:
+    # KNN может пропустить курс если его эмбеддинг далеко от запроса, но язык совпадает точно.
     lang_cands = get_lang_candidates(query, normalized, df)
 
-    # ── 3. Объединяем ─────────────────────────────────────────────
     if not lang_cands.empty:
         candidates = pd.concat([lang_cands, knn_cands])
         candidates = candidates[~candidates.index.duplicated(keep="first")]
@@ -551,8 +560,6 @@ def recommend(
 
     if candidates.empty:
         return pd.DataFrame({"Сообщение": ["Ничего не нашлось — попробуй переформулировать запрос"]})
-
-    # ══ ФИЛЬТРЫ ═══════════════════════════════════════════════════
 
     if language != "all":
         candidates = candidates[candidates["language"] == language]
@@ -591,20 +598,20 @@ def recommend(
 
     candidates = candidates.copy()
 
-    # ── Скоринг ────────────────────────────────────────────────────
+    # Итоговый скор: 75% семантическое сходство с запросом + 25% качество курса
     candidates["final_score"] = (
         W_SIMILARITY * candidates["similarity"] +
         W_QUALITY    * candidates["hybrid_score"]
     )
 
-    # ── Персонализация ─────────────────────────────────────────────
+    # Персонализация: поднимаем курсы по тематикам которые пользователь лайкал,
+    # опускаем то что он уже видел или пометил "не интересно".
     profile = profile_manager.get(user_id)
     if profile:
         candidates = personalize_scores(candidates, profile)
     else:
         candidates["personal_score"] = candidates["final_score"]
 
-    # ── Сортировка ─────────────────────────────────────────────────
     if sort_by == "rating":
         candidates = candidates.sort_values("weighted_rating", ascending=False)
     elif sort_by == "popularity":
@@ -614,7 +621,8 @@ def recommend(
 
     candidates = candidates.head(max(top_k * 5, 20))
 
-    # ── MMR ────────────────────────────────────────────────────────
+    # При коротком запросе (≤2 слов) MMR чуть консервативнее (λ=0.80) —
+    # запрос размытый, лучше держаться ближе к релевантности.
     query_words  = len(normalized.split())
     lambda_param = 0.80 if query_words <= 2 else 0.70
     candidates   = mmr_rerank(candidates, embeddings, lambda_param=lambda_param, top_k=top_k)
@@ -630,7 +638,6 @@ def recommend(
     cols = [c for c in cols if c in candidates.columns]
     return candidates[cols].reset_index(drop=True)
 
-# ИНТЕРФЕЙС
 
 def print_results(recs: pd.DataFrame, show_url: bool = True):
     if "Сообщение" in recs.columns:
@@ -814,8 +821,6 @@ def interactive():
             for _, row in recs.iterrows():
                 profile_manager.track_view(USER_ID, row.to_dict())
 
-
-# MAIN
 
 if __name__ == "__main__":
     df = load_data(DATA_PATH)

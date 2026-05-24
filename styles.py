@@ -1,7 +1,3 @@
-"""
-Общие стили для всех страниц приложения CourseFind.
-"""
-
 import streamlit as st
 
 
@@ -810,6 +806,8 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
     max-height: 150px;
     overflow: hidden;
     flex: none;
+    display: flex;
+    flex-direction: column;
 }
 .course-tag-new {
     font-size: 0.7rem;
@@ -833,6 +831,7 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 .course-title-new a { text-decoration: none; color: inherit; }
 .course-title-new a:hover { color: #a594ff; }
 .course-meta-new {
+    margin-top: auto;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1445,7 +1444,483 @@ div:has(.cc-btns) ~ div [data-testid="stHorizontalBlock"] [data-testid="baseButt
     transform: translateY(-1px) !important;
 }
 
+
 </style>
 """, unsafe_allow_html=True)
+
+    # chat widget вызывается отдельно через inject_chat_widget()
+
+
+def inject_chat_widget(user_id="default"):
+    """Плавающий ИИ-чат — вызывать только после авторизации."""
+    import streamlit.components.v1 as _components
+    _html = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background: transparent; overflow: hidden; }
+</style>
+</head>
+<body>
+<script>
+var p = window.parent.document;
+
+function inject() {
+  var existingFab = p.getElementById('ai-fab');
+  if (existingFab) {
+    if (existingFab.dataset.uid === '__USER_ID__') return;
+    // Сменился пользователь — убираем старый виджет
+    existingFab.remove();
+    var old;
+    old = p.getElementById('ai-panel');   if (old) old.remove();
+    old = p.getElementById('ai-chat-styles'); if (old) old.remove();
+  }
+
+  // Стили
+  var style = p.createElement('style');
+  style.id = 'ai-chat-styles';
+  style.textContent = `
+    #ai-fab {
+      position: fixed; bottom: 28px; right: 28px;
+      width: 62px; height: 62px; border-radius: 50%;
+      background: linear-gradient(145deg, #8b7aff, #6c5ce7);
+      box-shadow: 0 4px 24px rgba(108,92,231,0.6), 0 0 0 3px rgba(255,255,255,0.08);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; z-index: 99999;
+      transition: transform 0.2s, box-shadow 0.2s;
+      user-select: none;
+    }
+    #ai-fab:hover { transform: scale(1.08); box-shadow: 0 6px 32px rgba(108,92,231,0.8); }
+    #ai-panel {
+      position: fixed; bottom: 100px; right: 28px;
+      width: 340px; max-height: 480px;
+      background: #13131f; border-radius: 16px;
+      border: 1px solid rgba(124,107,255,0.35);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.55);
+      display: none; flex-direction: column; z-index: 99998;
+      overflow: hidden; font-family: Inter, sans-serif;
+    }
+    #ai-panel.open { display: flex; }
+    #ai-panel-header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 14px 10px; border-bottom: 1px solid rgba(255,255,255,0.07);
+      color: #f1f5f9; font-weight: 600; font-size: 0.88rem;
+    }
+    #ai-panel-header a { font-size: 0.72rem; color: #7c6bff; text-decoration: none; }
+    #ai-clear { font-size: 0.68rem; color: #55556a; cursor: pointer; background: none; border: none; padding: 0; margin-left: 8px; }
+    #ai-clear:hover { color: #a78bfa; }
+    #ai-messages {
+      overflow-y: auto; padding: 12px;
+      display: flex; flex-direction: column; gap: 10px;
+      min-height: 200px; max-height: 320px;
+    }
+    .ai-msg { display: flex; gap: 8px; align-items: flex-start; }
+    .ai-msg.user { flex-direction: row-reverse; }
+    .ai-bubble {
+      max-width: 80%; padding: 8px 12px; border-radius: 12px;
+      font-size: 0.82rem; line-height: 1.45; color: #e2e8f0;
+      background: rgba(255,255,255,0.06);
+    }
+    .ai-msg.user .ai-bubble { background: rgba(124,107,255,0.25); }
+    .ai-avatar { font-size: 1.1rem; margin-top: 2px; flex-shrink: 0; }
+    #ai-typing { color: #7c6bff; font-size: 0.78rem; padding: 4px 12px; display: none; }
+    .ai-course-cards { display: flex; flex-direction: column; gap: 6px; padding: 4px 12px; width: 100%; box-sizing: border-box; }
+    .ai-course-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px; padding: 8px 10px;
+      box-sizing: border-box; width: 100%;
+    }
+    .ai-course-card-title {
+      color: #e2e8f0; font-weight: 600;
+      margin-bottom: 3px; font-size: 0.78rem;
+      line-height: 1.3;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .ai-course-card-meta {
+      color: #64748b; font-size: 0.7rem; margin-bottom: 7px;
+    }
+    .ai-course-card-btns { display: flex; gap: 5px; }
+    .ai-btn-start {
+      flex: 1; background: #7c6bff; border: none;
+      border-radius: 6px; color: #fff; font-size: 0.7rem;
+      padding: 5px 8px; cursor: pointer; font-family: inherit; font-weight: 600;
+    }
+    .ai-btn-save {
+      background: transparent; border: 1px solid rgba(255,255,255,0.13);
+      border-radius: 6px; color: #64748b; font-size: 0.7rem;
+      padding: 5px 8px; cursor: pointer; font-family: inherit;
+    }
+    .ai-btn-start:hover { background: #6a5aef; }
+    .ai-btn-save:hover  { color: #94a3b8; }
+    .ai-btn-start:disabled, .ai-btn-save:disabled { opacity: 0.45; cursor: default; }
+    .ai-btn-similar {
+      display: inline-flex; align-items: center;
+      background: rgba(124,107,255,0.25);
+      border: 1px solid rgba(124,107,255,0.45); border-radius: 20px;
+      color: #c4b5fd; font-size: 0.76rem; padding: 6px 14px;
+      cursor: pointer; font-family: inherit; font-weight: 600;
+    }
+    #ai-input-row {
+      display: flex; gap: 8px; padding: 10px 12px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+    #ai-input {
+      flex: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px; color: #f1f5f9; font-size: 0.82rem;
+      padding: 7px 10px; outline: none; font-family: inherit;
+    }
+    #ai-input:focus { border-color: rgba(124,107,255,0.5); }
+    #ai-send {
+      background: linear-gradient(135deg, #7c6bff, #a78bfa);
+      border: none; border-radius: 8px; color: #fff;
+      padding: 7px 12px; cursor: pointer; font-size: 0.9rem;
+    }
+    #ai-send:disabled { opacity: 0.5; }
+  `;
+  p.head.appendChild(style);
+
+  // Кнопка
+  var fab = p.createElement('div');
+  fab.id = 'ai-fab';
+  fab.innerHTML = `<svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="16" y1="3" x2="16" y2="8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="16" cy="2.5" r="2" fill="white"/>
+    <rect x="5" y="8" width="22" height="16" rx="5" fill="white" fill-opacity="0.95"/>
+    <circle cx="11" cy="15" r="3" fill="#6c5ce7"/>
+    <circle cx="21" cy="15" r="3" fill="#6c5ce7"/>
+    <circle cx="12" cy="14" r="1" fill="white"/>
+    <circle cx="22" cy="14" r="1" fill="white"/>
+    <rect x="11" y="20" width="10" height="2" rx="1" fill="#6c5ce7" fill-opacity="0.6"/>
+  </svg>`;
+  fab.onclick = togglePanel;
+  fab.dataset.uid = '__USER_ID__';
+  p.body.appendChild(fab);
+
+  // Панель
+  var panel = p.createElement('div');
+  panel.id = 'ai-panel';
+  panel.innerHTML = `
+    <div id="ai-panel-header">
+      <span>🤖 ИИ Помощник</span>
+      <span style="display:flex;align-items:center;gap:6px">
+        <button id="ai-clear" title="Очистить историю">🗑</button>
+      </span>
+    </div>
+    <div id="ai-messages">
+      <div class="ai-msg bot"><span class="ai-avatar">🤖</span><div class="ai-bubble">Привет! Что хочешь изучить?</div></div>
+    </div>
+    <div id="ai-typing">Печатает...</div>
+    <div id="ai-input-row">
+      <input id="ai-input" placeholder="Спроси меня..."/>
+      <button id="ai-send">➤</button>
+    </div>
+  `;
+  p.body.appendChild(panel);
+
+  // Восстановить историю
+  var HIST_URL = 'http://localhost:11435';
+  var USER_ID = '__USER_ID__';
+  var history = [];
+  fetch(HIST_URL + '?user=' + USER_ID).then(function(r){ return r.json(); }).then(function(saved){
+    if (saved && saved.length) {
+      history = saved;
+      var msgs = p.getElementById('ai-messages');
+      msgs.innerHTML = '';
+      history.forEach(function(m) { appendBubble(m.role, m.content); });
+    }
+  }).catch(function(){});
+  // Загружаем уже начатые курсы пользователя чтобы не рекомендовать их снова
+  fetch(HIST_URL + '/started?user=' + USER_ID).then(function(r){ return r.json(); }).then(function(started){
+    if (started && started.length) {
+      started.forEach(function(s){ _startedSet.add(s.url || s.title); });
+    }
+  }).catch(function(){});
+
+  p.getElementById('ai-input').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') sendAI();
+  });
+  p.getElementById('ai-send').addEventListener('click', sendAI);
+  p.getElementById('ai-clear').addEventListener('click', function() {
+    history = [];
+    fetch(HIST_URL + '?user=' + USER_ID, {method:'POST', headers:{'Content-Type':'application/json'}, body:'[]'}).catch(function(){});
+    var msgs = p.getElementById('ai-messages');
+    msgs.innerHTML = '<div class="ai-msg bot"><span class="ai-avatar">🤖</span><div class="ai-bubble">Привет! Что хочешь изучить?</div></div>';
+  });
+
+  function togglePanel() {
+    var panel = p.getElementById('ai-panel');
+    panel.classList.toggle('open');
+  }
+
+  function stripMd(text) {
+    return text
+      .replace(/[*][*](.+?)[*][*]/g, '$1')
+      .replace(/[*](.+?)[*]/g, '$1')
+      .replace(/^#{1,6}\s+/gm, '')
+      .replace(/^\s*[*\-•]\s+/gm, '— ')
+      .replace(/`(.+?)`/g, '$1')
+      .trim();
+  }
+
+  function appendBubble(role, text) {
+    var msgs = p.getElementById('ai-messages');
+    var div = p.createElement('div');
+    div.className = 'ai-msg ' + (role === 'user' ? 'user' : 'bot');
+    var clean = role === 'assistant' ? stripMd(text) : text;
+    div.innerHTML = '<span class="ai-avatar">' + (role === 'user' ? '👤' : '🤖') + '</span>' +
+                    '<div class="ai-bubble">' + clean.replace(/</g,'&lt;') + '</div>';
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+
+  var _startedSet = new Set();
+  var _savedSet   = new Set();
+
+  function appendCourseCards(courses, planMode) {
+    var msgs = p.getElementById('ai-messages');
+    var wrap = p.createElement('div');
+    wrap.className = 'ai-course-cards';
+    courses.forEach(function(c, idx) {
+      var key = c.url || c.title;
+      var card = p.createElement('div');
+      card.className = 'ai-course-card';
+      var dayLabel = planMode ? '<div style="font-size:0.7rem;font-weight:700;color:#a78bfa;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">День ' + (idx+1) + '</div>' : '';
+      var meta = c.platform + (c.level ? ' · ' + c.level : '') + ' · ' + c.price;
+      card.innerHTML =
+        dayLabel +
+        '<div class="ai-course-card-title">' + c.title.replace(/</g,'&lt;') + '</div>' +
+        '<div class="ai-course-card-meta">' + meta + '</div>' +
+        '<div class="ai-course-card-btns">' +
+          '<button class="ai-btn-start">▶ Начать курс</button>' +
+          '<button class="ai-btn-save">Сохранить</button>' +
+        '</div>';
+      var btnStart = card.querySelector('.ai-btn-start');
+      var btnSave  = card.querySelector('.ai-btn-save');
+      if (_startedSet.has(key)) { btnStart.disabled = true; btnStart.textContent = '✓ Добавлено'; }
+      if (_savedSet.has(key))   { btnSave.disabled  = true; btnSave.textContent  = '✓ Сохранено'; }
+      btnStart.addEventListener('click', function() {
+        _startedSet.add(key);
+        btnStart.disabled = true; btnStart.textContent = '✓ Добавлено';
+        fetch(HIST_URL + '/start?user=' + USER_ID, {
+          method: 'POST', headers: {'Content-Type':'application/json'},
+          body: JSON.stringify(c)
+        }).catch(function(){});
+        // Уведомление в чате с предложением похожих курсов
+        var msgs = p.getElementById('ai-messages');
+        var suggDiv = p.createElement('div');
+        suggDiv.style.cssText = 'padding: 4px 12px 10px 12px; width: 100%; box-sizing: border-box;';
+        suggDiv.innerHTML = '<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:10px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;">' +
+          '<span style="color:#94a3b8;font-size:0.75rem;line-height:1.35;">Курс добавлен в <b style=\"color:#e2e8f0\">Мой прогресс</b>.<br>Хочешь найти похожие?</span>' +
+          '<button class="ai-btn-similar" style="flex-shrink:0;">Похожие</button>' +
+          '</div>';
+        var suggBtn = suggDiv.querySelector('.ai-btn-similar');
+        suggBtn.addEventListener('click', async function() {
+          suggDiv.remove();
+          var skipKey = c.url || c.title;
+          // Извлекаем ключевые слова из названия (убираем короткие и стоп-слова)
+          var SKIP_W = ['для','по','как','что','это','или','введение','основы','основ','курс','stepik','udemy','coursera','openedu','начинающих','начинающий','новичков','профессионал','продвинутый','средний','бесплатно','платный','часть','модуль','уровень','практика','теория','полный','обучение','изучение','программирование'];
+          var words = c.title.toLowerCase().split(/[\s\-:,()«»"]+/);
+          // Приоритет: ASCII технические слова (javascript, python, sql...) → потом длинные русские
+          var asciiWords = words.filter(function(w){ return w.length > 2 && w === w.replace(/[^a-z0-9]/g,'') && SKIP_W.indexOf(w) < 0; });
+          var rusWords = words.filter(function(w){ return w.length > 4 && SKIP_W.indexOf(w) < 0 && w !== w.replace(/[^a-z0-9]/g,''); });
+          var bestWord = asciiWords.sort(function(a,b){ return b.length - a.length; })[0] || rusWords.sort(function(a,b){ return b.length - a.length; })[0] || '';
+          var searchQ = bestWord || c.category || '';
+          var found = [];
+          try {
+            var r = await fetch(HIST_URL + '/search?q=' + encodeURIComponent(searchQ) + '&n=10');
+            found = await r.json();
+          } catch(e) {}
+          var similarCount = Math.floor(Math.random() * 3) + 1;
+          var notStartedSimilar = found.filter(function(x){ return (x.url || x.title) !== skipKey && !_startedSet.has(x.url || x.title); });
+          var filtered = (notStartedSimilar.length > 0 ? notStartedSimilar : found.filter(function(x){ return (x.url || x.title) !== skipKey; })).slice(0, similarCount);
+          if (filtered.length > 0) {
+            appendBubble('user', 'Найди похожие курсы');
+            appendBubble('assistant', 'Смотри, вот похожие варианты!');
+            appendCourseCards(filtered);
+          } else {
+            appendBubble('assistant', 'Похожих курсов по этой теме не нашлось. Попробуй написать запрос вручную.');
+          }
+          p.getElementById('ai-messages').scrollTop = 99999;
+        });
+        msgs.appendChild(suggDiv);
+        msgs.scrollTop = 99999;
+      });
+      btnSave.addEventListener('click', function() {
+        _savedSet.add(key);
+        btnSave.disabled = true; btnSave.textContent = '✓ Сохранено';
+        fetch(HIST_URL + '/save?user=' + USER_ID, {
+          method: 'POST', headers: {'Content-Type':'application/json'},
+          body: JSON.stringify(c)
+        }).catch(function(){});
+      });
+      wrap.appendChild(card);
+    });
+    msgs.appendChild(wrap);
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+
+  var BASE_SYSTEM = 'Ты — дружелюбный и мотивирующий ИИ-помощник платформы CourseFind. Общайся с пользователем на "вы". CourseFind — веб-приложение для поиска IT-курсов (Stepik, Udemy, Coursera, OpenEdu, 7600+ курсов).' +
+    ' Разделы сайта: Главная — курс дня и персональные рекомендации; Каталог — все курсы по категориям с фильтрами (цена, уровень, язык, платформа); Мои курсы — начатые, сохранённые и завершённые курсы; Мои оценки — оценка пройденных курсов звёздочками (1-5); Профиль — XP, уровень, достижения, еженедельные задания, стрик; Настройки — смена никнейма (раз в 14 дней), пароля, цели обучения и интересов.' +
+    ' Как пользоваться чатом: напишите тему и я найду курсы (например "покажи курсы по Python"), или попросите план ("составь план по Java на 5 дней"), или задайте любой вопрос про обучение.' +
+    ' XP и уровни: за действия начисляется XP. Уровни: Новичок (0) → Студент (500) → Знаток (1200) → Практик (2500) → Эксперт (4500) → Профессионал (7500) → Мастер (11000) → Гуру (16000) → Элита (22000) → Легенда (30000 XP).' +
+    ' Стрик — количество дней подряд, когда вы заходили на сайт. Чем длиннее стрик, тем ближе к достижениям 🔥⚡💎.' +
+    ' Достижения (всегда пиши полное название и иконку): 🔍 Первопроходец — первый поиск; 🔥 3 дня подряд — стрик 3 дня; ⚡ Неделя! — стрик 7 дней; 💎 Месяц! — стрик 30 дней; 🚀 Поехали! — начни 1 курс; 📚 Книжный червь — начни 5 курсов; 🎓 Выпускник — заверши курс; ⭐ 100 XP; 🌟 500 XP; 💫 2000 XP; 🔮 7000 XP; 👑 20000 XP; 🌠 45000 XP; 🧭 Исследователь — 10 поисков; 🎯 С целью! — укажи цель; 📅 По расписанию — открой курс дня; 🌍 Исследователь миров — начни курсы в 3 направлениях; 📆 Активная неделя — 3 курса за неделю; 🏆 Чемпион недели — 5 курсов за неделю; 🔖 Коллекционер — сохрани 10 курсов.' +
+    ' Еженедельные задания (сбрасываются каждую неделю): открой 3 курса (80 XP), открой 5 курсов (150 XP), заходи 5 дней подряд (100 XP), сохрани 3 курса (50 XP).' +
+    ' Если спрашивают с чего начать тему — дай план из 2-4 шагов в правильном порядке. Когда хотят изучить что-то — поддержи и дай развёрнутый совет. Отвечай тепло, на русском. СТРОГО без markdown — никаких [текст](ссылка), никаких звёздочек, никаких решёток. Пиши обычным текстом. Не называй конкретные курсы — они показываются карточками автоматически. Не рекомендуй сторонние сайты.';
+
+  async function sendAI() {
+    var inp = p.getElementById('ai-input');
+    var text = inp.value.trim();
+    if (!text) return;
+    inp.value = '';
+    p.getElementById('ai-send').disabled = true;
+    history.push({role: 'user', content: text});
+    appendBubble('user', text);
+    // Быстрый ответ на приветствия — без вызова AI
+    var GREETINGS = ['привет','хай','хей','hello','hi','здравствуй','здравствуйте','добрый день','добрый вечер','доброе утро','салам','сәлем'];
+    var tLow = text.toLowerCase().trim().replace(/[!?.]+$/, '');
+    if (GREETINGS.indexOf(tLow) >= 0) {
+      var greetReply = 'Привет! Чем могу помочь? Могу найти курсы по любой IT-теме.';
+      history.push({role: 'assistant', content: greetReply});
+      appendBubble('assistant', greetReply);
+      fetch(HIST_URL + '?user=' + USER_ID, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(history.slice(-20))}).catch(function(){});
+      p.getElementById('ai-send').disabled = false;
+      return;
+    }
+    p.getElementById('ai-typing').style.display = 'block';
+    var selectedCourses = [];
+    var foundCourses = null;
+    // Определяем сколько курсов хочет пользователь
+    function parseCount(t) {
+      var m = t.match(/(\d+)/);
+      if (m) return Math.min(parseInt(m[1]), 10);
+      var words = {'один':1,'одну':1,'одного':1,'два':2,'две':2,'три':3,'четыре':4,'пять':5,'шесть':6,'семь':7,'восемь':8,'девять':9,'десять':10};
+      var tl = t.toLowerCase();
+      for (var w in words) { if (tl.indexOf(w) >= 0) return words[w]; }
+      return 3;
+    }
+    var wantCount = parseCount(text);
+    // Проверяем есть ли смысл искать курсы
+    var hasSearchIntent = (function() {
+      var tl = text.toLowerCase();
+      var STRONG = ['найди','покажи','подбери','посовет','порекоменд','рекоменд','составь','распредели','разбей'];
+      if (STRONG.some(function(s){ return tl.indexOf(s) >= 0; })) return true;
+      if (tl.indexOf('курс') >= 0) return true;
+      var POP = ['популярн','топ','лучши','рейтинг','что нибудь','что-нибудь'];
+      if (POP.some(function(s){ return tl.indexOf(s) >= 0; })) return true;
+      return false;
+    })();
+    try {
+      // Шаг 1: ищем курсы ДО запроса к ИИ
+      var systemContent = BASE_SYSTEM;
+      if (!hasSearchIntent) { systemContent += ' Пользователь просто общается — НЕ упоминай IT, курсы или обучение. Отвечай коротко только на то, что написал пользователь. Не используй слова "подобрал", "нашёл варианты", "вот что я нашёл", "отличный выбор".'; }
+      try {
+        if (!hasSearchIntent) { throw new Error('no intent'); }
+        // Проверяем что в запросе есть хоть одно осмысленное слово (не стоп-слова и не короткие)
+        var ACTION_WORDS = ['найди','найти','покажи','подбери','посоветуй','порекомендуй','покажите','дай','хочу','нужен','нужна','нужно','еще','ещё','больше','другой','другие','другое','снова','опять','тоже','также','давай','помоги','помогите','подскажи','подскажите','выбери','выбрать','посмотри','начать','начни','изучить','изучай','учить','учиться','хочется','хотел','хотела','пожалуйста'];
+        var POPULAR_SIGNALS = ['популярн','топ','лучши','рейтинг','самое популярное','самый популярный','что-нибудь интересное','что нибудь'];
+        var tl2 = text.toLowerCase();
+        var isPopular = POPULAR_SIGNALS.some(function(s){ return tl2.indexOf(s) >= 0; });
+        var VAGUE_WORDS = ['что','нибудь','интересное','интересный','интересных','популярное','популярный','любое','любой','чего','него','мне','для','все','всё','самое','самый','курс','курсы','курса','один','два','три','четыре','пять','шесть','семь','восемь','девять','десять','какой','какая','какие','какое','который','которая','знаю','знаешь','выбор','вообще','просто','очень','немного'];
+        var queryWords = text.toLowerCase().split(/\s+/).filter(function(w){ return w.length > 2 && ACTION_WORDS.indexOf(w) < 0 && VAGUE_WORDS.indexOf(w) < 0; });
+        // Если тема не указана — ищем в истории последнего пользователя
+        var searchQuery = text;
+        if (!isPopular && queryWords.length === 0) {
+          var prevTopics = [];
+          for (var hi = history.length - 2; hi >= 0 && prevTopics.length === 0; hi--) {
+            if (history[hi].role === 'user') {
+              var prevWords = history[hi].content.toLowerCase().split(/\s+/).filter(function(w){ return w.length > 2 && ACTION_WORDS.indexOf(w) < 0 && VAGUE_WORDS.indexOf(w) < 0; });
+              if (prevWords.length > 0) prevTopics = prevWords;
+            }
+          }
+          if (prevTopics.length > 0) {
+            searchQuery = prevTopics.join(' ');
+          } else {
+            isPopular = true; // нет темы — покажем популярное
+          }
+        }
+        var PLAN_WORDS_CHECK = ['план','дней','неделю','недель','недели','расписание','распредели','составь','разбей','по дням'];
+        var isPlanReq = PLAN_WORDS_CHECK.some(function(s){ return text.toLowerCase().indexOf(s) >= 0; });
+        var fetchCount = Math.min(wantCount + _startedSet.size + 10, 20);
+        var searchResp = isPopular
+          ? await fetch(HIST_URL + '/popular?n=' + fetchCount)
+          : await fetch(HIST_URL + '/search?q=' + encodeURIComponent(searchQuery) + '&n=' + fetchCount);
+        foundCourses = await searchResp.json();
+        if (foundCourses && foundCourses.length > 0) {
+          var diffOrder = {'Beginner':0,'Начинающий':0,'Intermediate':1,'Средний':1,'Advanced':2,'Продвинутый':2,'':3};
+          var sortedCourses = isPlanReq
+            ? foundCourses.slice().sort(function(a,b){
+                var da = diffOrder[a.difficulty] !== undefined ? diffOrder[a.difficulty] : (diffOrder[a.level] !== undefined ? diffOrder[a.level] : 3);
+                var db = diffOrder[b.difficulty] !== undefined ? diffOrder[b.difficulty] : (diffOrder[b.level] !== undefined ? diffOrder[b.level] : 3);
+                return da - db;
+              })
+            : foundCourses;
+          var notStarted = sortedCourses.filter(function(x){ return !_startedSet.has(x.url || x.title); });
+          selectedCourses = (notStarted.length > 0 ? notStarted : sortedCourses).slice(0, wantCount);
+          if (!isPlanReq) {
+            systemContent += ' Напиши ОДНУ короткую фразу (1 предложение): скажи что подобрал курсы и предлагаешь посмотреть. ЗАПРЕЩЕНО называть конкретные названия курсов — карточки с курсами уже показаны отдельно.';
+          }
+        } else {
+          systemContent += ' Курсы по этой теме не найдены. Скажи об этом и предложи уточнить запрос.';
+        }
+      } catch(se) {
+        if (se.message !== 'no intent' && se.message !== 'vague') throw se;
+      }
+
+      // Для плана — генерируем текст сами, без ИИ
+      if (isPlanReq && selectedCourses.length > 0) {
+        var n = wantCount; var dayWord = (n % 10 === 1 && n % 100 !== 11) ? 'день' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) ? 'дня' : 'дней';
+        var planAnswer = 'Вот план обучения на ' + n + ' ' + dayWord + ' — курсы подобраны от простого к сложному. Каждый день — один курс!';
+        history.push({role:'assistant', content: planAnswer});
+        fetch(HIST_URL + '?user=' + USER_ID, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(history.slice(-20))}).catch(function(){});
+        appendBubble('assistant', planAnswer);
+        appendCourseCards(selectedCourses, true);
+        p.getElementById('ai-typing').style.display = 'none';
+        p.getElementById('ai-send').disabled = false;
+        return;
+      }
+
+      var msgs = [{role:'system', content: systemContent}].concat(history);
+      var resp = await fetch('http://localhost:11434/api/chat', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({model:'gemma3:4b', messages: msgs, stream: false})
+      });
+      var data = await resp.json();
+      var answer = data.message ? data.message.content : 'Ошибка ответа.';
+      // Убираем markdown-ссылки которые модель генерирует вопреки инструкции
+      answer = answer.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+      // Убираем жирный текст и заголовки
+      answer = answer.replace(/\*\*([^*]+)\*\*/g, '$1').replace(/^#+\s*/gm, '');
+      history.push({role:'assistant', content: answer});
+      fetch(HIST_URL + '?user=' + USER_ID, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(history.slice(-20))}).catch(function(){});
+      appendBubble('assistant', answer);
+      // Шаг 2: показываем карточку курса который мы сами выбрали — гарантированно правильный
+      if (selectedCourses.length > 0) {
+        appendCourseCards(selectedCourses);
+      } else if (foundCourses && foundCourses.length > 0) {
+        appendBubble('assistant', 'Все подходящие курсы по этой теме уже есть у тебя в прогрессе! Попробуй другую тему.');
+      }
+    } catch(e) {
+      appendBubble('assistant', 'Ошибка: убедись что Ollama запущена (ollama serve).');
+    }
+    p.getElementById('ai-typing').style.display = 'none';
+    p.getElementById('ai-send').disabled = false;
+  }
+}
+
+// Запустить после загрузки страницы
+if (p.readyState === 'complete') { inject(); }
+else { p.addEventListener('DOMContentLoaded', inject); setTimeout(inject, 500); }
+setTimeout(inject, 1000);
+</script>
+</body>
+</html>
+""".replace("__USER_ID__", str(user_id))
+    _components.html(_html, height=0, scrolling=False)
 
 

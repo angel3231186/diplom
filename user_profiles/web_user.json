@@ -1,0 +1,1855 @@
+{
+  "user_id": "web_user",
+  "created_at": "2026-03-30T00:24:39.252769",
+  "views": [
+    {
+      "title": "Основы Python для исследований и анализа данных",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.077634"
+    },
+    {
+      "title": "\"Поколение Python\": курс для профессионалов",
+      "category": "Programming / Python",
+      "difficulty": "Advanced",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.081995"
+    },
+    {
+      "title": "Python - Модуль 4 (ООП) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.085606"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.088791"
+    },
+    {
+      "title": "Selenium на Python за 3 часа — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.092269"
+    },
+    {
+      "title": "Python Exclusive — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.095858"
+    },
+    {
+      "title": "Асинхронноcть, многопоточность и многопроцессность в Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.099059"
+    },
+    {
+      "title": "109 задач по python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.102712"
+    },
+    {
+      "title": "Лучший по Python. Часть 3",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.106869"
+    },
+    {
+      "title": "Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.110464"
+    },
+    {
+      "title": "\"Поколение Python\": ООП",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.114231"
+    },
+    {
+      "title": "Лучший по Python. Часть 4 — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.118524"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.121370"
+    },
+    {
+      "title": "Python - Модуль 3 (Библиотеки и файлы)",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.123842"
+    },
+    {
+      "title": "Многопоточное и многопроцессное программирование в Python",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.126712"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.129258"
+    },
+    {
+      "title": "\"Поколение Python\": профи + ООП — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.133562"
+    },
+    {
+      "title": "PROкод: курс по ООП на Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.136853"
+    },
+    {
+      "title": "Асинхронность в Python: от новичка до эксперта",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.140761"
+    },
+    {
+      "title": "Junior FullStack Developer: Python+JavaScript (быстрый курс) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:11.143465"
+    },
+    {
+      "title": "Основы Python для исследований и анализа данных",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.662399"
+    },
+    {
+      "title": "\"Поколение Python\": курс для профессионалов",
+      "category": "Programming / Python",
+      "difficulty": "Advanced",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.667425"
+    },
+    {
+      "title": "Python - Модуль 4 (ООП) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.671320"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.674635"
+    },
+    {
+      "title": "Selenium на Python за 3 часа — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.678548"
+    },
+    {
+      "title": "Python Exclusive — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.682688"
+    },
+    {
+      "title": "Асинхронноcть, многопоточность и многопроцессность в Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.686480"
+    },
+    {
+      "title": "109 задач по python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.690397"
+    },
+    {
+      "title": "Лучший по Python. Часть 3",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.695028"
+    },
+    {
+      "title": "Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.700527"
+    },
+    {
+      "title": "\"Поколение Python\": ООП",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.704528"
+    },
+    {
+      "title": "Лучший по Python. Часть 4 — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.707322"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.709979"
+    },
+    {
+      "title": "Python - Модуль 3 (Библиотеки и файлы)",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.712525"
+    },
+    {
+      "title": "Многопоточное и многопроцессное программирование в Python",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.715383"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.718457"
+    },
+    {
+      "title": "\"Поколение Python\": профи + ООП — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.722332"
+    },
+    {
+      "title": "PROкод: курс по ООП на Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.725058"
+    },
+    {
+      "title": "Асинхронность в Python: от новичка до эксперта",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.727817"
+    },
+    {
+      "title": "Junior FullStack Developer: Python+JavaScript (быстрый курс) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.730459"
+    },
+    {
+      "title": "Основы Python для исследований и анализа данных",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.867508"
+    },
+    {
+      "title": "\"Поколение Python\": курс для профессионалов",
+      "category": "Programming / Python",
+      "difficulty": "Advanced",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.871782"
+    },
+    {
+      "title": "Python - Модуль 4 (ООП) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.876076"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.879303"
+    },
+    {
+      "title": "Selenium на Python за 3 часа — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.882276"
+    },
+    {
+      "title": "Python Exclusive — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.886061"
+    },
+    {
+      "title": "Асинхронноcть, многопоточность и многопроцессность в Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.889340"
+    },
+    {
+      "title": "109 задач по python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.891727"
+    },
+    {
+      "title": "Лучший по Python. Часть 3",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.894613"
+    },
+    {
+      "title": "Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.897654"
+    },
+    {
+      "title": "\"Поколение Python\": ООП",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.902074"
+    },
+    {
+      "title": "Лучший по Python. Часть 4 — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.905336"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.908348"
+    },
+    {
+      "title": "Python - Модуль 3 (Библиотеки и файлы)",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.910981"
+    },
+    {
+      "title": "Многопоточное и многопроцессное программирование в Python",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.913591"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.916004"
+    },
+    {
+      "title": "\"Поколение Python\": профи + ООП — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.918937"
+    },
+    {
+      "title": "PROкод: курс по ООП на Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.921756"
+    },
+    {
+      "title": "Асинхронность в Python: от новичка до эксперта",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.924735"
+    },
+    {
+      "title": "Junior FullStack Developer: Python+JavaScript (быстрый курс) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:42.927928"
+    },
+    {
+      "title": "Основы Python для исследований и анализа данных",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.246376"
+    },
+    {
+      "title": "\"Поколение Python\": курс для профессионалов",
+      "category": "Programming / Python",
+      "difficulty": "Advanced",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.251649"
+    },
+    {
+      "title": "Python - Модуль 4 (ООП) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.255219"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.258491"
+    },
+    {
+      "title": "Selenium на Python за 3 часа — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.262397"
+    },
+    {
+      "title": "Python Exclusive — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.265756"
+    },
+    {
+      "title": "Асинхронноcть, многопоточность и многопроцессность в Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.268906"
+    },
+    {
+      "title": "109 задач по python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.272976"
+    },
+    {
+      "title": "Лучший по Python. Часть 3",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.277181"
+    },
+    {
+      "title": "Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.280890"
+    },
+    {
+      "title": "\"Поколение Python\": ООП",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.284664"
+    },
+    {
+      "title": "Лучший по Python. Часть 4 — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.287701"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.291174"
+    },
+    {
+      "title": "Python - Модуль 3 (Библиотеки и файлы)",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.294104"
+    },
+    {
+      "title": "Многопоточное и многопроцессное программирование в Python",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.297478"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.300999"
+    },
+    {
+      "title": "\"Поколение Python\": профи + ООП — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.304476"
+    },
+    {
+      "title": "PROкод: курс по ООП на Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.307121"
+    },
+    {
+      "title": "Асинхронность в Python: от новичка до эксперта",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.309559"
+    },
+    {
+      "title": "Junior FullStack Developer: Python+JavaScript (быстрый курс) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.312328"
+    },
+    {
+      "title": "Основы Python для исследований и анализа данных",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.449199"
+    },
+    {
+      "title": "\"Поколение Python\": курс для профессионалов",
+      "category": "Programming / Python",
+      "difficulty": "Advanced",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.452731"
+    },
+    {
+      "title": "Python - Модуль 4 (ООП) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.455650"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.458475"
+    },
+    {
+      "title": "Selenium на Python за 3 часа — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.461264"
+    },
+    {
+      "title": "Python Exclusive — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.464164"
+    },
+    {
+      "title": "Асинхронноcть, многопоточность и многопроцессность в Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.467885"
+    },
+    {
+      "title": "109 задач по python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.471801"
+    },
+    {
+      "title": "Лучший по Python. Часть 3",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.475787"
+    },
+    {
+      "title": "Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.480547"
+    },
+    {
+      "title": "\"Поколение Python\": ООП",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.484056"
+    },
+    {
+      "title": "Лучший по Python. Часть 4 — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.487296"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.490551"
+    },
+    {
+      "title": "Python - Модуль 3 (Библиотеки и файлы)",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.493067"
+    },
+    {
+      "title": "Многопоточное и многопроцессное программирование в Python",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.495595"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.497890"
+    },
+    {
+      "title": "\"Поколение Python\": профи + ООП — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.500343"
+    },
+    {
+      "title": "PROкод: курс по ООП на Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.502657"
+    },
+    {
+      "title": "Асинхронность в Python: от новичка до эксперта",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.505074"
+    },
+    {
+      "title": "Junior FullStack Developer: Python+JavaScript (быстрый курс) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:51:47.507182"
+    },
+    {
+      "title": "Основы Python для исследований и анализа данных",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.453920"
+    },
+    {
+      "title": "\"Поколение Python\": курс для профессионалов",
+      "category": "Programming / Python",
+      "difficulty": "Advanced",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.459064"
+    },
+    {
+      "title": "Python - Модуль 4 (ООП) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.466973"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.471032"
+    },
+    {
+      "title": "Selenium на Python за 3 часа — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.474780"
+    },
+    {
+      "title": "Python Exclusive — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.478196"
+    },
+    {
+      "title": "Асинхронноcть, многопоточность и многопроцессность в Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.482015"
+    },
+    {
+      "title": "109 задач по python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.486627"
+    },
+    {
+      "title": "Лучший по Python. Часть 3",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.490675"
+    },
+    {
+      "title": "Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.493533"
+    },
+    {
+      "title": "\"Поколение Python\": ООП",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.496299"
+    },
+    {
+      "title": "Лучший по Python. Часть 4 — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.498638"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.501218"
+    },
+    {
+      "title": "Python - Модуль 3 (Библиотеки и файлы)",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.503657"
+    },
+    {
+      "title": "Многопоточное и многопроцессное программирование в Python",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.506748"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.509758"
+    },
+    {
+      "title": "\"Поколение Python\": профи + ООП — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.512172"
+    },
+    {
+      "title": "PROкод: курс по ООП на Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.514281"
+    },
+    {
+      "title": "Асинхронность в Python: от новичка до эксперта",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.517697"
+    },
+    {
+      "title": "Junior FullStack Developer: Python+JavaScript (быстрый курс) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:49.520013"
+    },
+    {
+      "title": "Основы Python для исследований и анализа данных",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.341622"
+    },
+    {
+      "title": "\"Поколение Python\": курс для профессионалов",
+      "category": "Programming / Python",
+      "difficulty": "Advanced",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.345743"
+    },
+    {
+      "title": "Python - Модуль 4 (ООП) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.349373"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.352651"
+    },
+    {
+      "title": "Selenium на Python за 3 часа — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.355775"
+    },
+    {
+      "title": "Python Exclusive — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.358688"
+    },
+    {
+      "title": "Асинхронноcть, многопоточность и многопроцессность в Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.363351"
+    },
+    {
+      "title": "109 задач по python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.366460"
+    },
+    {
+      "title": "Лучший по Python. Часть 3",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.369472"
+    },
+    {
+      "title": "Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.372060"
+    },
+    {
+      "title": "\"Поколение Python\": ООП",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.374788"
+    },
+    {
+      "title": "Лучший по Python. Часть 4 — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.377176"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.379724"
+    },
+    {
+      "title": "Python - Модуль 3 (Библиотеки и файлы)",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.382084"
+    },
+    {
+      "title": "Многопоточное и многопроцессное программирование в Python",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.384900"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.387665"
+    },
+    {
+      "title": "\"Поколение Python\": профи + ООП — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.390511"
+    },
+    {
+      "title": "PROкод: курс по ООП на Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.392841"
+    },
+    {
+      "title": "Асинхронность в Python: от новичка до эксперта",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.395289"
+    },
+    {
+      "title": "Junior FullStack Developer: Python+JavaScript (быстрый курс) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:53.397585"
+    },
+    {
+      "title": "Легкий старт в Java. Вводный курс для чайников",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.686634"
+    },
+    {
+      "title": "Java ♨ разработчик (курс для новичков с постепенным наполнением)",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.688900"
+    },
+    {
+      "title": "Java Тренажер",
+      "category": "Cybersecurity / Ethical Hacking",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.691562"
+    },
+    {
+      "title": "Java - проект Apple Warehouse — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.693805"
+    },
+    {
+      "title": "Космическая Java с Артуром Вартаняном",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.696341"
+    },
+    {
+      "title": "Введение в Java для QA Auto",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.698929"
+    },
+    {
+      "title": "DevClub: Java для детей (+ графика на Swing/JavaFX) [> 60 задач] — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.703231"
+    },
+    {
+      "title": "Основы Java",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.705863"
+    },
+    {
+      "title": "Middle Java Developer для МТС Банк",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.708676"
+    },
+    {
+      "title": "Основы объектно-ориентированного программирования на Java",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.710897"
+    },
+    {
+      "title": "Android-разработка: базовый курс — основы Java",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.713279"
+    },
+    {
+      "title": "Java - проект Geometry Shapes — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.715477"
+    },
+    {
+      "title": "Intro to Programming in Python then Java using Media Computation — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.717670"
+    },
+    {
+      "title": "PRO JAVA. Основы программирования — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.719949"
+    },
+    {
+      "title": "Разработка мобильных приложений под Android на Java",
+      "category": "Cybersecurity / Ethical Hacking",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.722220"
+    },
+    {
+      "title": "Виртуальная Стажировка Java (с нуля до Junior Developer)",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.724728"
+    },
+    {
+      "title": "Java для начинающих (Курс на ранней стадии создания) — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.727346"
+    },
+    {
+      "title": "Java. Базовый курс — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.729705"
+    },
+    {
+      "title": "Java Часть 3 (Наследование, Полиморфизм и Enum) — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.732082"
+    },
+    {
+      "title": "Java Часть 1 (Базовая работа со встроенными конструкциями)",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:53:55.734342"
+    },
+    {
+      "title": "Легкий старт в Java. Вводный курс для чайников",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.735930"
+    },
+    {
+      "title": "Java ♨ разработчик (курс для новичков с постепенным наполнением)",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.739876"
+    },
+    {
+      "title": "Java Тренажер",
+      "category": "Cybersecurity / Ethical Hacking",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.743277"
+    },
+    {
+      "title": "Java - проект Apple Warehouse — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.746354"
+    },
+    {
+      "title": "Космическая Java с Артуром Вартаняном",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.749254"
+    },
+    {
+      "title": "Введение в Java для QA Auto",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.751859"
+    },
+    {
+      "title": "DevClub: Java для детей (+ графика на Swing/JavaFX) [> 60 задач] — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.754961"
+    },
+    {
+      "title": "Основы Java",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.759340"
+    },
+    {
+      "title": "Middle Java Developer для МТС Банк",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.764204"
+    },
+    {
+      "title": "Основы объектно-ориентированного программирования на Java",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.768033"
+    },
+    {
+      "title": "Android-разработка: базовый курс — основы Java",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.770908"
+    },
+    {
+      "title": "Java - проект Geometry Shapes — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.773504"
+    },
+    {
+      "title": "Intro to Programming in Python then Java using Media Computation — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "en",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.776253"
+    },
+    {
+      "title": "PRO JAVA. Основы программирования — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.778599"
+    },
+    {
+      "title": "Разработка мобильных приложений под Android на Java",
+      "category": "Cybersecurity / Ethical Hacking",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.780997"
+    },
+    {
+      "title": "Виртуальная Стажировка Java (с нуля до Junior Developer)",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.783235"
+    },
+    {
+      "title": "Java для начинающих (Курс на ранней стадии создания) — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.786365"
+    },
+    {
+      "title": "Java. Базовый курс — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.788688"
+    },
+    {
+      "title": "Java Часть 3 (Наследование, Полиморфизм и Enum) — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.791745"
+    },
+    {
+      "title": "Java Часть 1 (Базовая работа со встроенными конструкциями)",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:52.794078"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.255899"
+    },
+    {
+      "title": "Основы Python для исследований и анализа данных",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.258385"
+    },
+    {
+      "title": "Игра \"Змейка\" за час: Python + Tkinter (GUI)",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.260992"
+    },
+    {
+      "title": "Пакет 2в1: Асинхронный и Многопоточный Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.263172"
+    },
+    {
+      "title": "Многопроцессорный Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.265506"
+    },
+    {
+      "title": "Python. Часть 3 (Словари и обработка наборов данных) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.267674"
+    },
+    {
+      "title": "Лучший по Python. Часть 4 — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.270416"
+    },
+    {
+      "title": "Осознанный Python — ООП",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.274078"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.276749"
+    },
+    {
+      "title": "Python. Часть 4 (Функции, замыкание и декораторы)",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.278938"
+    },
+    {
+      "title": "WEB Парсинг на Python",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.281234"
+    },
+    {
+      "title": "\"Поколение Python\": курс для профессионалов",
+      "category": "Programming / Python",
+      "difficulty": "Advanced",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.283216"
+    },
+    {
+      "title": "Пакет 3в1: Асинхронный, Многопоточный и Многопроцессорный Python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.285349"
+    },
+    {
+      "title": "\"Поколение Python\": ООП",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.287356"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.289495"
+    },
+    {
+      "title": "109 задач по python — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.292102"
+    },
+    {
+      "title": "Многопоточный Python",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.295626"
+    },
+    {
+      "title": "\"Поколение Python\": алгоритмы и структуры данных для начинающих",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.298607"
+    },
+    {
+      "title": "Алгоритмы на Python",
+      "category": "General IT / Computer Science",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.301211"
+    },
+    {
+      "title": "Асинхронность в Python: от новичка до эксперта",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:54:54.303571"
+    }
+  ],
+  "likes": [
+    {
+      "title": "\"Поколение Python\": курс для профессионалов",
+      "category": "Programming / Python",
+      "difficulty": "Advanced",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:36:36.658104"
+    },
+    {
+      "title": "Программирование на Python с Нуля + Работа с SQL — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:36:38.228274"
+    },
+    {
+      "title": "Основы Python для исследований и анализа данных",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:48:59.958639"
+    },
+    {
+      "title": "Интерактивный тренажер по SQL",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:54:00.825027"
+    },
+    {
+      "title": "Основы статистики",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:57:51.651143"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T01:13:38.915965"
+    },
+    {
+      "title": "SQL практикум. Полный курс",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T01:13:55.867653"
+    },
+    {
+      "title": "Начальный курс SQL: от Новичка до Специалиста (+Оконные Функции) — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T01:13:56.932790"
+    },
+    {
+      "title": "PRO Kotlin. Основы программирования",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T01:14:00.292699"
+    },
+    {
+      "title": "Корутины и Flow в Kotlin (2025)",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T01:14:01.666818"
+    },
+    {
+      "title": "Веб-разработка для начинающих: HTML и CSS",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T09:38:54.416594"
+    },
+    {
+      "title": "ChatGPT + Excel: AI-Enhanced Data Analysis & Insight",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-30T09:51:11.178509"
+    }
+  ],
+  "searches": [
+    {
+      "query": "Python",
+      "ts": "2026-03-30T00:36:34.577520"
+    },
+    {
+      "query": "Java",
+      "ts": "2026-03-30T00:37:13.334149"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-03-30T00:48:46.880811"
+    },
+    {
+      "query": "математика",
+      "ts": "2026-03-30T00:54:20.474860"
+    },
+    {
+      "query": "Programming / Python",
+      "ts": "2026-03-30T01:03:57.606101"
+    },
+    {
+      "query": "Docker",
+      "ts": "2026-03-30T01:04:42.501937"
+    },
+    {
+      "query": "Data Science",
+      "ts": "2026-03-30T01:04:50.553944"
+    },
+    {
+      "query": "Data Science",
+      "ts": "2026-03-30T01:04:57.457423"
+    },
+    {
+      "query": "C++",
+      "ts": "2026-03-30T01:05:06.407448"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-03-30T01:13:35.095973"
+    },
+    {
+      "query": "SQL",
+      "ts": "2026-03-30T01:13:53.002982"
+    },
+    {
+      "query": "Kotlin",
+      "ts": "2026-03-30T01:13:58.763957"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-03-30T01:42:52.483470"
+    },
+    {
+      "query": "C++",
+      "ts": "2026-03-30T09:27:54.141129"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-03-30T09:43:21.621601"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-03-30T09:43:46.592628"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-03-30T09:49:04.653539"
+    },
+    {
+      "query": "Java",
+      "ts": "2026-03-30T09:53:55.463863"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-03-30T09:54:54.077182"
+    }
+  ],
+  "dislikes": [],
+  "saved": [
+    {
+      "title": "Нейронные сети и компьютерное зрение",
+      "source": "stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.799768926041019,
+      "url": "https://stepik.org/course/50352",
+      "organization": "Unknown",
+      "ts": "2026-03-30T01:26:15.789646"
+    },
+    {
+      "title": "Веб-разработка для начинающих: HTML и CSS",
+      "source": "stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.599936752222855,
+      "url": "https://stepik.org/course/38218",
+      "organization": "Unknown",
+      "ts": "2026-03-30T01:26:17.440794"
+    },
+    {
+      "title": "Основы HTML и CSS — Stepik",
+      "source": "stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.7997169512781195,
+      "url": "https://stepik.org/course/268737",
+      "organization": "Unknown",
+      "ts": "2026-03-30T01:26:18.880955"
+    },
+    {
+      "title": "Jetpack Compose: полный курс",
+      "source": "stepik",
+      "category": "UI/UX Design",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "is_free": 0,
+      "price": 6990,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.989843609760056,
+      "url": "https://stepik.org/course/125685",
+      "organization": "Unknown",
+      "ts": "2026-03-30T01:26:23.231463"
+    },
+    {
+      "title": "Финансовый анализ",
+      "source": "stepik",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.896518545752965,
+      "url": "https://stepik.org/course/123749",
+      "organization": "Unknown",
+      "ts": "2026-03-30T01:26:26.648755"
+    }
+  ]
+}

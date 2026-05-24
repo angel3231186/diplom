@@ -1,0 +1,1186 @@
+{
+  "user_id": "cli_user",
+  "created_at": "2026-03-29T15:49:33.498433",
+  "views": [
+    {
+      "title": "Химия. Часть 2",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-03-29T18:44:56.527725"
+    },
+    {
+      "title": "ClickHouse для аналитика",
+      "category": "General IT / Computer Science",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.528544"
+    },
+    {
+      "title": "Электромонтажный практикум: Часть 1",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-03-29T18:44:56.529254"
+    },
+    {
+      "title": "Аналитическая химия. Часть 2. Инструментальные методы анализа",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-03-29T18:44:56.529928"
+    },
+    {
+      "title": "Jenkins в работе — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.530595"
+    },
+    {
+      "title": "Microsoft Python Development",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:44:56.567923"
+    },
+    {
+      "title": "Web Development with Python",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:44:56.568758"
+    },
+    {
+      "title": "Python Data Representations",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:44:56.569500"
+    },
+    {
+      "title": "Using Databases with Python",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:44:56.570426"
+    },
+    {
+      "title": "Introduction to Scripting in Python",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:44:56.571186"
+    },
+    {
+      "title": "Профессия: Android-разработчик — расширенный стек (2025)",
+      "category": "Mobile Development",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.626931"
+    },
+    {
+      "title": "Основы Java и Android разработка — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.627842"
+    },
+    {
+      "title": "Мобильная разработка",
+      "category": "Mobile Development",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.628594"
+    },
+    {
+      "title": "PRO Kotlin. Основы программирования",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.629316"
+    },
+    {
+      "title": "Developing Android Apps with App Inventor",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:44:56.630034"
+    },
+    {
+      "title": "Полный курс по FastAPI: от новичка до профессионала",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.678378"
+    },
+    {
+      "title": "Добрый, добрый C/C++ с Сергеем Балакиревым",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.679253"
+    },
+    {
+      "title": "Интенсив по программированию на языке Java — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.679975"
+    },
+    {
+      "title": "FastAPI: создание API",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.680707"
+    },
+    {
+      "title": "Windows CMD — быстрый старт",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.681413"
+    },
+    {
+      "title": "Основы статистики",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.705296"
+    },
+    {
+      "title": "Демо курс Zabbix 6. Мониторинг IT инфраструктуры предприятия",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.706124"
+    },
+    {
+      "title": "Современные экологические проблемы и устойчивое развитие",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-03-29T18:44:56.707094"
+    },
+    {
+      "title": "Физика, которую должен знать каждый. Часть 1",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-03-29T18:44:56.707828"
+    },
+    {
+      "title": "Теоретическая механика 2 семестр",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-03-29T18:44:56.708529"
+    },
+    {
+      "title": "TypeScript для профессиональной разработки",
+      "category": "Frontend / JavaScript",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.735228"
+    },
+    {
+      "title": "Typescript. Часть 4 (Дженерики и Продвинутая Типизация)",
+      "category": "Frontend / JavaScript",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.736054"
+    },
+    {
+      "title": "Typescript. Часть 2 (Продвинутая работа с типами) — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.736806"
+    },
+    {
+      "title": "Typescript. Часть 1 (Погружение в TypeScript) — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.737516"
+    },
+    {
+      "title": "Базовые алгоритмы с примерами на JavaScript и TypeScript — Stepik",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.738255"
+    },
+    {
+      "title": "Введение в R  и tidyverse — Stepik",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.761824"
+    },
+    {
+      "title": "Moodle для всех: простое администрирование",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.762838"
+    },
+    {
+      "title": "Введение в tidyverse",
+      "category": "Other",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.763584"
+    },
+    {
+      "title": "Механика сплошных сред",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-03-29T18:44:56.764272"
+    },
+    {
+      "title": "История естествознания. Часть 1",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-03-29T18:44:56.764948"
+    },
+    {
+      "title": "SQL для Анализа Данных с Глебом Михайловым",
+      "category": "General IT / Computer Science",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.787791"
+    },
+    {
+      "title": "Кайдзен разработка",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.788611"
+    },
+    {
+      "title": "PRO C#. Подготовка к собеседованиям",
+      "category": "Other",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.789302"
+    },
+    {
+      "title": "Подготовка к собеседованию на Data Engineer",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.790348"
+    },
+    {
+      "title": "Добрый, добрый ООП C++ с Сергеем Балакиревым",
+      "category": "Other",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:44:56.791077"
+    },
+    {
+      "title": "Космическая Java с Артуром Вартаняном",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:45:01.699104"
+    },
+    {
+      "title": "Химия лекарственных веществ - как создаются лекарства — Stepik",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:45:01.700938"
+    },
+    {
+      "title": "Telegram бот для начинающих на Java. Определяем знака зодиака.",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:45:01.702040"
+    },
+    {
+      "title": "Основы статистики для врачей",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:45:01.702914"
+    },
+    {
+      "title": "Создание telegram-бота для колледжей",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:45:01.703943"
+    },
+    {
+      "title": "PRO Kotlin. Курс для продвинутых — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:44.808962"
+    },
+    {
+      "title": "Корутины и Flow в Kotlin (2025)",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:44.810062"
+    },
+    {
+      "title": "PRO Kotlin. Основы программирования",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:44.811127"
+    },
+    {
+      "title": "PRO Kotlin. Базовый курс по структурам данных",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:44.812084"
+    },
+    {
+      "title": "Programming Fundamentals in Kotlin",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:44.812945"
+    },
+    {
+      "title": "PRO Kotlin. Основы программирования",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:44.860259"
+    },
+    {
+      "title": "PRO Kotlin. Алгоритмы и структуры данных",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:44.861416"
+    },
+    {
+      "title": "PRO Kotlin. Курс для продвинутых — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:44.862225"
+    },
+    {
+      "title": "Advanced Programming in Kotlin",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:44.863214"
+    },
+    {
+      "title": "Kotlin for Java Developers",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:44.864188"
+    },
+    {
+      "title": "Python, Bash and SQL Essentials for Data Engineering",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:44.906834"
+    },
+    {
+      "title": "Data Analysis Using Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:44.907769"
+    },
+    {
+      "title": "Investment Management with Python and Machine Learning",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:44.908753"
+    },
+    {
+      "title": "Python Basic Structures: Lists, Strings, and Files",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:44.909698"
+    },
+    {
+      "title": "Python Data Visualization",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:44.911274"
+    },
+    {
+      "title": "Android-разработка: базовый курс — основы Java",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:44.981174"
+    },
+    {
+      "title": "Профессия: Android-разработчик — расширенный стек (2025)",
+      "category": "Mobile Development",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:44.982234"
+    },
+    {
+      "title": "Create the User Interface in Android Studio",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:44.983240"
+    },
+    {
+      "title": "Build Your First Android App (Project-Centered Course)",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:44.984047"
+    },
+    {
+      "title": "Advanced App Development in Android",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:44.984832"
+    },
+    {
+      "title": "Programming Fundamentals in Swift",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:45.047959"
+    },
+    {
+      "title": "Introduction to Programming in Swift 5",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:45.048878"
+    },
+    {
+      "title": "Swift 5 iOS Application Developer",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:45.049994"
+    },
+    {
+      "title": "Advanced Programming in Swift",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:45.050824"
+    },
+    {
+      "title": "iOS Machine Learning with Core ML, Swift 6, and SwiftUI",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "udemy",
+      "ts": "2026-03-29T18:49:45.051794"
+    },
+    {
+      "title": "RUST DEV <База> => Дай КРАБА! — Stepik",
+      "category": "Cybersecurity / Ethical Hacking",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.083048"
+    },
+    {
+      "title": "Программирование на Rust",
+      "category": "Programming / Other",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.084156"
+    },
+    {
+      "title": "Rust Programming",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:45.085146"
+    },
+    {
+      "title": "Rust Fundamentals",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:45.086141"
+    },
+    {
+      "title": "Build a Time Series Crate in Rust and Publish to Cargo",
+      "category": "Programming / Other",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "udemy",
+      "ts": "2026-03-29T18:49:45.086948"
+    },
+    {
+      "title": "Миникурс: основы ООП для JS/TS, React разработчика — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.116833"
+    },
+    {
+      "title": "Автоматизация тестирования c Playwright на JS/TS: базовый курс",
+      "category": "Frontend / JavaScript",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.117759"
+    },
+    {
+      "title": "Typescript. Часть 1 (Погружение в TypeScript) — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.118695"
+    },
+    {
+      "title": "Автоматизация тестирования на Playwright (JavaScript/TypeScript)",
+      "category": "Frontend / JavaScript",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.119475"
+    },
+    {
+      "title": "NestJS — с нуля, современный backend на TypeScript и Node JS — Stepik",
+      "category": "Frontend / JavaScript",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.121134"
+    },
+    {
+      "title": "Микросервисы, Docker, Kafka Spring Cloud, реактивный стек",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.155232"
+    },
+    {
+      "title": "Docker for Beginners with Hands-on labs",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:45.182042"
+    },
+    {
+      "title": "Virtualization, Docker, and Kubernetes for Data Engineering",
+      "category": "DevOps / Cloud",
+      "difficulty": "Advanced",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:45.185222"
+    },
+    {
+      "title": "Docker Basics for DevOps",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:45.186087"
+    },
+    {
+      "title": "Работа с платформой ROBIN RPA. Продвинутый курс. — Stepik",
+      "category": "Business / Management / Soft Skills",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.186954"
+    },
+    {
+      "title": "Kubernetes для начинающих + практический опыт",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.225976"
+    },
+    {
+      "title": "Kubernetes и Helm — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.226930"
+    },
+    {
+      "title": "Kubernetes простым языком",
+      "category": "DevOps / Cloud",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.227747"
+    },
+    {
+      "title": "Certified Kubernetes Administrator (CKA) + практический опыт — Stepik",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:49:45.228549"
+    },
+    {
+      "title": "Architecting with Google Kubernetes Engine: Production en Español",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-03-29T18:49:45.229333"
+    },
+    {
+      "title": "Переносим Python(FastAPI/Django/Flask/TG БОТ)на сервер.VPS+ДОМЕН — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:50:30.189588"
+    },
+    {
+      "title": "Создание сайтов на Python Flask + HTML, CSS, JS — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:50:30.190884"
+    },
+    {
+      "title": "\"Flask, пишем игру 'Своя игра'. Bootstrap, CSS, HTML, шаблоны. — Stepik",
+      "category": "Programming / Python",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:50:30.191798"
+    },
+    {
+      "title": "Профессия «Аналитик в ИТ». Модуль 0: Знакомство с профессией — Stepik",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:50:30.192677"
+    },
+    {
+      "title": "Летняя школа по аналитике, Data Science и Data Engineering 2025 — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T18:50:30.193546"
+    },
+    {
+      "title": "Многопоточный Python",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T19:21:53.412558"
+    },
+    {
+      "title": "Профессия: Python-разработчик [ Python + SQL + Git + Linux ] — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T19:21:53.413506"
+    },
+    {
+      "title": "Асинхронный Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T19:21:53.414365"
+    },
+    {
+      "title": "Полный курс Python для начинающих + ООП",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T19:21:53.415319"
+    },
+    {
+      "title": "Многопоточность в Python: от новичка до эксперта",
+      "category": "Mobile Development",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-29T19:21:53.416142"
+    },
+    {
+      "title": "Профессия Python-разработчик — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:08.653989"
+    },
+    {
+      "title": "Многопоточный Python",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:08.655192"
+    },
+    {
+      "title": "\"Поколение Python\": ООП",
+      "category": "Programming / Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:08.656304"
+    },
+    {
+      "title": "Многопроцессорный Python",
+      "category": "Programming / Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:08.657445"
+    },
+    {
+      "title": "Профессия: Python-разработчик [ Python + SQL + Git + Linux ] — Stepik",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:08.658580"
+    },
+    {
+      "title": "Живопись пастелью. Поэтапное освоение материала в рамках задания «натюрморт» и «пейзаж»",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-03-30T00:23:11.751210"
+    },
+    {
+      "title": "BI-аналитик от AW BI Academy — Stepik",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:11.752314"
+    },
+    {
+      "title": "Мини-курс по регулярным выражениям — Stepik",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:11.753333"
+    },
+    {
+      "title": "Фальсификация и безопасность товаров",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-03-30T00:23:11.754441"
+    },
+    {
+      "title": "Химия. Часть 1",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "openedu",
+      "ts": "2026-03-30T00:23:11.755337"
+    },
+    {
+      "title": "Введение в Java для QA Auto",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:20.557020"
+    },
+    {
+      "title": "Android-разработка: базовый курс — основы Java",
+      "category": "Mobile Development",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:20.558767"
+    },
+    {
+      "title": "PRO JAVA. Основы программирования — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:20.559749"
+    },
+    {
+      "title": "Разработка веб сервиса на Java (часть 1) — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:20.560713"
+    },
+    {
+      "title": "Java - проект Fraud Detector — Stepik",
+      "category": "Programming / Java/Kotlin",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:20.561676"
+    },
+    {
+      "title": "НТО Junior 23-24. ОК \"Технологии и искусственный интеллект\" — Stepik",
+      "category": "Other",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:24.408124"
+    },
+    {
+      "title": "Программист 1С. Интенсив с преподавателем",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:24.409902"
+    },
+    {
+      "title": "Системный аналитик: вход в IT с нуля. БАЗА — Stepik",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:24.411555"
+    },
+    {
+      "title": "Искусственный интеллект. Основное — Stepik",
+      "category": "Other",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:24.412783"
+    },
+    {
+      "title": "Добрый, добрый ИИ. Часть 1. Машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-03-30T00:23:24.414078"
+    }
+  ],
+  "likes": [],
+  "searches": [
+    {
+      "query": "python",
+      "ts": "2026-03-29T18:30:43.724711"
+    },
+    {
+      "query": "java",
+      "ts": "2026-03-29T18:34:39.942745"
+    },
+    {
+      "query": "java",
+      "ts": "2026-03-29T18:34:50.919015"
+    },
+    {
+      "query": "джава",
+      "ts": "2026-03-29T18:34:55.419812"
+    },
+    {
+      "query": "python",
+      "ts": "2026-03-29T18:35:00.156281"
+    },
+    {
+      "query": "java",
+      "ts": "2026-03-29T18:38:43.039899"
+    },
+    {
+      "query": "java",
+      "ts": "2026-03-29T18:38:49.041872"
+    },
+    {
+      "query": "джава",
+      "ts": "2026-03-29T18:38:53.829372"
+    },
+    {
+      "query": "python",
+      "ts": "2026-03-29T18:38:58.673966"
+    },
+    {
+      "query": "machine learning",
+      "ts": "2026-03-29T18:39:55.129968"
+    },
+    {
+      "query": "нейросети",
+      "ts": "2026-03-29T18:40:00.048843"
+    },
+    {
+      "query": "devops",
+      "ts": "2026-03-29T18:40:06.243314"
+    },
+    {
+      "query": "django",
+      "ts": "2026-03-29T18:40:14.679055"
+    },
+    {
+      "query": "sql",
+      "ts": "2026-03-29T18:40:21.192612"
+    },
+    {
+      "query": "пайтон",
+      "ts": "2026-03-29T18:40:26.760152"
+    },
+    {
+      "query": "kotlin",
+      "ts": "2026-03-29T18:40:31.494495"
+    },
+    {
+      "query": "data science",
+      "ts": "2026-03-29T18:40:39.909537"
+    },
+    {
+      "query": "c++",
+      "ts": "2026-03-29T18:40:44.834528"
+    },
+    {
+      "query": "spring boot",
+      "ts": "2026-03-29T18:40:50.431518"
+    },
+    {
+      "query": "kotlin",
+      "ts": "2026-03-29T18:44:29.649980"
+    },
+    {
+      "query": "kotlin",
+      "ts": "2026-03-29T18:44:37.149141"
+    },
+    {
+      "query": "котлин",
+      "ts": "2026-03-29T18:44:37.236526"
+    },
+    {
+      "query": "пайтон",
+      "ts": "2026-03-29T18:44:37.280395"
+    },
+    {
+      "query": "android",
+      "ts": "2026-03-29T18:44:37.328730"
+    },
+    {
+      "query": "swift",
+      "ts": "2026-03-29T18:44:37.389736"
+    },
+    {
+      "query": "rust",
+      "ts": "2026-03-29T18:44:37.452127"
+    },
+    {
+      "query": "typescript",
+      "ts": "2026-03-29T18:44:37.480495"
+    },
+    {
+      "query": "docker",
+      "ts": "2026-03-29T18:44:37.510769"
+    },
+    {
+      "query": "kubernetes",
+      "ts": "2026-03-29T18:44:37.541639"
+    },
+    {
+      "query": "kotlin",
+      "ts": "2026-03-29T18:44:56.342534"
+    },
+    {
+      "query": "котлин",
+      "ts": "2026-03-29T18:44:56.501756"
+    },
+    {
+      "query": "пайтон",
+      "ts": "2026-03-29T18:44:56.531347"
+    },
+    {
+      "query": "android",
+      "ts": "2026-03-29T18:44:56.571942"
+    },
+    {
+      "query": "swift",
+      "ts": "2026-03-29T18:44:56.630800"
+    },
+    {
+      "query": "rust",
+      "ts": "2026-03-29T18:44:56.682172"
+    },
+    {
+      "query": "typescript",
+      "ts": "2026-03-29T18:44:56.709389"
+    },
+    {
+      "query": "docker",
+      "ts": "2026-03-29T18:44:56.739010"
+    },
+    {
+      "query": "kubernetes",
+      "ts": "2026-03-29T18:44:56.765701"
+    },
+    {
+      "query": "flask",
+      "ts": "2026-03-29T18:45:01.611567"
+    },
+    {
+      "query": "kotlin",
+      "ts": "2026-03-29T18:49:44.477647"
+    },
+    {
+      "query": "котлин",
+      "ts": "2026-03-29T18:49:44.814060"
+    },
+    {
+      "query": "пайтон",
+      "ts": "2026-03-29T18:49:44.865187"
+    },
+    {
+      "query": "android",
+      "ts": "2026-03-29T18:49:44.912536"
+    },
+    {
+      "query": "swift",
+      "ts": "2026-03-29T18:49:44.985840"
+    },
+    {
+      "query": "rust",
+      "ts": "2026-03-29T18:49:45.052663"
+    },
+    {
+      "query": "typescript",
+      "ts": "2026-03-29T18:49:45.087929"
+    },
+    {
+      "query": "docker",
+      "ts": "2026-03-29T18:49:45.122133"
+    },
+    {
+      "query": "kubernetes",
+      "ts": "2026-03-29T18:49:45.187891"
+    },
+    {
+      "query": "flask",
+      "ts": "2026-03-29T18:50:30.077834"
+    },
+    {
+      "query": "python",
+      "ts": "2026-03-29T19:21:53.082373"
+    },
+    {
+      "query": "python",
+      "ts": "2026-03-30T00:23:08.456748"
+    },
+    {
+      "query": "kava",
+      "ts": "2026-03-30T00:23:11.660466"
+    },
+    {
+      "query": "java",
+      "ts": "2026-03-30T00:23:20.484591"
+    },
+    {
+      "query": "ai",
+      "ts": "2026-03-30T00:23:24.339359"
+    }
+  ],
+  "dislikes": []
+}

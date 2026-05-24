@@ -1,10 +1,3 @@
-"""
-Модуль аутентификации
-====================
-Хранит аккаунты в accounts.json (логин → хеш пароля + дата создания).
-Пароль хешируется SHA-256, соль — сам логин.
-"""
-
 import json
 import os
 import hashlib
@@ -98,7 +91,6 @@ def _save_sessions(sessions: dict):
 
 
 def create_session(username: str) -> str:
-    """Создаёт токен сессии и сохраняет его. Возвращает токен."""
     token    = secrets.token_urlsafe(32)
     expires  = (datetime.now() + timedelta(days=SESSION_DAYS)).isoformat()
     sessions = _load_sessions()
@@ -108,7 +100,6 @@ def create_session(username: str) -> str:
 
 
 def validate_session(token: str) -> str | None:
-    """Проверяет токен. Возвращает username если валиден, иначе None."""
     if not token:
         return None
     sessions = _load_sessions()
@@ -126,7 +117,6 @@ def validate_session(token: str) -> str | None:
 
 
 def revoke_session(token: str):
-    """Удаляет токен (выход из аккаунта)."""
     sessions = _load_sessions()
     if token in sessions:
         del sessions[token]
@@ -134,7 +124,6 @@ def revoke_session(token: str):
 
 
 def get_created_at(username: str) -> str:
-    """Возвращает дату регистрации в читаемом формате."""
     accounts = _load()
     raw = accounts.get(username.strip().lower(), {}).get("created_at", "")
     if not raw:
