@@ -1495,7 +1495,9 @@ function inject() {
     #ai-fab:hover { transform: scale(1.08); box-shadow: 0 6px 32px rgba(108,92,231,0.8); }
     #ai-panel {
       position: fixed; bottom: 100px; right: 28px;
-      width: 340px; max-height: 480px;
+      width: 340px; height: 480px;
+      min-width: 260px; min-height: 320px;
+      max-width: 700px; max-height: 90vh;
       background: #13131f; border-radius: 16px;
       border: 1px solid rgba(124,107,255,0.35);
       box-shadow: 0 8px 32px rgba(0,0,0,0.55);
@@ -1503,6 +1505,19 @@ function inject() {
       overflow: hidden; font-family: Inter, sans-serif;
     }
     #ai-panel.open { display: flex; }
+    #ai-resize-handle {
+      position: absolute; top: 0; left: 0;
+      width: 28px; height: 28px; cursor: nw-resize; z-index: 10;
+      border-top-left-radius: 16px;
+    }
+    #ai-resize-handle::before {
+      content: '';
+      position: absolute; top: 5px; left: 5px;
+      width: 13px; height: 13px;
+      border-top: 2.5px solid rgba(124,107,255,0.85);
+      border-left: 2.5px solid rgba(124,107,255,0.85);
+      border-top-left-radius: 5px;
+    }
     #ai-panel-header {
       display: flex; justify-content: space-between; align-items: center;
       padding: 12px 14px 10px; border-bottom: 1px solid rgba(255,255,255,0.07);
@@ -1514,7 +1529,7 @@ function inject() {
     #ai-messages {
       overflow-y: auto; padding: 12px;
       display: flex; flex-direction: column; gap: 10px;
-      min-height: 200px; max-height: 320px;
+      flex: 1; min-height: 0;
     }
     .ai-msg { display: flex; gap: 8px; align-items: flex-start; }
     .ai-msg.user { flex-direction: row-reverse; }
@@ -1604,6 +1619,7 @@ function inject() {
   var panel = p.createElement('div');
   panel.id = 'ai-panel';
   panel.innerHTML = `
+    <div id="ai-resize-handle"></div>
     <div id="ai-panel-header">
       <span>🤖 ИИ Помощник</span>
       <span style="display:flex;align-items:center;gap:6px">
@@ -1620,6 +1636,54 @@ function inject() {
     </div>
   `;
   p.body.appendChild(panel);
+
+  // Изменение размера окна чата за левый верхний угол
+  (function() {
+    var handle = p.getElementById('ai-resize-handle');
+    var resizing = false, startX, startY, startW, startH;
+    var pw = window.parent;
+
+    // Оверлей в parent window
+    var overlay = p.createElement('div');
+    overlay.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:2147483647;display:none;cursor:nw-resize;user-select:none;';
+    p.body.appendChild(overlay);
+
+    function onMove(e) {
+      if (!resizing) return;
+      var cx = e.clientX !== undefined ? e.clientX : (e.touches && e.touches[0].clientX);
+      var cy = e.clientY !== undefined ? e.clientY : (e.touches && e.touches[0].clientY);
+      var newW = startW - (cx - startX);
+      var newH = startH - (cy - startY);
+      newW = Math.max(260, Math.min(700, newW));
+      newH = Math.max(320, Math.min(pw.innerHeight * 0.9, newH));
+      panel.style.width = newW + 'px';
+      panel.style.height = newH + 'px';
+    }
+    function onUp() {
+      if (!resizing) return;
+      resizing = false;
+      overlay.style.display = 'none';
+      p.body.style.userSelect = '';
+      p.removeEventListener('mousemove', onMove);
+      p.removeEventListener('mouseup', onUp);
+      pw.removeEventListener('mousemove', onMove);
+      pw.removeEventListener('mouseup', onUp);
+    }
+
+    handle.addEventListener('mousedown', function(e) {
+      e.preventDefault(); e.stopPropagation();
+      resizing = true;
+      startX = e.clientX; startY = e.clientY;
+      startW = panel.offsetWidth; startH = panel.offsetHeight;
+      overlay.style.display = 'block';
+      p.body.style.userSelect = 'none';
+      // Слушаем в обоих контекстах: parent document и parent window
+      p.addEventListener('mousemove', onMove);
+      p.addEventListener('mouseup', onUp);
+      pw.addEventListener('mousemove', onMove);
+      pw.addEventListener('mouseup', onUp);
+    });
+  })();
 
   // Восстановить историю
   var HIST_URL = 'http://localhost:11435';
@@ -1763,14 +1827,24 @@ function inject() {
     msgs.scrollTop = msgs.scrollHeight;
   }
 
+  var _userProfile = {xp: 0, level: '', streak: 0, achievements: [], started_count: 0, saved_count: 0};
+  fetch(HIST_URL + '/profile?user=' + USER_ID).then(function(r){ return r.json(); }).then(function(p){
+    if (p && !p.error) _userProfile = p;
+  }).catch(function(){});
+
   var BASE_SYSTEM = 'Ты — дружелюбный и мотивирующий ИИ-помощник платформы CourseFind. Общайся с пользователем на "вы". CourseFind — веб-приложение для поиска IT-курсов (Stepik, Udemy, Coursera, OpenEdu, 7600+ курсов).' +
     ' Разделы сайта: Главная — курс дня и персональные рекомендации; Каталог — все курсы по категориям с фильтрами (цена, уровень, язык, платформа); Мои курсы — начатые, сохранённые и завершённые курсы; Мои оценки — оценка пройденных курсов звёздочками (1-5); Профиль — XP, уровень, достижения, еженедельные задания, стрик; Настройки — смена никнейма (раз в 14 дней), пароля, цели обучения и интересов.' +
-    ' Как пользоваться чатом: напишите тему и я найду курсы (например "покажи курсы по Python"), или попросите план ("составь план по Java на 5 дней"), или задайте любой вопрос про обучение.' +
+    ' Ты — ИИ-ассистент, у тебя нет XP, уровней, стрика или достижений. Если спрашивают "расскажи о себе" — опиши себя как ИИ-помощника CourseFind который помогает находить курсы и давать советы по обучению. Никогда не приписывай себе данные пользователя.' +
+    ' Ты отвечаешь на вопросы пользователя напрямую — даёшь советы, планы и объяснения сам, а не предлагаешь что-то написать.' +
     ' XP и уровни: за действия начисляется XP. Уровни: Новичок (0) → Студент (500) → Знаток (1200) → Практик (2500) → Эксперт (4500) → Профессионал (7500) → Мастер (11000) → Гуру (16000) → Элита (22000) → Легенда (30000 XP).' +
     ' Стрик — количество дней подряд, когда вы заходили на сайт. Чем длиннее стрик, тем ближе к достижениям 🔥⚡💎.' +
     ' Достижения (всегда пиши полное название и иконку): 🔍 Первопроходец — первый поиск; 🔥 3 дня подряд — стрик 3 дня; ⚡ Неделя! — стрик 7 дней; 💎 Месяц! — стрик 30 дней; 🚀 Поехали! — начни 1 курс; 📚 Книжный червь — начни 5 курсов; 🎓 Выпускник — заверши курс; ⭐ 100 XP; 🌟 500 XP; 💫 2000 XP; 🔮 7000 XP; 👑 20000 XP; 🌠 45000 XP; 🧭 Исследователь — 10 поисков; 🎯 С целью! — укажи цель; 📅 По расписанию — открой курс дня; 🌍 Исследователь миров — начни курсы в 3 направлениях; 📆 Активная неделя — 3 курса за неделю; 🏆 Чемпион недели — 5 курсов за неделю; 🔖 Коллекционер — сохрани 10 курсов.' +
     ' Еженедельные задания (сбрасываются каждую неделю): открой 3 курса (80 XP), открой 5 курсов (150 XP), заходи 5 дней подряд (100 XP), сохрани 3 курса (50 XP).' +
-    ' Если спрашивают с чего начать тему — дай план из 2-4 шагов в правильном порядке. Когда хотят изучить что-то — поддержи и дай развёрнутый совет. Отвечай тепло, на русском. СТРОГО без markdown — никаких [текст](ссылка), никаких звёздочек, никаких решёток. Пиши обычным текстом. Не называй конкретные курсы — они показываются карточками автоматически. Не рекомендуй сторонние сайты.';
+    ' Когда пользователь спрашивает с чего начать или хочет план — СРАЗУ дай конкретный план из 2-4 шагов своими словами (например: "Шаг 1: начните с HTML — это основа. Шаг 2: изучите CSS..."). НЕ говори пользователю что написать — отвечай сам.' +
+    ' Когда пользователь хочет изучить тему — дай совет и поддержку напрямую. Отвечай тепло, на русском. СТРОГО без markdown — никаких [текст](ссылка), никаких звёздочек, никаких решёток. Пиши обычным текстом. Не называй конкретные курсы — они показываются карточками автоматически. Не рекомендуй сторонние сайты.' +
+    ' Когда пользователь просит найти или показать курс — НЕ задавай уточняющих вопросов. Напиши одно короткое одобряющее предложение (например: "Отличный выбор!") — курсы подберутся и покажутся сами.' +
+    ' Если пользователь спрашивает про свои (личные) достижения — перечисли ТОЛЬКО то, что написано в разделе "Открытые достижения" в данных пользователя. НЕ добавляй достижения из общего списка платформы — только личные открытые. Если раздела нет или он пуст — скажи что достижений пока нет.' +
+    ' Если спрашивают как пользоваться сайтом или что здесь можно делать — расскажи про основные разделы: раздел "Найти курс" — поиск по ключевым словам, тегам и фильтрам; раздел "Для вас" — персональные рекомендации; раздел "Каталог" — все курсы по категориям; раздел "Мой прогресс" — начатые, сохранённые и завершённые курсы. А также скажи, что прямо в этом чате можно написать тему которую хочется изучить — и чат подберёт курсы или даст план.';
 
   async function sendAI() {
     var inp = p.getElementById('ai-input');
@@ -1816,7 +1890,16 @@ function inject() {
     })();
     try {
       // Шаг 1: ищем курсы ДО запроса к ИИ
-      var systemContent = BASE_SYSTEM;
+      var _profileCtx = '';
+      if (_userProfile.xp || _userProfile.achievements && _userProfile.achievements.length) {
+        _profileCtx = ' [ДАННЫЕ СОБЕСЕДНИКА — это не твои данные, а данные пользователя которому ты помогаешь]: его XP=' + _userProfile.xp + ', уровень=' + (_userProfile.level||'?') + ', стрик=' + _userProfile.streak + ' дн., начато курсов=' + _userProfile.started_count + ', сохранено=' + _userProfile.saved_count + '.';
+        if (_userProfile.achievements && _userProfile.achievements.length > 0) {
+          _profileCtx += ' Открытые достижения пользователя: ' + _userProfile.achievements.join(', ') + '.';
+        } else {
+          _profileCtx += ' Достижений пока нет.';
+        }
+      }
+      var systemContent = BASE_SYSTEM + _profileCtx;
       if (!hasSearchIntent) { systemContent += ' Пользователь просто общается — НЕ упоминай IT, курсы или обучение. Отвечай коротко только на то, что написал пользователь. Не используй слова "подобрал", "нашёл варианты", "вот что я нашёл", "отличный выбор".'; }
       try {
         if (!hasSearchIntent) { throw new Error('no intent'); }

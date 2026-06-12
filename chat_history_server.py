@@ -212,6 +212,49 @@ class _Handler(BaseHTTPRequestHandler):
             self.wfile.write(body)
             return
 
+        if parsed.path == "/profile":
+            params = parse_qs(parsed.query)
+            user_id = params.get("user", ["default"])[0]
+            try:
+                import sys
+                sys.path.insert(0, os.path.dirname(HISTORY_DIR))
+                from personalization import profile_manager
+                import gamification as gam
+                profile = profile_manager.get(user_id)
+                profile_data = gam._load(user_id)
+                gam_data = profile_data.get("gamification", {})
+                unlocked = gam_data.get("achievements", [])
+                ach_names = {a["id"]: a["title"] + " " + a["icon"] for a in gam.ACHIEVEMENTS}
+                unlocked_names = [ach_names.get(a, a) for a in unlocked]
+                level_map = {
+                    "Новичок": "Новичок", "Знаток": "Знаток", "Эксперт": "Эксперт",
+                    "Мастер": "Мастер", "Легенда": "Легенда"
+                }
+                xp = gam_data.get("xp", 0)
+                level = "Новичок"
+                if xp >= 20000: level = "Легенда"
+                elif xp >= 7000: level = "Мастер"
+                elif xp >= 2000: level = "Эксперт"
+                elif xp >= 500: level = "Знаток"
+                result = {
+                    "xp": xp,
+                    "level": level,
+                    "streak": gam_data.get("streak", 0),
+                    "achievements": unlocked_names,
+                    "started_count": len(profile.get_started()),
+                    "saved_count": len(profile.get_saved()),
+                }
+            except Exception as e:
+                result = {"error": str(e)}
+            body = json.dumps(result, ensure_ascii=False).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self._cors()
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+
         if parsed.path == "/popular":
             params = parse_qs(parsed.query)
             n = int(params.get("n", ["5"])[0])

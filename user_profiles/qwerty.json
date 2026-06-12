@@ -3,524 +3,12 @@
   "created_at": "2026-04-26T18:58:46.037945",
   "views": [
     {
-      "title": "Блокчейн: архитектура и принцип работы",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:20.370970"
-    },
-    {
-      "title": "Технологии распределенных реестров: правовое регулирование",
-      "category": "Business & Management",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:20.374660"
-    },
-    {
-      "title": "Introduction to Blockchain Technologies",
-      "category": "Finance",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:20.378958"
-    },
-    {
-      "title": "Временные ряды для прогноза криптовалют",
-      "category": "DevOps / Cloud",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:20.383159"
-    },
-    {
-      "title": "Web3 and Blockchain in Global Commerce",
-      "category": "Finance",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:20.386657"
-    },
-    {
-      "title": "Криптовалюта для чайников — Stepik",
-      "category": "DevOps / Cloud",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:20.389688"
-    },
-    {
-      "title": "Cryptocurrency and Blockchain: An Introduction to Digital Currencies",
-      "category": "Finance",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:20.393053"
-    },
-    {
-      "title": "Занимательный блокчейн",
-      "category": "General IT / Computer Science",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:20.396845"
-    },
-    {
-      "title": "The Blockchain",
-      "category": "Finance",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:20.401950"
-    },
-    {
-      "title": "Blockchain: Foundations and Use Cases",
-      "category": "Finance",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:20.408593"
-    },
-    {
-      "title": "Блокчейн в государственном и муниципальном управлении",
-      "category": "Business & Management",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:20.412520"
-    },
-    {
-      "title": "Introduction to Blockchain",
-      "category": "Finance",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:20.415890"
-    },
-    {
-      "title": "Power BI: от новичка до уверенного бизнес-пользователя",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:20.419137"
-    },
-    {
-      "title": "Blockchain Revolution in Financial Services",
-      "category": "Finance",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:20.422830"
-    },
-    {
-      "title": "Transacting on the Blockchain",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:20.426702"
-    },
-    {
-      "title": "Blockchain, Cryptoassets, and Decentralized Finance",
-      "category": "Finance",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:20.429885"
-    },
-    {
-      "title": "Blockchain Scalability and its Foundations in Distributed Systems",
-      "category": "Finance",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:20.433849"
-    },
-    {
-      "title": "Цифровые валюты и блокчейн-технологии",
-      "category": "Business & Management",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:20.436899"
-    },
-    {
-      "title": "Data Science on Blockchains",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:20.439877"
-    },
-    {
-      "title": "Блокчейн: цели, бизнес-модели и регулирование",
-      "category": "Business & Management",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:20.442779"
-    },
-    {
-      "title": "Сводные таблицы в Excel. С нуля до анализа данных",
-      "category": "Excel",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.334170"
-    },
-    {
-      "title": "Excel для административных сотрудников. Оптимизация работы — Stepik",
-      "category": "Excel",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.337989"
-    },
-    {
-      "title": "Комплекс инструментов для бизнес-анализа. MS Excel",
-      "category": "Excel",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:21.341397"
-    },
-    {
-      "title": "Мощный старт в анализе данных с Excel — Stepik",
-      "category": "Excel",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.344486"
-    },
-    {
-      "title": "Power Query и сводные отчеты в MS Excel",
-      "category": "Excel",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.348216"
-    },
-    {
-      "title": "Диагностика уровня владения Excel — Stepik",
-      "category": "Excel",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.354848"
-    },
-    {
-      "title": "Экспресс курс Excel. Секреты эффективной работы",
-      "category": "Excel",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.358697"
-    },
-    {
-      "title": "Автоматизация в Excel c помощью сводных таблиц",
-      "category": "Excel",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.362037"
-    },
-    {
-      "title": "Логические функции в Excel",
-      "category": "Excel",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.365211"
-    },
-    {
-      "title": "Продвинутые навыки работы в Excel — Stepik",
-      "category": "Excel",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.368185"
-    },
-    {
-      "title": "Advanced Excel: поиск решений, аналитика и прогнозирование — Stepik",
-      "category": "Excel",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.371292"
-    },
-    {
-      "title": "Магия сводных таблиц Excel — Stepik",
-      "category": "Excel",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.374612"
-    },
-    {
-      "title": "Оконные функции SQL",
-      "category": "SQL",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.378342"
-    },
-    {
-      "title": "Excel: от новичка до аналитика",
-      "category": "Excel",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.381537"
-    },
-    {
-      "title": "Python для работы с Excel и PDF",
-      "category": "Excel",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.385262"
-    },
-    {
-      "title": "Альтернатива Excel: работа с данными в KNIME",
-      "category": "Excel",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:21.388244"
-    },
-    {
-      "title": "Тестовое задание на знание Excel при собеседовании — Stepik",
-      "category": "Excel",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.391326"
-    },
-    {
-      "title": "Power Query в Excel — Stepik",
-      "category": "Excel",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.394152"
-    },
-    {
-      "title": "Полный курс Excel + Power Query: от новичка до эксперта — Stepik",
-      "category": "Excel",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:21.397300"
-    },
-    {
-      "title": "Microsoft Excel for Data Analytics",
-      "category": "Excel",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:21.400477"
-    },
-    {
-      "title": "Делаем свой AI-продукт на базе ChatGPT и других LLM. Версия 2.0",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:22.246453"
-    },
-    {
-      "title": "Beginner's Guide to ChatGPT: A Comprehensive Masterclass",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:22.251060"
-    },
-    {
-      "title": "WEB Парсинг на Python",
-      "category": "Python",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:22.254895"
-    },
-    {
-      "title": "Внутри LLM: как думает ChatGPT?",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:22.258079"
-    },
-    {
-      "title": "ChatGPT for Project Management: Execution, Tracking, Success",
-      "category": "Project Management",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:22.261163"
-    },
-    {
-      "title": "The Ultimate Beginners Guide to ChatGPT and DALL-E",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:22.264110"
-    },
-    {
-      "title": "ChatGPT for Data Engineers",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:22.267758"
-    },
-    {
-      "title": "ChatGPT в помощь Java-разработчику. Практический курс",
-      "category": "Java / Kotlin",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:22.270727"
-    },
-    {
-      "title": "Unlocking the Power of ChatGPT in Data Science : A-Z Guide",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:22.274047"
-    },
-    {
-      "title": "Курс по ChatGPT от магистра University of Cambridge.",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:22.277012"
-    },
-    {
-      "title": "ChatGPT Plugins: Enable More Power to Your ChatGPT",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:22.280215"
-    },
-    {
-      "title": "Создание telegram-бота для колледжей",
-      "category": "C#",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:22.283184"
-    },
-    {
-      "title": "ChatGPT Masterclass: A Complete ChatGPT Zero to Hero!",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:22.286336"
-    },
-    {
-      "title": "ChatGPT for Data Science and Machine Learning",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:22.290371"
-    },
-    {
-      "title": "Telegram бот для начинающих на Java. Определяем знака зодиака.",
-      "category": "Java / Kotlin",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:22.294807"
-    },
-    {
-      "title": "Промт-инжиниринг для LLM: техники и лучшие практики",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:22.298603"
-    },
-    {
-      "title": "Mastering AI Conversations: ChatGPT 2025 Masterclass",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:22.303785"
-    },
-    {
-      "title": "Mastering ChatGPT and AI for eLearning Course Development",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:22.306658"
-    },
-    {
-      "title": "Свой веб-сайт и telegram-бот в облаке — настрой и запусти сам",
-      "category": "Python",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:22.309672"
-    },
-    {
-      "title": "NLP Techniques for creating AI Chatbots",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:22.312569"
-    },
-    {
-      "title": "Основы статистики. Часть 2 — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:23.056281"
-    },
-    {
-      "title": "Основы статистики. Часть 3",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:23.060728"
-    },
-    {
-      "title": "Анализ данных в R",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:23.064126"
-    },
-    {
-      "title": "Статистический анализ данных в пакете STATISTICA — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:23.067111"
-    },
-    {
       "title": "Статистика для гуманитариев",
       "category": "Data Science / ML / AI",
       "difficulty": "Не указан",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:23.070310"
+      "ts": "2026-06-12T14:28:19.065487"
     },
     {
       "title": "Медико-социальные исследования: основы статистического анализа — Stepik",
@@ -528,7 +16,7 @@
       "difficulty": "Beginner",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:23.074554"
+      "ts": "2026-06-12T14:28:19.068147"
     },
     {
       "title": "Статистика в клинических исследованиях — Stepik",
@@ -536,7 +24,7 @@
       "difficulty": "Beginner",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:23.079085"
+      "ts": "2026-06-12T14:28:19.070661"
     },
     {
       "title": "Основы статистики для врачей",
@@ -544,7 +32,7 @@
       "difficulty": "Beginner",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:23.081947"
+      "ts": "2026-06-12T14:28:19.073380"
     },
     {
       "title": "Введение в статистику и проверку гипотез — Stepik",
@@ -552,55 +40,31 @@
       "difficulty": "Beginner",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:23.084931"
+      "ts": "2026-06-12T14:28:19.076054"
     },
     {
-      "title": "Statistics 2025 A-Z™: For Data Science with Both Python & R",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:23.087630"
-    },
-    {
-      "title": "Data Science с Глебом Михайловым",
+      "title": "Pre-MBA Statistics",
       "category": "Data Science / ML / AI",
       "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:23.090939"
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-06-12T14:28:19.078933"
     },
     {
-      "title": "Анализ данных в R. Часть 2",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:23.094321"
-    },
-    {
-      "title": "Математика для Data Science. Специализация. Тариф «Перельман» — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:23.097397"
-    },
-    {
-      "title": "Прикладной статистический анализ",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:23.100716"
-    },
-    {
-      "title": "Modeling Count Data using Stata",
+      "title": "Basic Statistics for AI: Build the Foundation for ML",
       "category": "Data Science / ML / AI",
       "difficulty": "Beginner",
       "language": "en",
       "source": "udemy",
-      "ts": "2026-04-28T23:41:23.103958"
+      "ts": "2026-06-12T14:28:19.081406"
+    },
+    {
+      "title": "Calculating Descriptive Statistics in R",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "en",
+      "source": "coursera",
+      "ts": "2026-06-12T14:28:19.083967"
     },
     {
       "title": "Introduction to Statistics in R - A Practical Approach",
@@ -608,535 +72,7 @@
       "difficulty": "Beginner",
       "language": "en",
       "source": "udemy",
-      "ts": "2026-04-28T23:41:23.106953"
-    },
-    {
-      "title": "Анализ Данных с Глебом Михайловым (3 курса сразу!)",
-      "category": "General IT / Computer Science",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:23.110068"
-    },
-    {
-      "title": "Data science tools: Basic of Statistics",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:23.113018"
-    },
-    {
-      "title": "Introductory statistics Part1: Descriptive Statistics",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:23.116140"
-    },
-    {
-      "title": "Statistics for AI & ML Developers",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:23.119389"
-    },
-    {
-      "title": "TensorFlow: от основ математики до глубокого обучения",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:24.136691"
-    },
-    {
-      "title": "The Complete Guide to TensorFlow 1.x",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.140401"
-    },
-    {
-      "title": "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:24.144468"
-    },
-    {
-      "title": "TensorFlow Course: Basic to Advanced Neural Network & Beyond",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.147906"
-    },
-    {
-      "title": "Нейросети Full Stack: Глубинное обучение, PyTorch, Tensorflow — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:24.152054"
-    },
-    {
-      "title": "Tensorflow for Beginners",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.155125"
-    },
-    {
-      "title": "Hands-On Transfer Learning with TensorFlow 2.0",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.158329"
-    },
-    {
-      "title": "Learning Path: TensorFlow: Machine & Deep Learning Solutions",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.161161"
-    },
-    {
-      "title": "A Complete Guide on TensorFlow 2.0 using Keras API",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.164295"
-    },
-    {
-      "title": "TensorFlow: Basic to Advanced - 100 Projects in 100 Days",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.167951"
-    },
-    {
-      "title": "Deep Learning Masterclass with TensorFlow 2 Over 20 Projects",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.171708"
-    },
-    {
-      "title": "TensorFlow: Artificial Intelligence with TensorFlow: 3-in-1",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Advanced",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.176016"
-    },
-    {
-      "title": "Tensorflow Tutorial: Hands-on AI development with Tensorflow",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.179227"
-    },
-    {
-      "title": "Введение в нейронные сети (Keras/Tensorflow)",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:24.182357"
-    },
-    {
-      "title": "TensorFlow 2.0 Practical",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.186083"
-    },
-    {
-      "title": "TensorFlow Mastery: Unleashing the Power of Machine Learning",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.190559"
-    },
-    {
-      "title": "Python & TensorFlow: Deep Dive into Machine Learning",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.195145"
-    },
-    {
-      "title": "Machine Learning Projects with TensorFlow 2.0",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.199104"
-    },
-    {
-      "title": "TensorFlow: создай свою первую нейронную сеть — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:24.202491"
-    },
-    {
-      "title": "[2026] Tensorflow 2: Deep Learning & Artificial Intelligence",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:24.205378"
-    },
-    {
-      "title": "Базовая аналитика — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.206226"
-    },
-    {
-      "title": "Анализ данных просто и доступно. — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.210641"
-    },
-    {
-      "title": "Анализ данных в принятии решений — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.214737"
-    },
-    {
-      "title": "Анализ данных в R",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.218031"
-    },
-    {
-      "title": "Бизнес аналитик в IT с Нуля до Специалиста",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.221261"
-    },
-    {
-      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.224149"
-    },
-    {
-      "title": "Анализ данных: финальный проект — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.227326"
-    },
-    {
-      "title": "Аналитика данных: MS Power BI, оконные функции",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.230148"
-    },
-    {
-      "title": "Системный аналитик с нуля. Базовые знания",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.233616"
-    },
-    {
-      "title": "Анализ данных в KNIME — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.237127"
-    },
-    {
-      "title": "Представление данных: основы — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.241184"
-    },
-    {
-      "title": "Системный аналитик с нуля до старта",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.244514"
-    },
-    {
-      "title": "Системный аналитик: вход в IT с нуля. БАЗА — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.247624"
-    },
-    {
-      "title": "Основы искусственного интеллекта и анализа данных  — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.250486"
-    },
-    {
-      "title": "HR-аналитик — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.253585"
-    },
-    {
-      "title": "Интеллектуальный анализ данных в АПК — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.256738"
-    },
-    {
-      "title": "Построение выводов по данным — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.260500"
-    },
-    {
-      "title": "Основы анализа текстовых данных",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.266537"
-    },
-    {
-      "title": "BI-аналитик от AW BI Academy — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.270511"
-    },
-    {
-      "title": "Математический анализ: часть 1",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:25.273450"
-    },
-    {
-      "title": "Deep Learning (семестр 1, осень 2024)",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.266477"
-    },
-    {
-      "title": "Deep Learning (семестр 1, весна 2025)",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.270610"
-    },
-    {
-      "title": "Нейронные сети: Глубокое обучение с нуля",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.274708"
-    },
-    {
-      "title": "Deep Learning (семестр 2, осень 2025)",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.277861"
-    },
-    {
-      "title": "[АРХИВ] Deep Learning (семестр 1, весна 2023): продвинутый поток",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.281095"
-    },
-    {
-      "title": "Deep Learning (семестр 2, осень 2024) — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Advanced",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.284139"
-    },
-    {
-      "title": "[АРХИВ] Deep Learning (семестр 1, осень 2023) — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.287442"
-    },
-    {
-      "title": "[АРХИВ] Deep Learning (семестр 1, весна 2024)",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.290501"
-    },
-    {
-      "title": "Deep Learning in Finance",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.293770"
-    },
-    {
-      "title": "Продвинутые методы глубинного обучения",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.298159"
-    },
-    {
-      "title": "Машинное обучение",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.302020"
-    },
-    {
-      "title": "[АРХИВ] Deep Learning (семестр 1, весна 2023): базовый поток",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.305015"
-    },
-    {
-      "title": "Нейронные сети",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.308543"
-    },
-    {
-      "title": "Практический Deep Learning — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.311612"
-    },
-    {
-      "title": "Deep Learning (семестр 2, весна 2025) — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.315387"
-    },
-    {
-      "title": "Deep Learning (семестр 1, осень 2025) — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:27.318596"
-    },
-    {
-      "title": "Deep Learning for Object Detection",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:27.322370"
-    },
-    {
-      "title": "Машинное обучение: из грязи в Kaggle-князи",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Advanced",
-      "language": "ru",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:27.326644"
-    },
-    {
-      "title": "Deep learning: An Image Classification Bootcamp",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:27.330085"
-    },
-    {
-      "title": "Deep Learning in Practice III: Face Recognition",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:27.332913"
-    },
-    {
-      "title": "Добрый, добрый ИИ. Часть 1. Машинное обучение",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.066567"
-    },
-    {
-      "title": "Профессия «Аналитик в ИТ». Модуль 0: Знакомство с профессией — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.071354"
+      "ts": "2026-06-12T14:28:19.086516"
     },
     {
       "title": "Data Science с Глебом Михайловым",
@@ -1144,207 +80,7 @@
       "difficulty": "Beginner",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:28.076019"
-    },
-    {
-      "title": "Искусственный интеллект для педагогов",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.079495"
-    },
-    {
-      "title": "Искусственный интеллект. Основное — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.082857"
-    },
-    {
-      "title": "НТО Junior 23-24. ОК \"Технологии и искусственный интеллект\" — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.085745"
-    },
-    {
-      "title": "Всероссийская олимпиада по искусственному интеллекту — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.088713"
-    },
-    {
-      "title": "Доверенный искусственный интеллект",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.091440"
-    },
-    {
-      "title": "Кайдзен разработка",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.095468"
-    },
-    {
-      "title": "Введение в Data Quality (качество данных). Great Expectations. — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.101052"
-    },
-    {
-      "title": "Применение искусственного интеллекта в системах интернета вещей",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:28.104470"
-    },
-    {
-      "title": "Быстрый старт в искусственный интеллект",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.107526"
-    },
-    {
-      "title": "BI-аналитик от AW BI Academy — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.110920"
-    },
-    {
-      "title": "Искусственный Интеллект на кончиках пальцев",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:28.114099"
-    },
-    {
-      "title": "А/Б-тесты с Глебом Михайловым — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.117422"
-    },
-    {
-      "title": "Доверенный искусственный интеллект: экспертный уровень",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.120399"
-    },
-    {
-      "title": "Power BI: от новичка до уверенного бизнес-пользователя",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.124033"
-    },
-    {
-      "title": "Искусственный интеллект в робототехнике — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.127214"
-    },
-    {
-      "title": "Введение в промпт-инжиниринг",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:28.130302"
-    },
-    {
-      "title": "PyTorch: от тензоров до нейросетей и кастомных фреймворков🔥 — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:28.133170"
-    },
-    {
-      "title": "MLOps. Начало — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.328287"
-    },
-    {
-      "title": "MathML на практике — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.333130"
-    },
-    {
-      "title": "Профессия Data Engineer с нуля до junior",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.336494"
-    },
-    {
-      "title": "Общий курс ML START (весна 2023)",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.339701"
-    },
-    {
-      "title": "ExplainableAI: Интерпретация моделей от ML до LLM — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.343363"
-    },
-    {
-      "title": "LLMOps & Evaluation: из песочницы в продакшн — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.346493"
-    },
-    {
-      "title": "Основы M в Power Query для бизнес-пользователей — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.349502"
-    },
-    {
-      "title": "Разработка ML сервиса: от идеи к прототипу",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.352279"
+      "ts": "2026-06-12T14:28:19.089229"
     },
     {
       "title": "АНАЛИЗ АССОРТИМЕНТА МАКСИМУМ (АВС-XYZ, оборачиваемость, скидки)",
@@ -1352,255 +88,1519 @@
       "difficulty": "Beginner",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:32.355445"
+      "ts": "2026-06-12T14:28:19.092227"
     },
     {
-      "title": "ML ЗА 3 ДНЯ — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.359046"
-    },
-    {
-      "title": "Аналитика и Data Science для менеджеров и гуманитариев",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.362389"
-    },
-    {
-      "title": "Большие Языковые Модели (LLM) с нуля",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.368182"
-    },
-    {
-      "title": "Linmodr - «Линейные модели с использованием R»  — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.371757"
-    },
-    {
-      "title": "Старт в ML: создайте свою систему распознавания лиц — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.375016"
-    },
-    {
-      "title": "Основы статистики. Часть 2 — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.378441"
-    },
-    {
-      "title": "MathML: язык математической разметки — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.381444"
-    },
-    {
-      "title": "MLOps, Machine Learning Operations for beginners",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "en",
-      "source": "udemy",
-      "ts": "2026-04-28T23:41:32.384507"
-    },
-    {
-      "title": "Добрый, добрый ИИ. Часть 1. Машинное обучение",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.389010"
-    },
-    {
-      "title": "Математический анализ: часть 2 (ВСЕ о пределах)",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:32.392820"
-    },
-    {
-      "title": "Deploying LLMs: A Practical Guide to LLMOps in Production",
+      "title": "Mastering Statistics: Fundamentals to Data Analysis",
       "category": "Data Science / ML / AI",
       "difficulty": "Intermediate",
       "language": "en",
       "source": "udemy",
-      "ts": "2026-04-28T23:41:32.395752"
+      "ts": "2026-06-12T14:28:19.095097"
     },
     {
-      "title": "PRO Kotlin. Основы программирования",
-      "category": "Mobile Development",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:33.493413"
-    },
-    {
-      "title": "PRO Kotlin. Курс для продвинутых — Stepik",
-      "category": "Mobile Development",
+      "title": "Основы высшей математики",
+      "category": "Other",
       "difficulty": "Intermediate",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:33.497975"
+      "ts": "2026-06-12T14:28:19.097660"
     },
     {
-      "title": "PRO Kotlin. Алгоритмы и структуры данных",
-      "category": "Mobile Development",
+      "title": "Master the Normal (Gaussian) Distribution in Statistics",
+      "category": "Data Science / ML / AI",
       "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:33.501885"
+      "language": "en",
+      "source": "udemy",
+      "ts": "2026-06-12T14:28:19.100497"
     },
     {
-      "title": "Kotlin for Java Developers",
-      "category": "Java / Kotlin",
+      "title": "Probability for Statistics and Data Science",
+      "category": "Data Science / ML / AI",
       "difficulty": "Intermediate",
       "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:33.505086"
+      "source": "udemy",
+      "ts": "2026-06-12T14:28:19.103109"
     },
     {
-      "title": "PRO Kotlin. Базовый курс по структурам данных",
-      "category": "Mobile Development",
-      "difficulty": "Intermediate",
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:33.508721"
+      "ts": "2026-06-12T14:28:23.016693"
     },
     {
-      "title": "Сопротивление материалов. Часть 1. Основные положения, растяжение-сжатие прямолинейных стержней, кручение прямолинейных стержней, простой изгиб, сложный изгиб",
-      "category": "General IT / Computer Science",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:33.511819"
-    },
-    {
-      "title": "Корутины и Flow в Kotlin (2025)",
-      "category": "Mobile Development",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:33.515219"
-    },
-    {
-      "title": "109 задач по python — Stepik",
+      "title": "Основы Python для анализа данных — Stepik",
       "category": "Python",
       "difficulty": "Beginner",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:33.518353"
+      "ts": "2026-06-12T14:28:23.022698"
     },
     {
-      "title": "Hadoop. Система для обработки больших объемов данных",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:33.521852"
-    },
-    {
-      "title": "Jenkins в работе — Stepik",
-      "category": "DevOps / Cloud",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:33.525025"
-    },
-    {
-      "title": "PyTorch: от тензоров до нейросетей и кастомных фреймворков🔥 — Stepik",
-      "category": "Data Science / ML / AI",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:33.528579"
-    },
-    {
-      "title": "Молекулярная гастрономия",
-      "category": "Other",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:33.535256"
-    },
-    {
-      "title": "Живопись пастелью. Поэтапное освоение материала в рамках задания «натюрморт» и «пейзаж»",
-      "category": "General IT / Computer Science",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "openedu",
-      "ts": "2026-04-28T23:41:33.539460"
-    },
-    {
-      "title": "Advanced Programming in Kotlin",
-      "category": "Mobile Development",
-      "difficulty": "Intermediate",
-      "language": "en",
-      "source": "coursera",
-      "ts": "2026-04-28T23:41:33.543079"
-    },
-    {
-      "title": "ClickHouse для инженеров и аналитиков",
-      "category": "DevOps / Cloud",
-      "difficulty": "Intermediate",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:33.546882"
-    },
-    {
-      "title": "SQL Тренажер. Бесконечное приключение 01. На планете. — Stepik",
-      "category": "SQL",
-      "difficulty": "Не указан",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:33.550461"
-    },
-    {
-      "title": "Тестирование REST API в Postman - легкий старт в автоматизацию — Stepik",
-      "category": "Frontend / JavaScript",
-      "difficulty": "Beginner",
-      "language": "ru",
-      "source": "stepik",
-      "ts": "2026-04-28T23:41:33.553904"
-    },
-    {
-      "title": "Нейросети в PyTorch: быстрый старт с нуля",
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
       "category": "Data Science / ML / AI",
       "difficulty": "Beginner",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:33.556939"
+      "ts": "2026-06-12T14:28:23.028929"
     },
     {
-      "title": "Алгоритмический фундамент программиста — Stepik",
-      "category": "Programming",
-      "difficulty": "Не указан",
+      "title": "\"Поколение Python\": базы данных и SQL",
+      "category": "Python",
+      "difficulty": "Intermediate",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:33.560006"
+      "ts": "2026-06-12T14:28:23.032389"
     },
     {
-      "title": "Программист 1С. Интенсив с преподавателем",
-      "category": "Other",
+      "title": "Многопроцессорный Python",
+      "category": "Python",
       "difficulty": "Beginner",
       "language": "ru",
       "source": "stepik",
-      "ts": "2026-04-28T23:41:33.562982"
+      "ts": "2026-06-12T14:28:23.037864"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.042903"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.049118"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.053771"
+    },
+    {
+      "title": "Переносим Python(FastAPI/Django/Flask/TG БОТ)на сервер.VPS+ДОМЕН — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.057259"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.062717"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.067643"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.070914"
+    },
+    {
+      "title": "QR-разложение Python.Грама-Шмидта. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.074562"
+    },
+    {
+      "title": "Асинхронный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.080561"
+    },
+    {
+      "title": "Библиотеки Python для Data Science — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.084659"
+    },
+    {
+      "title": "Python: самый быстрый курс — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.088296"
+    },
+    {
+      "title": "Анализ данных Python: с 0 до уверенного бизнес-пользователя — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.091567"
+    },
+    {
+      "title": "Python. Часть 1 (Базовый python и условные операторы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.094964"
+    },
+    {
+      "title": "Сингулярное разложение SVD Python. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.100228"
+    },
+    {
+      "title": "DataOPS + Python Engineer с нуля до junior",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:28:23.103966"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.834057"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.838188"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.843974"
+    },
+    {
+      "title": "\"Поколение Python\": базы данных и SQL",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.847561"
+    },
+    {
+      "title": "Многопроцессорный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.851158"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.855016"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.858614"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.862392"
+    },
+    {
+      "title": "Переносим Python(FastAPI/Django/Flask/TG БОТ)на сервер.VPS+ДОМЕН — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.866063"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.869984"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.874282"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.877506"
+    },
+    {
+      "title": "QR-разложение Python.Грама-Шмидта. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.881053"
+    },
+    {
+      "title": "Асинхронный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.884356"
+    },
+    {
+      "title": "Библиотеки Python для Data Science — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.887759"
+    },
+    {
+      "title": "Python: самый быстрый курс — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.890840"
+    },
+    {
+      "title": "Анализ данных Python: с 0 до уверенного бизнес-пользователя — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.894224"
+    },
+    {
+      "title": "Python. Часть 1 (Базовый python и условные операторы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.897559"
+    },
+    {
+      "title": "Сингулярное разложение SVD Python. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.900963"
+    },
+    {
+      "title": "DataOPS + Python Engineer с нуля до junior",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:00.904340"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.414408"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.417813"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.421142"
+    },
+    {
+      "title": "\"Поколение Python\": базы данных и SQL",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.424083"
+    },
+    {
+      "title": "Многопроцессорный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.427334"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.431313"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.435969"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.439445"
+    },
+    {
+      "title": "Переносим Python(FastAPI/Django/Flask/TG БОТ)на сервер.VPS+ДОМЕН — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.442729"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.445698"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.452029"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.459019"
+    },
+    {
+      "title": "QR-разложение Python.Грама-Шмидта. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.462824"
+    },
+    {
+      "title": "Асинхронный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.465897"
+    },
+    {
+      "title": "Библиотеки Python для Data Science — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.469177"
+    },
+    {
+      "title": "Python: самый быстрый курс — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.472256"
+    },
+    {
+      "title": "Анализ данных Python: с 0 до уверенного бизнес-пользователя — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.475424"
+    },
+    {
+      "title": "Python. Часть 1 (Базовый python и условные операторы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.478567"
+    },
+    {
+      "title": "Сингулярное разложение SVD Python. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.482696"
+    },
+    {
+      "title": "DataOPS + Python Engineer с нуля до junior",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.486312"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.222631"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.227775"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.366048"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.370084"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.373819"
+    },
+    {
+      "title": "\"Поколение Python\": базы данных и SQL",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.377368"
+    },
+    {
+      "title": "Многопроцессорный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.382621"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.386097"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.390061"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.392931"
+    },
+    {
+      "title": "Переносим Python(FastAPI/Django/Flask/TG БОТ)на сервер.VPS+ДОМЕН — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.396735"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.399995"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.403380"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.406489"
+    },
+    {
+      "title": "QR-разложение Python.Грама-Шмидта. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.410021"
+    },
+    {
+      "title": "Асинхронный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.418693"
+    },
+    {
+      "title": "Библиотеки Python для Data Science — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.425003"
+    },
+    {
+      "title": "Python: самый быстрый курс — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.440691"
+    },
+    {
+      "title": "Анализ данных Python: с 0 до уверенного бизнес-пользователя — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.458650"
+    },
+    {
+      "title": "Python. Часть 1 (Базовый python и условные операторы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.480708"
+    },
+    {
+      "title": "Сингулярное разложение SVD Python. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.495176"
+    },
+    {
+      "title": "DataOPS + Python Engineer с нуля до junior",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.498990"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.504648"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.509533"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.653403"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.656921"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.662553"
+    },
+    {
+      "title": "\"Поколение Python\": базы данных и SQL",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.670877"
+    },
+    {
+      "title": "Многопроцессорный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.674361"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.677912"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.681380"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.684506"
+    },
+    {
+      "title": "Переносим Python(FastAPI/Django/Flask/TG БОТ)на сервер.VPS+ДОМЕН — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.687761"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.690708"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.694370"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.697706"
+    },
+    {
+      "title": "QR-разложение Python.Грама-Шмидта. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.701498"
+    },
+    {
+      "title": "Асинхронный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.704559"
+    },
+    {
+      "title": "Библиотеки Python для Data Science — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.709740"
+    },
+    {
+      "title": "Python: самый быстрый курс — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.715319"
+    },
+    {
+      "title": "Анализ данных Python: с 0 до уверенного бизнес-пользователя — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.718723"
+    },
+    {
+      "title": "Python. Часть 1 (Базовый python и условные операторы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.722029"
+    },
+    {
+      "title": "Сингулярное разложение SVD Python. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.725255"
+    },
+    {
+      "title": "DataOPS + Python Engineer с нуля до junior",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:07.728570"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.241672"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.245456"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.248875"
+    },
+    {
+      "title": "\"Поколение Python\": базы данных и SQL",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.251859"
+    },
+    {
+      "title": "Многопроцессорный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.255334"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.259127"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.263449"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.268126"
+    },
+    {
+      "title": "Переносим Python(FastAPI/Django/Flask/TG БОТ)на сервер.VPS+ДОМЕН — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.271446"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.274277"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.277347"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.282215"
+    },
+    {
+      "title": "QR-разложение Python.Грама-Шмидта. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.287309"
+    },
+    {
+      "title": "Асинхронный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.290599"
+    },
+    {
+      "title": "Библиотеки Python для Data Science — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.293939"
+    },
+    {
+      "title": "Python: самый быстрый курс — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.297243"
+    },
+    {
+      "title": "Анализ данных Python: с 0 до уверенного бизнес-пользователя — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.301562"
+    },
+    {
+      "title": "Python. Часть 1 (Базовый python и условные операторы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.305372"
+    },
+    {
+      "title": "Сингулярное разложение SVD Python. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.309014"
+    },
+    {
+      "title": "DataOPS + Python Engineer с нуля до junior",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:09.312677"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.388095"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.391676"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.395130"
+    },
+    {
+      "title": "\"Поколение Python\": базы данных и SQL",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.399123"
+    },
+    {
+      "title": "Многопроцессорный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.402412"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.405535"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.409464"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.412760"
+    },
+    {
+      "title": "Переносим Python(FastAPI/Django/Flask/TG БОТ)на сервер.VPS+ДОМЕН — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.416020"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.418926"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.422435"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.425854"
+    },
+    {
+      "title": "QR-разложение Python.Грама-Шмидта. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.429356"
+    },
+    {
+      "title": "Асинхронный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.433102"
+    },
+    {
+      "title": "Библиотеки Python для Data Science — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.438113"
+    },
+    {
+      "title": "Python: самый быстрый курс — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.442543"
+    },
+    {
+      "title": "Анализ данных Python: с 0 до уверенного бизнес-пользователя — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.446316"
+    },
+    {
+      "title": "Python. Часть 1 (Базовый python и условные операторы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.450930"
+    },
+    {
+      "title": "Сингулярное разложение SVD Python. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.455674"
+    },
+    {
+      "title": "DataOPS + Python Engineer с нуля до junior",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:11.459607"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.308564"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.449998"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.453515"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.457909"
+    },
+    {
+      "title": "\"Поколение Python\": базы данных и SQL",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.461276"
+    },
+    {
+      "title": "Многопроцессорный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.464885"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.468127"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.472129"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.476014"
+    },
+    {
+      "title": "Переносим Python(FastAPI/Django/Flask/TG БОТ)на сервер.VPS+ДОМЕН — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.479315"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.482290"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.485282"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.489338"
+    },
+    {
+      "title": "QR-разложение Python.Грама-Шмидта. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.493470"
+    },
+    {
+      "title": "Асинхронный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.497016"
+    },
+    {
+      "title": "Библиотеки Python для Data Science — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.500332"
+    },
+    {
+      "title": "Python: самый быстрый курс — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.503597"
+    },
+    {
+      "title": "Анализ данных Python: с 0 до уверенного бизнес-пользователя — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.506901"
+    },
+    {
+      "title": "Python. Часть 1 (Базовый python и условные операторы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.510736"
+    },
+    {
+      "title": "Сингулярное разложение SVD Python. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.514478"
+    },
+    {
+      "title": "DataOPS + Python Engineer с нуля до junior",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.517992"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.027721"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.031197"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.035637"
+    },
+    {
+      "title": "\"Поколение Python\": базы данных и SQL",
+      "category": "Python",
+      "difficulty": "Intermediate",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.039041"
+    },
+    {
+      "title": "Многопроцессорный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.042374"
+    },
+    {
+      "title": "Введение в Data Science: от Python до машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.045659"
+    },
+    {
+      "title": "Пакет курсов \"Data Scientist\": Python + SQL + Машинное обучение",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Не указан",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.049351"
+    },
+    {
+      "title": "Роадмап деда-программиста. Python бэкенд с 0 до джуна. — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.052617"
+    },
+    {
+      "title": "Переносим Python(FastAPI/Django/Flask/TG БОТ)на сервер.VPS+ДОМЕН — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.055630"
+    },
+    {
+      "title": "Лучший по Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.058425"
+    },
+    {
+      "title": "Python. Часть 2 (Списки и циклы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.061901"
+    },
+    {
+      "title": "Python Data Science: самый быстрый курс — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.065137"
+    },
+    {
+      "title": "QR-разложение Python.Грама-Шмидта. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.068348"
+    },
+    {
+      "title": "Асинхронный Python",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.072658"
+    },
+    {
+      "title": "Библиотеки Python для Data Science — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.076731"
+    },
+    {
+      "title": "Python: самый быстрый курс — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.080508"
+    },
+    {
+      "title": "Анализ данных Python: с 0 до уверенного бизнес-пользователя — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.084098"
+    },
+    {
+      "title": "Python. Часть 1 (Базовый python и условные операторы) — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.087526"
+    },
+    {
+      "title": "Сингулярное разложение SVD Python. Математика машинного обучения",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.091401"
+    },
+    {
+      "title": "DataOPS + Python Engineer с нуля до junior",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:22.095005"
     }
   ],
   "likes": [
@@ -1611,6 +1611,30 @@
       "language": "ru",
       "source": "stepik",
       "ts": "2026-04-28T22:26:41.524924"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:03.278589"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:06.237446"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "source": "stepik",
+      "ts": "2026-06-12T14:30:17.315579"
     }
   ],
   "searches": [
@@ -1765,6 +1789,22 @@
     {
       "query": "Kotlin",
       "ts": "2026-04-28T23:41:33.325191"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-06-03T18:56:30.447488"
+    },
+    {
+      "query": "Testing",
+      "ts": "2026-06-03T18:56:40.720824"
+    },
+    {
+      "query": "Statistics",
+      "ts": "2026-06-12T14:28:11.426411"
+    },
+    {
+      "query": "Python",
+      "ts": "2026-06-12T14:28:22.801641"
     }
   ],
   "dislikes": [],
@@ -1894,6 +1934,62 @@
       "url": "https://stepik.org/course/4852",
       "organization": "Unknown",
       "ts": "2026-04-28T22:26:44.494572"
+    },
+    {
+      "title": "Microsoft AI & ML Engineering",
+      "source": "coursera",
+      "category": "DevOps / Cloud",
+      "difficulty": "Intermediate",
+      "language": "en",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Короткий (<1 мес)",
+      "weighted_rating": 3.719787010255062,
+      "url": "https://www.coursera.org/learn/microsoft-azure-for-ai-and-machine-learning",
+      "organization": "Microsoft",
+      "ts": "2026-06-12T14:27:53.685722"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "source": "stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.796355556714761,
+      "url": "https://stepik.org/course/189476",
+      "organization": "",
+      "ts": "2026-06-12T14:30:03.275943"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "source": "stepik",
+      "category": "Data Science / ML / AI",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.980719683889383,
+      "url": "https://stepik.org/course/240962/promo",
+      "organization": "",
+      "ts": "2026-06-12T14:30:06.233941"
+    },
+    {
+      "title": "Основы Python для анализа данных — Stepik",
+      "source": "stepik",
+      "category": "Python",
+      "difficulty": "Beginner",
+      "language": "ru",
+      "is_free": 1,
+      "price": 0,
+      "duration_category": "Не указана",
+      "weighted_rating": 4.6924772602475455,
+      "url": "https://stepik.org/course/175246",
+      "organization": "",
+      "ts": "2026-06-12T14:30:17.313096"
     }
   ],
   "onboarding": {
@@ -1908,8 +2004,8 @@
   },
   "gamification": {
     "streak": 1,
-    "last_visit": "2026-05-14",
-    "xp": 1485,
+    "last_visit": "2026-06-12",
+    "xp": 1865,
     "achievements": [
       "course_of_day",
       "first_search",
@@ -1918,18 +2014,23 @@
       "streak_3",
       "xp_500",
       "searches_10",
-      "weekly_3"
+      "weekly_3",
+      "started_1",
+      "started_5",
+      "explorer"
     ],
-    "total_searches": 39,
-    "course_of_day_opened": "2026-05-14",
+    "total_searches": 43,
+    "course_of_day_opened": "2026-06-12",
     "weekly": {
-      "week_start": "2026-05-11",
-      "courses_opened": 0,
-      "courses_saved": 0,
-      "claimed": [],
+      "week_start": "2026-06-08",
+      "courses_opened": 3,
+      "courses_saved": 3,
+      "claimed": [
+        "wq_open_3",
+        "wq_save_3"
+      ],
       "days_visited": [
-        "2026-05-11",
-        "2026-05-14"
+        "2026-06-12"
       ]
     }
   },
@@ -1996,6 +2097,41 @@
       "category": "level",
       "ts": "2026-04-28T22:26:44.500327",
       "read": true
+    },
+    {
+      "text": "Достижение разблокировано: Поехали!",
+      "icon": "🚀",
+      "category": "achievement",
+      "ts": "2026-06-12T14:30:07.524023",
+      "read": false
+    },
+    {
+      "text": "Достижение разблокировано: Книжный червь",
+      "icon": "📚",
+      "category": "achievement",
+      "ts": "2026-06-12T14:30:07.526187",
+      "read": false
+    },
+    {
+      "text": "Достижение разблокировано: Исследователь миров",
+      "icon": "🌍",
+      "category": "achievement",
+      "ts": "2026-06-12T14:30:07.528520",
+      "read": false
+    },
+    {
+      "text": "Получено 80 XP за задание: Открой 3 курса за неделю",
+      "icon": "🎁",
+      "category": "achievement",
+      "ts": "2026-06-12T14:30:11.247550",
+      "read": false
+    },
+    {
+      "text": "Получено 50 XP за задание: Сохрани 3 курса за неделю",
+      "icon": "🎁",
+      "category": "achievement",
+      "ts": "2026-06-12T14:30:21.880081",
+      "read": false
     }
   ],
   "started": [
@@ -2033,6 +2169,27 @@
       "source": "stepik",
       "progress": 0,
       "started_at": "2026-04-28T22:26:44.492141"
+    },
+    {
+      "title": "Microsoft AI & ML Engineering",
+      "url": "https://www.coursera.org/learn/microsoft-azure-for-ai-and-machine-learning",
+      "source": "coursera",
+      "progress": 0,
+      "started_at": "2026-06-12T14:27:55.571252"
+    },
+    {
+      "title": "Анализ+Визуализация данных.Python.Pandas.EDA с Нуля.Data Science",
+      "url": "https://stepik.org/course/240962/promo",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-06-12T14:30:07.515222"
+    },
+    {
+      "title": "Python for Data Science: Практика Numpy — Stepik",
+      "url": "https://stepik.org/course/189476",
+      "source": "stepik",
+      "progress": 0,
+      "started_at": "2026-06-12T14:30:09.101652"
     }
   ]
 }
